@@ -10,11 +10,17 @@
     height: fit-content;
     min-height: 5vh;
     top: 0;
+    background-color: variables.$primary-color;
+    box-shadow: 0 0 10px black;
     .contact, .about, .projects, .home, .techs {
         margin-bottom: 3px;
     }
     .active {
         margin-bottom: 0;
         border-bottom : 3px  solid orange;
+    }
+    :hover {
+        color: white;
+        cursor: pointer;
     }
 }

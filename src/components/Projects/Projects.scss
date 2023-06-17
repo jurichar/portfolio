@@ -8,21 +8,30 @@
     align-items: start;
     width: 100%;
     height: 100vh;
-    .Project_1 {
-        background-color: red;
+    padding: 5rem 0;
+    .Project {
+        // background-color: red;
+        border: 3px solid gray;
         width: 30%;
         height: 100%;
-    }
-    .Project_2 {
-        background-color: green;
-        width: 30%;
-        height: 100%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 10px;
+        .Picture {
+            width: 100%;
+            height: 50%;
+            border-radius: 10px;
+            background-color: blue;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+        }
+        .Description {
 
-    }
-    .Project_3 {
-        background-color: yellow;
-        width: 30%;
-        height: 100%;
-
+        }
     }
 }

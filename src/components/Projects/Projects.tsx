@@ -1,19 +1,32 @@
 import './Projects.scss';
 
+const Project = (title, description, image) => {
+    const content = {
+        title: title,
+        description: description,
+        image: image
+    };
+    return (
+        <div className="Project">
+            <h1 className="Title"> { content.title } </h1>
+            <div className="Picture">
+                <img src={ content.image } alt="Project_gif" />
+            </div>
+            <div className="Description">
+                <p> { content.description }</p>
+            </div>
+        </div>
+    );
+}
+
 const Projects = () => {
     return (
         <header className="About-header">
             &#128679; Projects (in work) &#128679;
             <div id="projects" className="Projects">
-                    <div className="Project_1">
-                        <h2>This is my first project :</h2>
-                    </div>
-                    <div className="Project_2">
-                        <h2>This is my second project :</h2>
-                    </div>
-                    <div className="Project_3">
-                        <h2>This is my third project :</h2>
-                    </div>
+                    { Project("Project 1", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus, diam ac scelerisque laoreet, enim libero imperdiet erat, ac tempus.", "src/assets/matrix_gif.gif") }
+                    { Project("Project 2", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus, diam ac scelerisque laoreet, enim libero imperdiet erat, ac tempus.", "src/assets/matrix_gif.gif") }
+                    { Project("Project 3", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus, diam ac scelerisque laoreet, enim libero imperdiet erat, ac tempus.", "src/assets/matrix_gif.gif") }
             </div>
         </header>
     );
