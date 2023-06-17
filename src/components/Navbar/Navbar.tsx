@@ -15,7 +15,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             id="home-link"
-            className={activeTab === "home" ? "active" : ""}
+            className={activeTab === "home" ? "active" : "home"}
           >
             Julien Richard
           </Link>
@@ -26,7 +26,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             id="about-link"
-            className={activeTab === "about" ? "active" : ""}
+            className={activeTab === "about" ? "active" : "about"}
           >
             ABOUT ME
           </Link>
@@ -37,7 +37,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             id="projects-link"
-            className={activeTab === "projects" ? "active" : ""}
+            className={activeTab === "projects" ? "active" : "projects"}
           >
             PROJECTS
           </Link>
@@ -48,7 +48,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             id="techs-link"
-            className={activeTab === "techs" ? "active" : ""}
+            className={activeTab === "techs" ? "active" : "techs"}
           >
             TECHS
           </Link>
@@ -59,7 +59,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             id="contact-link"
-            className={activeTab === "contact" ? "active" : ""}
+            className={activeTab === "contact" ? "active" : "contact"}
           >
             CONTACT
           </Link>

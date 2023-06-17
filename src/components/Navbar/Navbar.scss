@@ -10,13 +10,11 @@
     height: fit-content;
     min-height: 5vh;
     top: 0;
-    #home, #about, #projects, #techs, #contact {
-        border-bottom : 3px  transparent;
+    .contact, .about, .projects, .home, .techs {
+        margin-bottom: 3px;
     }
-    #contact-link, #about-link, #projects-link, #techs-link, #home-link {
-        border-bottom : 3px  transparent;
-        .active {
-            border-bottom : 3px  solid orange;
-        }
+    .active {
+        margin-bottom: 0;
+        border-bottom : 3px  solid orange;
     }
 }
