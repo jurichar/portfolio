@@ -7,13 +7,14 @@ const Navbar = () => {
 
   return (
     <nav className="container">
-      <ul className="Navbar">
+      <div className="Navbar">
           <Link
             activeClass="active"
             to="home"
             spy={true}
             smooth={true}
             duration={500}
+            id="home-link"
             className={activeTab === "home" ? "active" : ""}
           >
             Julien Richard
@@ -24,6 +25,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
+            id="about-link"
             className={activeTab === "about" ? "active" : ""}
           >
             ABOUT ME
@@ -34,6 +36,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
+            id="projects-link"
             className={activeTab === "projects" ? "active" : ""}
           >
             PROJECTS
@@ -44,6 +47,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
+            id="techs-link"
             className={activeTab === "techs" ? "active" : ""}
           >
             TECHS
@@ -54,11 +58,12 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
+            id="contact-link"
             className={activeTab === "contact" ? "active" : ""}
           >
             CONTACT
           </Link>
-      </ul>
+      </div>
     </nav>
   );
 };

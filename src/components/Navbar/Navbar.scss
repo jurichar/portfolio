@@ -10,22 +10,13 @@
     height: fit-content;
     min-height: 5vh;
     top: 0;
-    .Navbar__elem {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        button {
-            font-family: variables.$base-font;
-            color: variables.$font-color;
-            padding: 0 1rem;
-            border: 1px solid variables.$navbar-border-color;
-            width: 100%;
-            height: 100%;
-            background-color: variables.$primary-color;
-        }
+    #home, #about, #projects, #techs, #contact {
+        border-bottom : 3px  transparent;
     }
-    .active {
-        border-bottom : 3px  solid orange;
+    #contact-link, #about-link, #projects-link, #techs-link, #home-link {
+        border-bottom : 3px  transparent;
+        .active {
+            border-bottom : 3px  solid orange;
+        }
     }
 }
