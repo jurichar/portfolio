@@ -1,11 +1,11 @@
 import './Techs.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
+import { faReact, faSass, faDocker, faUbuntu, faGitSquare } from "@fortawesome/free-brands-svg-icons";
 
-const icon = () => {
+const icon = (name) => {
     return (
         <div className="Icon">
-            <FontAwesomeIcon icon={faReact} size="2xl" />
+            <FontAwesomeIcon icon={name} size="2xl" />
         </div>
     );
 }
@@ -14,17 +14,17 @@ const iconGroup = () => {
     return (
         <div className="Icon_group">
             <div className="Icon_group_line">
-                {icon()}
-                {icon()}
+                {icon(faReact)}
+                {icon(faSass)}
             </div>
             <div className="Icon_group_line">
-                {icon()}
-                {icon()}
-                {icon()}
+                {icon(faUbuntu)}
+                {icon(faGitSquare)}
+                {icon(faGitSquare)}
             </div>
             <div className="Icon_group_line">
-                {icon()}
-                {icon()}
+                {icon(faDocker)}
+                {icon(faGitSquare)}
             </div>
         </div>
     );

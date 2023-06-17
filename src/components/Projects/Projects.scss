@@ -4,26 +4,27 @@
 .Projects {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: start;
     width: 100%;
     height: 100vh;
-    padding: 5rem 0;
+    padding: 5rem 5rem;
     .Project {
         // background-color: red;
-        border: 3px solid gray;
-        width: 30%;
+        width: 35%;
         height: 100%;
         padding: 1rem;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         border-radius: 10px;
+        gap: 1rem;
         .Picture {
             width: 100%;
-            height: 50%;
+            height: 70%;
             border-radius: 10px;
-            background-color: blue;
+            border: 3px solid gray;
+            // background-color: blue;
             img {
                 width: 100%;
                 height: 100%;
