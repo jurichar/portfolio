@@ -44,7 +44,6 @@ const Techs = () => {
         <header className="Techs-header">
             &#128679; Techs (in work) &#128679;
             <div id="techs" className="Techs">
-                    <p> This is the techs page</p>
                     {groups()}
             </div>
         </header>
