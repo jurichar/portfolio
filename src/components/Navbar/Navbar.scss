@@ -1,6 +1,7 @@
 @use '../../variables';
 
 .Navbar {
+    z-index: 9;
     display: flex;
     position: fixed;
     flex-direction: row;

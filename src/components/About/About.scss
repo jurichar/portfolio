@@ -1,6 +1,7 @@
 @use "../../variables";
 
 .About {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,9 +19,15 @@
     gap: 1rem;
     .timeline {
       position: relative;
-      height: 5px;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      height: 2px;
       background: variables.$font-color;
       width: 100%;
+      .svg-inline--fa {
+        margin-right: -0.1rem;
+      }
     }
     .events {
         width: 100%;
@@ -38,13 +45,34 @@
             width: 25vw;
             height: 42vh;
             padding: 1rem;
+            gap: 1rem;
             .event-date {
+                font-size: 20px;
               color: #fff;
             }
             .event-card {
-            //   background: #fff;
-              height: 100%;
-            width: 100%;
+                height: 100%;
+                width: 100%;
+                img {
+                    display: flex;
+                    border: 1px solid variables.$font-color;
+                    border-radius: 10px;
+                    background-color: red;
+                    height: 20vh;
+                    width: 100%;
+                    margin-bottom: 1rem;
+                }
+                h3 {
+                    color: variables.$font-color;
+                    margin-bottom: 1rem;
+                    height: 5vh;
+                }
+                p {
+                    text-align: left;
+                    font-size: 14px;
+                    height: 20vh;
+                }
+                 
             }
           }
           .events_upper {
@@ -54,8 +82,9 @@
             justify-content: center;
           }
           .events_lower {
+            margin-top: 1rem;
             display: flex;
-            flex-direction: row-reverse;
+            flex-direction: row;
             width: 100%;
             justify-content: center;
           }
@@ -64,8 +93,8 @@
 }
 
 #middle_card {
-    border-left: 5px solid variables.$font-color;
-    border-right: 5px solid variables.$font-color;
+    border-left: 1px solid variables.$font-color;
+    border-right: 1px solid variables.$font-color;
 }
 
 // @media screen and (max-width: 600px) {
