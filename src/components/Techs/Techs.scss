@@ -12,6 +12,23 @@
         display: flex;
         justify-content: space-around;
         width: 100%;
+        .Left_group {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            #Gem_icon {
+                transform: rotate(-47deg);
+            }
+        }
+        .Right_group {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+        }
         .Icon_group {
             display: flex;
             flex-direction: column;
@@ -26,8 +43,13 @@
                 align-items: center;
                 width: 5rem;
                 height: 5rem;
-                background-color: red;
+                background-color: rgb(40, 41, 55);
                 border-radius: 50%;
+                border: 1px solid gray;
+                &:hover {
+                    color: black;
+                    background-color: white;
+                }
             }
         }
     }

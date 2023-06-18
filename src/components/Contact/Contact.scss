@@ -40,8 +40,10 @@
         font-weight: 600;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
+        border: 1px solid gray;
         &:hover {
-            background-color: grey;
+            color: white;
+            background-color: rgb(40, 41, 55);
         }
     }
 }
