@@ -7,7 +7,7 @@ const eventData = [
     date: "2017",
     title: "University of Paris",
     description: "> Computer Science\n> Mathematics\n> Algorithms\n> Basic web dev",
-    image: "src/assets/isometric.png",
+    image: "/isometric.png",
   },
   {
     date: "2018",
@@ -19,19 +19,19 @@ const eventData = [
     date: "2020",
     title: "School 42 Paris",
     description: "> Peer Learning\n> C, C++ Programming\n> FullStack Development\n> Project-based Learning",
-    image: "src/assets/42_school.png",
+    image: "/42_school.png",
   },
   {
     date: "2022",
     title: "Software Engineer",
     description: "> Implementation of UX\n> Qt Framework\n> Software Development\n> Low-Level",
-    image: "src/assets/software.png",
+    image: "/software.png",
   },
   {
     date: "2023",
     title: "DevOps Engineer",
     description: "> Continuous Integration\n> Continuous Deployment\n> Infrastructure as Code\n> MLOps ",
-    image: "src/assets/devops.png",
+    image: "/devops.png",
   },
 ];
 
