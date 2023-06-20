@@ -6,8 +6,6 @@ import Projects from './components/Projects/Projects';
 import About from './components/About/About';
 import Techs from './components/Techs/Techs';
 
-// import { Outlet } from 'react-router-dom';
-
 const App = () => {
   return (
     <>

@@ -24,4 +24,14 @@
         color: white;
         cursor: pointer;
     }
+    @media (max-width: 768px) {
+        .home {
+            display: none;
+        }
+        .active {
+            border-bottom : 2px  solid orange;
+        }
+        font-size: 0.8rem;
+
+    }
 }

@@ -20,7 +20,6 @@ const Contact = () => {
 
     return (
         <header className="Contact-header">
-            &#128679; Contact (in work) &#128679;
             <div id="contact" className="Contact">
                 <form onSubmit={handleSubmit}>
                     <h1> Contact-me </h1>

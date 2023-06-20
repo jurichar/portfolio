@@ -7,31 +7,31 @@ const eventData = [
     date: "2017",
     title: "University of Paris",
     description: "> Computer Science\n> Mathematics\n> Algorithms\n> Basic web dev",
-    image: "src/assets/matrix_gif.gif",
+    image: "src/assets/isometric.png",
   },
   {
     date: "2018",
     title: "Educational Engineer",
     description: "> Pedagogical Skills\n> Programming Instruction\n> Basic Robotics",
-    image: "src/assets/matrix_gif.gif",
+    image: "src/assets/school.png",
   },
   {
     date: "2020",
     title: "School 42 Paris",
     description: "> Peer Learning\n> C, C++ Programming\n> FullStack Development\n> Project-based Learning",
-    image: "src/assets/matrix_gif.gif",
+    image: "src/assets/42_school.png",
   },
   {
     date: "2022",
     title: "Software Engineer",
     description: "> Implementation of UX\n> Qt Framework\n> Software Development\n> User Interface Design",
-    image: "src/assets/matrix_gif.gif",
+    image: "src/assets/software.png",
   },
   {
     date: "2023",
     title: "DevOps Engineer",
     description: "> Continuous Integration\n> Continuous Deployment\n> Infrastructure as Code\n> MLOps ",
-    image: "src/assets/matrix_gif.gif",
+    image: "src/assets/devops.png",
   },
 ];
 
@@ -41,7 +41,7 @@ const Event = ({ whichData }) => {
     <div className="event">
       <div className="event-date">{eventData[whichData].date}</div>
       <div className="event-card">
-        <img src={eventData[whichData].image} alt="About_gif" />
+        <img className="image-card" src={eventData[whichData].image} alt="About_gif" />
         <h3>{eventData[whichData].title}</h3>
         <p>{eventData[whichData].description.split('\n').map((line, i) => 
             <span key={i}>
@@ -57,7 +57,6 @@ const Event = ({ whichData }) => {
 const About = () => {
   return (
     <header className="About-header">
-      &#128679; About (in work) &#128679;
       <div id="about" className="About">
         <div className="timeline-container">
           <div className="timeline">

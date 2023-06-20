@@ -12,6 +12,12 @@
         display: flex;
         justify-content: space-around;
         width: 100%;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+        }
         .Left_group {
             display: flex;
             flex-direction: column;
