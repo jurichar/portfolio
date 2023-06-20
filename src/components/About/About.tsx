@@ -13,7 +13,7 @@ const eventData = [
     date: "2018",
     title: "Educational Engineer",
     description: "> Pedagogical Skills\n> Programming Instruction\n> Basic Robotics",
-    image: "src/assets/school.png",
+    image: "/school.png",
   },
   {
     date: "2020",
