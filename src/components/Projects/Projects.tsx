@@ -22,7 +22,6 @@ const Project = (title, description, image) => {
 const Projects = () => {
     return (
         <header className="About-header">
-            &#128679; Projects (in work) &#128679;
             <div id="projects" className="Projects">
                     { Project("Project 1", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus, diam ac scelerisque laoreet, enim libero imperdiet erat, ac tempus.", "src/assets/matrix_gif.gif") }
                     { Project("Project 2", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus, diam ac scelerisque laoreet, enim libero imperdiet erat, ac tempus.", "src/assets/matrix_gif.gif") }
