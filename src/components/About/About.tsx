@@ -24,7 +24,7 @@ const eventData = [
   {
     date: "2022",
     title: "Software Engineer",
-    description: "> Implementation of UX\n> Qt Framework\n> Software Development\n> User Interface Design",
+    description: "> Implementation of UX\n> Qt Framework\n> Software Development\n> Low-Level",
     image: "src/assets/software.png",
   },
   {
