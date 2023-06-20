@@ -13,25 +13,25 @@ const eventData = [
     date: "2018",
     title: "Educational Engineer",
     description: "> Pedagogical Skills\n> Programming Instruction\n> Basic Robotics",
-    image: "src/assets/school.png",
+    image: "public/assets/school.png",
   },
   {
     date: "2020",
     title: "School 42 Paris",
     description: "> Peer Learning\n> C, C++ Programming\n> FullStack Development\n> Project-based Learning",
-    image: "src/assets/42_school.png",
+    image: "public/assets/42_school.png",
   },
   {
     date: "2022",
     title: "Software Engineer",
     description: "> Implementation of UX\n> Qt Framework\n> Software Development\n> Low-Level",
-    image: "src/assets/software.png",
+    image: "public/assets/software.png",
   },
   {
     date: "2023",
     title: "DevOps Engineer",
     description: "> Continuous Integration\n> Continuous Deployment\n> Infrastructure as Code\n> MLOps ",
-    image: "src/assets/devops.png",
+    image: "public/assets/devops.png",
   },
 ];
 
