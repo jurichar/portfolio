@@ -8,16 +8,16 @@ import Techs from './components/Techs/Techs';
 
 const App = () => {
   return (
-    <>
-      <div className="section-container">
+    <div className="app">
       <Navbar />
-      <Home />
-      <About />
-      <Projects />
-      <Techs />
-      <Contact />
+      <div className="content">
+        <Home />
+        <About />
+        <Projects />
+        <Techs />
+        <Contact />
       </div>
-    </>
+    </div>
   );
 };
 

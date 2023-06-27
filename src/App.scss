@@ -1,23 +1,5 @@
 @use "./variables";
 
-.section-container {
-    width: 100%;
-    height: 100vh;
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;
-    overflow-x: hidden;
-  }
-  
-  .Home,
-  .About,
-  .Projects,
-  .Techs,
-  .Contact {
-    height: 100vh;
-    scroll-snap-align: start;
-  }
-
-
 #root, body, html {
     font-size: variables.$base-font-size;
     color: variables.$font-color;
@@ -26,4 +8,27 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
+    height: 100vh; // Add this
+}
+
+.app {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.content {
+    width: 100%;
+    height: calc(100vh - 60px); // Adjust as needed to account for the navbar height
+    scroll-snap-type: y mandatory;
+}
+
+.Home,
+.About,
+.Projects,
+.Techs,
+.Contact {
+    height: 100vh;
+    scroll-snap-align: start;
 }
