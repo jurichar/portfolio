@@ -9,12 +9,14 @@ import Techs from './components/Techs/Techs';
 const App = () => {
   return (
     <>
+      <div className="section-container">
       <Navbar />
       <Home />
       <About />
       <Projects />
       <Techs />
       <Contact />
+      </div>
     </>
   );
 };

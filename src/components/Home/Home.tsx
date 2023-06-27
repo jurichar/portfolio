@@ -47,7 +47,8 @@ const Home = () => {
     return (
         <div id="home" className="Home">
             <header className="Home-header">
-                <h1><strong>Hi, I'm Julien Richard</strong></h1> 
+                <h1><strong>Hi, <br/>  I'm Julien Richard</strong></h1> 
+                <br/>
                 <p>and I'm a&nbsp;
                     <a id="interactive_title" data-value="" onMouseOver={onMouseOver}>{title}</a>
                 </p>

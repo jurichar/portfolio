@@ -1,5 +1,21 @@
 @use "./variables";
 
+.section-container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+  }
+  
+  .Home,
+  .About,
+  .Projects,
+  .Techs,
+  .Contact {
+    height: 100vh;
+    scroll-snap-align: start;
+  }
 
 
 #root, body, html {

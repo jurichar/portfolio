@@ -3,24 +3,23 @@
 
 .Techs {
     display: flex;
+    padding-top: 6vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    @media screen and (max-width: 768px) {
-        height: auto;
-    }
+    font-size: 14px;
     .Groups {
         display: flex;
         justify-content: space-around;
         width: 100%;
         @media (max-width: 768px) {
-            margin-top: 2rem;
+            // margin-top: 2rem;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 3rem;
+            gap: 1rem;
         }
         .Left_group {
             display: flex;
