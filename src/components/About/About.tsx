@@ -1,6 +1,4 @@
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "./About.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const eventData = [
   {
