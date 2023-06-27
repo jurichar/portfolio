@@ -1,59 +1,59 @@
 @use '../../variables';
 
-
 .Projects {
+    padding-top: 6vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
-    width: 100%;
-    height: auto;
-    padding: 5rem;
-    margin: 20rem 0rem;
-    @media screen and (max-width: 768px) {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-        height: auto;
-        margin: 5rem 0;
-        gap: 2rem;
-    }
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: auto;  // permettre le défilement horizontal
+    white-space: nowrap; // empêcher le retour à la ligne des projets
+    scroll-snap-type: x mandatory; // cela permettra un scroll "par page"
+
     .Project {
-        width: 35%;
-        height: auto;
-        padding: 1rem;
+        // margin-top: 2rem;
+        width: 100vw;  // largeur de l'écran
+        height: 100%;  // hauteur de l'écran
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        border-radius: 10px;
+        justify-content: space-between;
+        padding: 1rem;
+        align-items: center;
+        scroll-snap-align: start; // cela permettra un scroll "par page"
+        box-sizing: border-box; // ceci fait que padding/border ne s'ajoutent pas à la largeur
         gap: 1rem;
-        @media screen and (max-width: 768px) {
-            width: 100%;
-            height: 50%;
-            padding: 0;
-            margin-top: 1rem;
-        }
         .Picture {
             width: 100%;
-            height: 70%;
+            height: 60%;
             border-radius: 10px;
             border: 3px solid gray;
+            overflow: hidden; // pour s'assurer que l'image est bien contenue dans le bloc
+
             img {
                 width: 100%;
                 height: 100%;
+                object-fit: cover; // pour s'assurer que l'image remplit bien le bloc
                 border-radius: 10px;
                 box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
             }
         }
+
         &:hover{
             color: white;
+
             .Picture {
                 border: 3px solid white;
             }
         }
-        .Description {
 
+        .Description {
+            width: 90vw;
+            height: 40%;
+            white-space: normal;
+            text-align: left;
+            overflow-wrap: break-word;
         }
     }
 }
