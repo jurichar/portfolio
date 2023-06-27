@@ -31,8 +31,16 @@ const Home = () => {
     }
 
     useEffect(() => {
+        // Démarrez l'animation lors du montage du composant
+        onMouseOver();
+
+        // Répétez l'animation toutes les 5 secondes
+        const intervalId = setInterval(onMouseOver, 5000);
+
+        // Nettoyez l'intervalle lorsque le composant est démonté
         return () => {
             if (intervalRef.current) clearInterval(intervalRef.current);
+            clearInterval(intervalId);
         };
     }, []);
 
