@@ -22,7 +22,7 @@ const Contact = () => {
         <header className="Contact-header">
             <div id="contact" className="Contact">
                 <form onSubmit={handleSubmit}>
-                    <h1> Contact-me </h1>
+                    <h1> Contact </h1>
                     <input type="text" id="name-input" placeholder="Your name" value={name} onChange={(e) => setName(e.target.value)} />
                     <input type="email" id="email-input" placeholder="Your email" value={email} onChange={(e) => setEmail(e.target.value)} />
                     <textarea id="message-input" placeholder="Your message" value={message} onChange={(e) => setMessage(e.target.value)} />

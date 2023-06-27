@@ -59,21 +59,12 @@ const About = () => {
     <header className="About-header">
       <div id="about" className="About">
         <div className="timeline-container">
-          <div className="timeline">
-          <FontAwesomeIcon icon={faArrowRight} />
-          </div>
           <div className="events">
-            <div className="events_upper">
-              <Event whichData={0} />
-              <div id="middle_card">
-                <Event whichData={2} />
-              </div>
               <Event whichData={4} />
-            </div>
-            <div className="events_lower">
-              <Event whichData={1} />
               <Event whichData={3} />
-            </div>
+              <Event whichData={2} />
+              <Event whichData={1} />
+              <Event whichData={0} />
           </div>
         </div>
       </div>
