@@ -34,7 +34,6 @@ const eventData = [
 ];
 
 const Event = ({ whichData }) => {
-  console.log(typeof whichData);
   return (
     <div className="event">
       <div className="event-date">{eventData[whichData].date}</div>

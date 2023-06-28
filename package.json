@@ -23,6 +23,7 @@
     "react-chrono": "^2.2.0",
     "react-dom": "^18.2.0",
     "react-scroll": "^1.8.9",
+    "react-scroll-into-view": "^1.12.1",
     "sass": "^1.63.4",
     "three": "^0.153.0"
   },
