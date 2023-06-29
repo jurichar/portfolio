@@ -6,14 +6,13 @@ const Navbar = () => {
   const [activeTab] = React.useState("");
 
   return (
-    // <nav className="container">
       <div className="Navbar">
         <ScrollIntoView selector="#home">
           <div
             id="home-link"
             className={activeTab === "home" ? "active" : "home"}
           >
-            Julien Richard
+            HOME
           </div>
         </ScrollIntoView>
         <ScrollIntoView selector="#about">
@@ -21,7 +20,7 @@ const Navbar = () => {
             id="about-link"
             className={activeTab === "about" ? "active" : "about"}
           >
-            ABOUT ME
+            ABOUT
           </div>
         </ScrollIntoView>
         <ScrollIntoView selector="#projects">
@@ -29,7 +28,7 @@ const Navbar = () => {
             id="projects-link"
             className={activeTab === "projects" ? "active" : "projects"}
           >
-            PROJECTS
+            WORKS
             </div>
         </ScrollIntoView>
         <ScrollIntoView selector="#techs">
@@ -49,7 +48,6 @@ const Navbar = () => {
             </div>
         </ScrollIntoView>
       </div>
-    // </nav>
   );
 };
 
