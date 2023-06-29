@@ -1,0 +1,39 @@
+{
+  "eventData": [
+    {
+      "date": "2017",
+      "title": "University of Paris",
+      "description": "> Computer Science\n> Mathematics\n> Algorithms\n> Basic web dev",
+      "image": "/public/isometric.png",
+      "image_alt": "University of Paris"
+    },
+    {
+      "date": "2018",
+      "title": "Educational Engineer",
+      "description": "> Pedagogical Skills\n> Programming Instruction\n> Basic Robotics",
+      "image": "/public/school.png",
+      "image_alt": "Educational Engineer"
+    },
+    {
+      "date": "2020",
+      "title": "School 42 Paris",
+      "description": "> Peer Learning\n> C, C++ Programming\n> FullStack Development\n> Project-based Learning",
+      "image": "/public/42_school.png",
+      "image_alt": "School 42 Paris"
+    },
+    {
+      "date": "2022",
+      "title": "Software Engineer",
+      "description": "> Implementation of UX\n> Qt Framework\n> Software Development\n> Low-Level",
+      "image": "/public/software.png",
+      "image_alt": "Software Engineer"
+    },
+    {
+      "date": "2023",
+      "title": "DevOps Engineer",
+      "description": "> Continuous Integration\n> Continuous Deployment\n> Infrastructure as Code\n> MLOps ",
+      "image": "/public/devops.png",
+      "image_alt": "DevOps Engineer"
+    }
+  ]
+}

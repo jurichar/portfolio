@@ -12,6 +12,11 @@
   .timeline-container {
     width: 90%;
     padding: 1rem;
+    .title {
+      font-size: 2rem;
+      color: variables.$font-color;
+      margin-bottom: 2rem;
+    }
 
     .events {
       display: flex;

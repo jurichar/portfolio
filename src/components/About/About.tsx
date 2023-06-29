@@ -1,4 +1,5 @@
 import "./About.scss";
+// import { Data } from "../../data/about.json";
 
 const eventData = [
   {
@@ -38,7 +39,7 @@ const Event = ({ whichData }) => {
     <div className="event">
       <div className="event-date">{eventData[whichData].date}</div>
       <div className="event-card">
-        <img className="image-card" src={eventData[whichData].image} alt="About_gif" />
+        <img className="image-card" src={eventData[whichData].image} alt="About_img" />
         <h3>{eventData[whichData].title}</h3>
         <p>{eventData[whichData].description.split('\n').map((line, i) => 
             <span key={i}>
@@ -56,6 +57,7 @@ const About = () => {
     <header className="About-header">
       <div id="about" className="About">
         <div className="timeline-container">
+          <h1 className="title"> About </h1>
           <div className="events">
               <Event whichData={4} />
               <Event whichData={3} />

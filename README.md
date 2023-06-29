@@ -17,7 +17,6 @@ Navbar :
 - pas de ligne sur certaines sections
 - plus de contraste 
 
-
 Home :
 - badges
 - photo en AI
