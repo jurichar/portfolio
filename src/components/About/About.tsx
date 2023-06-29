@@ -1,69 +1,29 @@
 import "./About.scss";
-// import { Data } from "../../data/about.json";
 
-const eventData = [
-  {
-    date: "2017",
-    title: "University of Paris",
-    description: "> Computer Science\n> Mathematics\n> Algorithms\n> Basic web dev",
-    image: "/isometric.png",
-  },
-  {
-    date: "2018",
-    title: "Educational Engineer",
-    description: "> Pedagogical Skills\n> Programming Instruction\n> Basic Robotics",
-    image: "/school.png",
-  },
-  {
-    date: "2020",
-    title: "School 42 Paris",
-    description: "> Peer Learning\n> C, C++ Programming\n> FullStack Development\n> Project-based Learning",
-    image: "/42_school.png",
-  },
-  {
-    date: "2022",
-    title: "Software Engineer",
-    description: "> Implementation of UX\n> Qt Framework\n> Software Development\n> Low-Level",
-    image: "/software.png",
-  },
-  {
-    date: "2023",
-    title: "DevOps Engineer",
-    description: "> Continuous Integration\n> Continuous Deployment\n> Infrastructure as Code\n> MLOps ",
-    image: "/devops.png",
-  },
-];
-
-const Event = ({ whichData }) => {
-  return (
-    <div className="event">
-      <div className="event-date">{eventData[whichData].date}</div>
-      <div className="event-card">
-        <img className="image-card" src={eventData[whichData].image} alt="About_img" />
-        <h3>{eventData[whichData].title}</h3>
-        <p>{eventData[whichData].description.split('\n').map((line, i) => 
-            <span key={i}>
-              {line}
-              <br />
-            </span>
-          )}</p>
-      </div>
-    </div>
-  );
-};
-
-const About = () => {
+const About = ({data}) => {
   return (
     <header className="About-header">
       <div id="about" className="About">
         <div className="timeline-container">
           <h1 className="title"> About </h1>
           <div className="events">
-              <Event whichData={4} />
-              <Event whichData={3} />
-              <Event whichData={2} />
-              <Event whichData={1} />
-              <Event whichData={0} />
+            {data.map((event, i) => {
+              return (
+                <div className="event">
+                  <div className="event-date">{event.date}</div>
+                  <div className="event-card">
+                    <img className="image-card" src={event.image} alt={event.image_alt} />
+                    <h3>{event.title}</h3>
+                    <p>{event.description.split('\n').map((line, i) => 
+                        <span key={i}>
+                          {line}
+                          <br />
+                        </span>
+                      )}</p>
+                  </div>
+                </div>
+              )
+            })}
           </div>
         </div>
       </div>

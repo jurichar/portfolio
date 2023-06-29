@@ -5,6 +5,7 @@ import Contact from './components/Contact/Contact';
 import Projects from './components/Projects/Projects';
 import About from './components/About/About';
 import Techs from './components/Techs/Techs';
+import { eventData } from "../src/data/about.json";
 
 const App = () => {
   return (
@@ -12,7 +13,7 @@ const App = () => {
       <Navbar />
       <div className="content">
       <Home />
-      <About />
+      <About data={eventData}/>
       <Projects />
       <Techs />
       <Contact />
