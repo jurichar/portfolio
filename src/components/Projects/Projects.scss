@@ -11,7 +11,11 @@
     overflow-x: auto;  // permettre le défilement horizontal
     white-space: nowrap; // empêcher le retour à la ligne des projets
     scroll-snap-type: x mandatory; // cela permettra un scroll "par page"
-
+    scroll-behavior: smooth; // pour un scroll fluide
+    -webkit-overflow-scrolling: touch; // pour un scroll fluide sur iOS
+    ::-webkit-scrollbar {
+        display: none; // pour cacher la scrollbar
+    }
     .Project {
         // margin-top: 2rem;
         width: 100vw;  // largeur de l'écran

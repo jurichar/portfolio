@@ -1,5 +1,5 @@
 {
-  "aboutData": [
+  "projectsData": [
     {
       "date": "2017",
       "title": "University of Paris",
@@ -7,8 +7,7 @@
         "> Computer Science",
         "> Mathematics",
         "> Algorithms",
-        "> Basic web dev"
-      ],
+        "> Basic web dev"],
       "image": "/public/isometric.png",
       "image_alt": "University of Paris"
     },
@@ -16,47 +15,40 @@
       "date": "2018",
       "title": "Educational Engineer",
       "description": [
-        "> Pedagogical Skills",
-        "> Programming Instruction",
-        "> Basic Robotics"
-      ],
-      "image": "/public/school.png",
+        "> Computer Science",
+        "> Mathematics",
+        "> Algorithms",
+        "> Basic web dev"],      "image": "/public/school.png",
       "image_alt": "Educational Engineer"
     },
     {
       "date": "2020",
       "title": "School 42 Paris",
       "description": [
-        "> Peer Learning",
-        "> C, C++ Programming",
-        "> FullStack Development",
-        "> Project-based Learning"
-      ],
-      "image": "/public/42_school.png",
+        "> Computer Science",
+        "> Mathematics",
+        "> Algorithms",
+        "> Basic web dev"],      "image": "/public/42_school.png",
       "image_alt": "School 42 Paris"
     },
     {
       "date": "2022",
       "title": "Software Engineer",
       "description": [
-        "> Implementation of UX",
-        "> Qt Framework",
-        "> Software Development",
-        "> Low-Level"
-      ],
-      "image": "/public/software.png",
+        "> Computer Science",
+        "> Mathematics",
+        "> Algorithms",
+        "> Basic web dev"],      "image": "/public/software.png",
       "image_alt": "Software Engineer"
     },
     {
       "date": "2023",
       "title": "DevOps Engineer",
       "description": [
-        "> Continuous Integration",
-        "> Continuous Deployment",
-        "> Infrastructure as Code",
-        "> MLOps"
-      ],
-      "image": "/public/devops.png",
+        "> Computer Science",
+        "> Mathematics",
+        "> Algorithms",
+        "> Basic web dev"],      "image": "/public/devops.png",
       "image_alt": "DevOps Engineer"
     }
   ]

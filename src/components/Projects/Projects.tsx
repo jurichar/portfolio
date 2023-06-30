@@ -1,32 +1,29 @@
-import './Projects.scss';
+import "./Projects.scss";
 
-const Project = (description, image) => {
-    const content = {
-        description: description,
-        image: image
-    };
-    return (
-        <div className="Project">
-            <div className="Picture">
-                <img src={ content.image } alt="Project_gif" />
+const Projects = ({ data }) => {
+  return (
+    <header className="About-header">
+      <div id="projects" className="Projects">
+        {data.map((event:any, key:any) => {
+          return (
+            <div className="Project" key={key}>
+              <div className="Picture">
+                <img src={event.image} alt="Project_gif" />
+              </div>
+              <div className="Description">
+                <p> {event?.description?.map((line:any, i:any) =>
+                    <span key={i}>
+                        {line}
+                        <br />
+                    </span>
+                    )} </p>
+              </div>
             </div>
-            <div className="Description">
-                <p> { content.description }</p>
-            </div>
-        </div>
-    );
-}
-
-const Projects = () => {
-    return (
-        <header className="About-header">
-            <div id="projects" className="Projects">
-                    { Project("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus, diam ac scelerisque laoreet, enim libero imperdiet erat, ac tempus.", "/matrix_gif.gif") }
-                    { Project("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus, diam ac scelerisque laoreet, enim libero imperdiet erat, ac tempus.", "/matrix_gif.gif") }
-                    { Project("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus, diam ac scelerisque laoreet, enim libero imperdiet erat, ac tempus.", "/matrix_gif.gif") }
-            </div>
-        </header>
-    );
-}
+          );
+        })}
+      </div>
+    </header>
+  );
+};
 
 export default Projects;
