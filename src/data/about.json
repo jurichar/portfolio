@@ -9,7 +9,7 @@
         "> Algorithms",
         "> Basic web dev"
       ],
-      "image": "/public/isometric.png",
+      "image": "./public/isometric.png",
       "image_alt": "University of Paris"
     },
     {
@@ -20,7 +20,7 @@
         "> Programming Instruction",
         "> Basic Robotics"
       ],
-      "image": "/public/school.png",
+      "image": "./public/school.png",
       "image_alt": "Educational Engineer"
     },
     {
