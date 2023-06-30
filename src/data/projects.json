@@ -8,7 +8,7 @@
         "> Mathematics",
         "> Algorithms",
         "> Basic web dev"],
-      "image": "/public/isometric.png",
+      "image": "isometric.png",
       "image_alt": "University of Paris"
     },
     {
@@ -18,7 +18,8 @@
         "> Computer Science",
         "> Mathematics",
         "> Algorithms",
-        "> Basic web dev"],      "image": "/public/school.png",
+        "> Basic web dev"],      
+      "image": "school.png",
       "image_alt": "Educational Engineer"
     },
     {
@@ -28,7 +29,8 @@
         "> Computer Science",
         "> Mathematics",
         "> Algorithms",
-        "> Basic web dev"],      "image": "/public/42_school.png",
+        "> Basic web dev"],      
+      "image": "42_school.png",
       "image_alt": "School 42 Paris"
     },
     {
@@ -38,7 +40,8 @@
         "> Computer Science",
         "> Mathematics",
         "> Algorithms",
-        "> Basic web dev"],      "image": "/public/software.png",
+        "> Basic web dev"],      
+      "image": "software.png",
       "image_alt": "Software Engineer"
     },
     {
@@ -48,7 +51,8 @@
         "> Computer Science",
         "> Mathematics",
         "> Algorithms",
-        "> Basic web dev"],      "image": "/public/devops.png",
+        "> Basic web dev"],
+      "image": "devops.png",
       "image_alt": "DevOps Engineer"
     }
   ]
