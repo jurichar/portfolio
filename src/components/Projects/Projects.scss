@@ -1,59 +1,66 @@
-@use '../../variables';
+@use "../../variables";
 
+.FullSizeWrapper {
+  z-index: 0;
+  padding: 2rem 0;
+  padding-top: 4rem;
+  .Title {
+    text-align: center;
+  }
+}
 .Projects {
-    padding-top: 6vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  .Project {
     width: 100vw;
-    height: 100vh;
-    overflow-x: auto;
-    white-space: nowrap;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
     scroll-snap-align: start;
-    -webkit-overflow-scrolling: touch;
-    .Project {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 2rem;
-        align-items: center;
-        scroll-snap-align: start;
-        box-sizing: border-box;
-        gap: 2rem;
-        .Picture {
-            width: 100%;
-            height: 60%;
-            border-radius: 10px;
-            border: 3px solid gray;
-            overflow: hidden;
+    box-sizing: border-box;
+    gap: 2rem;
 
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 10px;
-                box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
-            }
-        }
+    .Picture {
+      width: 100%;
+      height: 60%;
+      border-radius: 10px;
+      border: 3px solid gray;
+      overflow: hidden;
 
-        &:hover{
-            color: white;
-
-            .Picture {
-                border: 3px solid white;
-            }
-        }
-
-        .Description {
-            width: 80vw;
-            height: 40%;
-            white-space: normal;
-            text-align: left;
-            overflow-wrap: break-word;
-        }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+      }
     }
+
+    &:hover {
+      color: white;
+
+      .Picture {
+        border: 3px solid white;
+      }
+    }
+
+    .Description {
+      width: 80vw;
+      height: 40%;
+      white-space: normal;
+      text-align: left;
+      overflow-wrap: break-word;
+    }
+  }
 }

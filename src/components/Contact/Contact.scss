@@ -4,15 +4,15 @@
 .Contact, form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 100vh;
-    padding: 0 20px;
+    padding: 2rem 1rem;
     input, textarea {
         width: 100%;
         padding: 10px;
-        margin: 10px 0;
+        // margin: 10px 0;
         border: 1px solid black;
         border-radius: 5px;
         font-size: 1.2rem;
@@ -24,7 +24,7 @@
         display: flex;
         justify-content: start;
         align-items: start;
-        height: 30%;
+        height: 50%;
         outline: none;
     }
     button {
@@ -33,16 +33,21 @@
         outline: none;
         border: none;
         border-radius: 5px;
+        width: 100%;
         padding: 10px 20px;
         font-size: 1.2rem;
         font-weight: 600;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
         border: 1px solid gray;
+ 
         &:hover {
             color: white;
             background-color: rgb(40, 41, 55);
         }
+    }
+    h1 {
+        margin-bottom: 2rem;
     }
     @media (max-width: 768px) {
         form {
