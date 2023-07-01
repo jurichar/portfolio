@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
 import './Home.scss';
-import { Tooltip } from '@mui/material';
 import {faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
