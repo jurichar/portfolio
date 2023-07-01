@@ -10,7 +10,9 @@ const Projects = ({ data }) => {
             return (
               <div className="event" key={key}>
                   <h3>{event.title}</h3>
-                  <img className="event-image" src={event.image} alt={event.image_alt} />
+                  <a target="_blank" href={event.link}>
+                    <img className="event-image" src={event.image} alt={event.image_alt} />
+                  </a>
                   <p>
                     {event?.description?.map((line: any, i: any) => (
                       <span key={i}>

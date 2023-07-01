@@ -10,9 +10,31 @@
   font-size: x-large;
   #interactive_title {
     font-size: x-large;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     &:hover {
       background-color: white;
       color: black;
+    }
+  }
+  .buttons {
+    padding: 2rem 0;
+    display: flex;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1rem;
+    // background-color: red;
+    .Icon {
+      height: 2rem;
+      a {
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        color: variables.$font-color;
+        &:hover {
+          color: white;
+        }
+      }
+      // background-color: red;
+      // color: $primary.;
     }
   }
   @media (max-width: 768px) {

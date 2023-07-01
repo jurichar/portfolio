@@ -56,7 +56,7 @@ const iconGroup = () => {
         <Tooltip title="Databases / SQL" arrow>
           {icon(faDatabase)}
         </Tooltip>
-        <Tooltip title="PHP" arrow>
+        <Tooltip title="NodeJS" arrow>
           {icon(faNodeJs)}
         </Tooltip>
       </div>

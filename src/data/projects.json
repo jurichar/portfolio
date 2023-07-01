@@ -1,13 +1,15 @@
 {
   "projectsData": [
     {
-      "title": "ft_project1",
+      "title": "QR Code Generator",
       "description": [
-        "> Mathematics",
-        "> Algorithms",
-        "> Basic web dev"],
-      "image": "matrix_gif.gif",
-      "image_alt": "University of Paris"
+        "> HTML / CSS",
+        "> JavaScript",
+        "> Basic web dev"
+      ],
+      "image": "qrcode.gif",
+      "image_alt": "University of Paris",
+      "link": "https://qrcode-generator-livid.vercel.app/"
     },
     {
       "title": "ft_project2",
@@ -16,7 +18,9 @@
         "> Algorithms",
         "> Basic web dev"],
       "image": "matrix_gif.gif",
-      "image_alt": "University of Paris"
+      "image_alt": "University of Paris",
+      "link": "https://www.42.fr/"
+
     },
     {
       "title": "ft_project3",
@@ -25,7 +29,8 @@
         "> Algorithms",
         "> Basic web dev"],
       "image": "matrix_gif.gif",
-      "image_alt": "University of Paris"
+      "image_alt": "University of Paris",
+      "link": "https://www.42.fr/"
     }
   ]
 }

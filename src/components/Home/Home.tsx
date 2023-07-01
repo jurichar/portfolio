@@ -1,8 +1,22 @@
 import { useState, useEffect, useRef } from 'react';
 import './Home.scss';
+import { Tooltip } from '@mui/material';
+import {faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 const phrase = "fullstack developper";
+
+const icon = (name:IconProp, link:string) => {
+    return (
+      <div className="Icon">
+        <a href={link} target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={name} size="xl" />
+        </a>
+      </div>
+    );
+  };
 
 const Home = () => {
     const [title, setTitle] = useState(phrase);
@@ -52,6 +66,10 @@ const Home = () => {
                 <p>and I'm a&nbsp;
                     <a id="interactive_title" data-value="" onMouseOver={onMouseOver}>{title}</a>
                 </p>
+                <div className='buttons'>
+                    {icon(faGithubSquare, "https://github.com/jurichar/")}
+                    {icon(faLinkedin, "https://www.linkedin.com/in/julien-rchd/")}
+                </div>
             </header>
         </div>
     );
