@@ -1,59 +1,31 @@
 {
   "projectsData": [
     {
-      "date": "2017",
-      "title": "University of Paris",
+      "title": "ft_project1",
       "description": [
-        "> Computer Science",
         "> Mathematics",
         "> Algorithms",
         "> Basic web dev"],
-      "image": "isometric.png",
+      "image": "matrix_gif.gif",
       "image_alt": "University of Paris"
     },
     {
-      "date": "2018",
-      "title": "Educational Engineer",
+      "title": "ft_project2",
       "description": [
-        "> Computer Science",
-        "> Mathematics",
-        "> Algorithms",
-        "> Basic web dev"],      
-      "image": "school.png",
-      "image_alt": "Educational Engineer"
-    },
-    {
-      "date": "2020",
-      "title": "School 42 Paris",
-      "description": [
-        "> Computer Science",
-        "> Mathematics",
-        "> Algorithms",
-        "> Basic web dev"],      
-      "image": "42_school.png",
-      "image_alt": "School 42 Paris"
-    },
-    {
-      "date": "2022",
-      "title": "Software Engineer",
-      "description": [
-        "> Computer Science",
-        "> Mathematics",
-        "> Algorithms",
-        "> Basic web dev"],      
-      "image": "software.png",
-      "image_alt": "Software Engineer"
-    },
-    {
-      "date": "2023",
-      "title": "DevOps Engineer",
-      "description": [
-        "> Computer Science",
         "> Mathematics",
         "> Algorithms",
         "> Basic web dev"],
-      "image": "devops.png",
-      "image_alt": "DevOps Engineer"
+      "image": "matrix_gif.gif",
+      "image_alt": "University of Paris"
+    },
+    {
+      "title": "ft_project3",
+      "description": [
+        "> Mathematics",
+        "> Algorithms",
+        "> Basic web dev"],
+      "image": "matrix_gif.gif",
+      "image_alt": "University of Paris"
     }
   ]
 }

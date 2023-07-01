@@ -1,71 +1,87 @@
 @use '../../variables';
 
-
 .Techs {
+  display: flex;
+  padding-top: 6vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 14px;
+
+  .Groups {
     display: flex;
-    padding-top: 6vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    font-size: 14px;
-    .Groups {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        @media (max-width: 768px) {
-            // margin-top: 2rem;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-        }
-        .Left_group {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 3rem;
-            @media screen and (max-width: 768px) {
-                gap: 1rem;
-            }
-            #Gem_icon {
-                transform: rotate(-47deg);
-            }
-        }
-        .Right_group {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 3rem;
-            @media screen and (max-width: 768px) {
-                gap: 1rem;
-            }
-        }
-        .Icon_group {
-            display: flex;
-            flex-direction: column;
-            .Icon_group_line {
-                display: flex;
-                justify-content: center;
-                gap: 1rem;
-            }
-            .Icon {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 5rem;
-                height: 5rem;
-                background-color: rgb(40, 41, 55);
-                border-radius: 50%;
-                border: 1px solid gray;
-                &:hover {
-                    color: black;
-                    background-color: white;
-                }
-            }
-        }
+    justify-content: space-around;
+    width: 100%;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
     }
+
+    .Left_group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+
+      @media screen and (max-width: 768px) {
+        gap: 1rem;
+      }
+
+      #Gem_icon {
+        transform: rotate(-47deg);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+
+    .Right_group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+
+      @media screen and (max-width: 768px) {
+        gap: 1rem;
+      }
+    }
+
+    .Icon_group {
+      display: flex;
+      flex-direction: column;
+
+      .Icon_group_line {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .Icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 6rem;
+        height: 6rem;
+        background-color: rgb(40, 41, 55);
+        border-radius: 50%;
+        border: 1px solid gray;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+        &:hover {
+          color: black;
+          background-color: white;
+        }
+
+        @media screen and (max-width: 768px) {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+    }
+  }
 }

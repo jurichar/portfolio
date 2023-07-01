@@ -2,33 +2,29 @@ import "./Projects.scss";
 
 const Projects = ({ data }) => {
   return (
-    <div id="projects" className="FullSizeWrapper">
-      <h1 className="Title">Titre</h1>
-      <header className="Project-header">
-        <div className="Projects">
-          {data.map((event:any, key:any) => {
+    <header className="Project-header">
+      <div id="projects" className="Projects">
+        <h1 className="title"> Works </h1>
+        <div className="events">
+          {data.map((event: any, key: any) => {
             return (
-              <div className="Project" key={key}>
-                <div className="Title">
+              <div className="event" key={key}>
                   <h3>{event.title}</h3>
-                </div>
-                <div className="Picture">
-                  <img src={event.image} alt={event.image_alt} />
-                </div>
-                <div className="Description">
-                  <p> {event?.description?.map((line:any, i:any) =>
-                    <span key={i}>
+                  <img className="event-image" src={event.image} alt={event.image_alt} />
+                  <p>
+                    {event?.description?.map((line: any, i: any) => (
+                      <span key={i}>
                         {line}
                         <br />
-                    </span>
-                    )} </p>
-                </div>
+                      </span>
+                    ))}
+                  </p>
               </div>
             );
           })}
         </div>
-      </header>
-    </div>
+      </div>
+    </header>
   );
 };
 

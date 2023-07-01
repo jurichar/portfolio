@@ -4,7 +4,6 @@ const About = ({data}) => {
   return (
     <header className="About-header">
       <div id="about" className="About">
-        <div className="timeline-container">
           <h1 className="title"> About </h1>
           <div className="events">
             {data.map((event:any, key:any) => {
@@ -24,7 +23,6 @@ const About = ({data}) => {
                 </div>
               )
             })}
-          </div>
         </div>
       </div>
     </header>
