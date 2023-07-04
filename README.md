@@ -8,13 +8,10 @@ This project is a portfolio implemented with :
 Features idea :
 
 General :
-- auto scroll avec systeme
-- hover : TRANSITIONS !
 - curseurs a revoir
 - console log number 
 
 Navbar :
-- pas de ligne sur certaines sections
 - plus de contraste 
 
 Home :
@@ -26,7 +23,7 @@ About :
 - responsive a revoir
 
 Project :
-
+- ajout de readme.md pour les projets puis rediriger vers les projets.
 
 Techs :
 - Badge node js !!

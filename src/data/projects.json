@@ -12,11 +12,12 @@
       "link": "https://qrcode-generator-livid.vercel.app/"
     },
     {
-      "title": "ft_project2",
+      "title": "swifty_companion",
       "description": [
-        "> Mathematics",
-        "> Algorithms",
-        "> Basic web dev"],
+        "> Swift",
+        "> iOS",
+        "> API"
+      ],
       "image": "matrix_gif.gif",
       "image_alt": "University of Paris",
       "link": "https://www.42.fr/"
