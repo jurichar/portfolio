@@ -6,12 +6,11 @@
         "> HTML / CSS",
         "> JavaScript",
         "> JavaScript",
-        "> JavaScript",
         "> Basic web dev"
       ],
-      "image": "qrcode.gif",
       "image_alt": "University of Paris",
-      "readme": "/hello-world.md"
+      "image": "project_1/project_1.gif",
+      "readme": "project_1/project_1.md"
     },
     {
       "title": "swifty_companion",
@@ -19,13 +18,11 @@
         "> Swift",
         "> iOS",
         "> iOS",
-        "> iOS",
-        "> iOS",
-        "> API"
+        "> iOS"
       ],
-      "image": "matrix_gif.gif",
       "image_alt": "University of Paris",
-      "readme": "/hello-world.md"
+      "image": "project_2/project_2.gif",
+      "readme": "project_2/project_2.md"
 
     },
     {
@@ -33,10 +30,11 @@
       "description": [
         "> Mathematics",
         "> Algorithms",
+        "> Algorithms",
         "> Basic web dev"],
-      "image": "matrix_gif.gif",
       "image_alt": "University of Paris",
-      "readme": "/hello-world.md"
+      "image": "project_3/project_3.gif",
+      "readme": "project_3/project_3.md"
     }
   ]
 }
