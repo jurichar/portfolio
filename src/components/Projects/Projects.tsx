@@ -6,6 +6,7 @@ import Modal from 'react-modal';
 Modal.setAppElement('#root');
 
 const Projects = ({ data }) => {
+  const isSmallScreen = window.innerWidth < 768;
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [readmeContent, setReadmeContent] = useState("");
 
@@ -60,12 +61,14 @@ const Projects = ({ data }) => {
             animation: `${modalIsOpen ? 'appear' : ''} 0.3s`,
           },
           content: {
-            backgroundColor: '#ffe8d6',
-            color: '#997461',
-            inset: '60px',
+            backgroundColor: '#22577a',
+            color: '#a8dadc',
+            margin: '5vh 0 0 0',
+            inset: isSmallScreen ? '20px' : '60px',
             border: 'none',
             borderRadius: '10px',
             animation: `${modalIsOpen ? 'appear' : ''} 0.3s`,
+
           }
         }}
       >
