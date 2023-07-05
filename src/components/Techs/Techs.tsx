@@ -13,6 +13,7 @@ import {
 import {
   faDatabase,
   faDharmachakra,
+  faGears,
   faGem,
   faPuzzlePiece,
   faRobot,
@@ -32,21 +33,21 @@ const iconGroup = () => {
   return (
     <div className="Icon_group">
       <div className="Icon_group_line">
-        <Tooltip title="React / TS" arrow>
-          {icon(faReact)}
+        <Tooltip title="Python" arrow>
+          {icon(faPython)}
         </Tooltip>
-        <Tooltip title="scss / css" arrow>
+        <Tooltip title="Style framework" arrow>
           {icon(faSass)}
         </Tooltip>
       </div>
       <div className="Icon_group_line">
-        <Tooltip title="Ruby" arrow>
+        <Tooltip title="Ruby (on rails)" arrow>
             <div className="Icon">
                 <FontAwesomeIcon id="Gem_icon" icon={faGem} size="2xl" />
             </div>
         </Tooltip>
-        <Tooltip title="Python" arrow>
-          {icon(faPython)}
+        <Tooltip title="React TS" arrow>
+          {icon(faReact)}
         </Tooltip>
         <Tooltip title="Figma" arrow>
           {icon(faFigma)}
@@ -68,19 +69,19 @@ const iconGroup2 = () => {
     return (
         <div className="Icon_group">
       <div className="Icon_group_line">
-        <Tooltip title="Kubernetes" arrow>
+        <Tooltip title="Kubernetes cluster" arrow>
           {icon(faDharmachakra)}
         </Tooltip>
-        <Tooltip title="Docker" arrow>
-          {icon(faDocker)}
+        <Tooltip title="Git" arrow>
+          {icon(faGithub)}
         </Tooltip>
       </div>
       <div className="Icon_group_line">
-      <Tooltip title="Ubuntu" arrow>
+      <Tooltip title="Linux systems" arrow>
           {icon(faUbuntu)}
         </Tooltip>
-        <Tooltip title="Github / Git" arrow>
-          {icon(faGithub)}
+        <Tooltip title="Containers" arrow>
+          {icon(faDocker)}
         </Tooltip>
         <Tooltip title="Scripting" arrow>
           {icon(faTerminal)}
@@ -88,7 +89,7 @@ const iconGroup2 = () => {
       </div>
       <div className="Icon_group_line">
         <Tooltip title="CI / CD" arrow>
-          {icon(faRobot)}
+          {icon(faGears)}
         </Tooltip>
         <Tooltip title="Algorithms" arrow>
           {icon(faPuzzlePiece)}
