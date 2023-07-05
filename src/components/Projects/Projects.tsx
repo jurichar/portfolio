@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Projects.scss";
 import ReactMarkdown from 'react-markdown';
 import Modal from 'react-modal';
