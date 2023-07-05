@@ -9,7 +9,7 @@
       ],
       "image": "qrcode.gif",
       "image_alt": "University of Paris",
-      "link": "https://qrcode-generator-livid.vercel.app/"
+      "readme": "/hello-world.md"
     },
     {
       "title": "swifty_companion",
@@ -20,7 +20,7 @@
       ],
       "image": "matrix_gif.gif",
       "image_alt": "University of Paris",
-      "link": "https://www.42.fr/"
+      "readme": "/hello-world.md"
 
     },
     {
@@ -31,7 +31,7 @@
         "> Basic web dev"],
       "image": "matrix_gif.gif",
       "image_alt": "University of Paris",
-      "link": "https://www.42.fr/"
+      "readme": "/hello-world.md"
     }
   ]
 }
