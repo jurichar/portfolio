@@ -12,10 +12,14 @@
 
   #interactive_title {
     font-size: x-large;
+    padding: 0.5rem 0.2rem;
+    border: 1px none;
+    border-radius: 5px;
+    background-color: variables.$card-color;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     &:hover {
-      background-color: white;
-      color: black;
+      background-color: variables.$card-color-hovered;
+      color: variables.$font-color-hovered;
     }
   }
   .buttons {
@@ -28,10 +32,12 @@
     .Icon {
       height: 2rem;
       a {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
         color: variables.$font-color;
         &:hover {
-          color: white;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          color: variables.$font-color-hovered;
         }
       }
     }
@@ -45,10 +51,10 @@
     }
     #interactive_title {
       font-size: 1rem;
-
+      background-color: variables.$card-color;
       &:hover {
-        background-color: white;
-        color: black;
+        background-color: variables.$card-color-hovered;
+        color: variables.$font-color-hovered;
       }
     }
   }

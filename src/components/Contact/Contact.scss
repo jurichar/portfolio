@@ -12,15 +12,18 @@
     cursor: default;
 
     input, textarea {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         width: 100%;
         padding: 10px;
-        // margin: 10px 0;
-        border: 1px solid black;
+        border: 1px solid variables.$card-border-color;
         border-radius: 5px;
         font-size: 1.2rem;
-        font-family: "Roboto Mono", monospace;
+        font-family: variables.$base-font;
         width: 50%;
         outline: none;
+        &:focus {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
     }
     #message-input {
         display: flex;
@@ -30,22 +33,23 @@
         outline: none;
     }
     button {
-        background-color: white;
-        color: black;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        background-color: variables.$card-color;
+        color: variables.$card-font-color;
         outline: none;
         border: none;
         border-radius: 5px;
         width: 50%;
         padding: 10px 20px;
         font-size: 1.2rem;
-        font-weight: 600;
         cursor: pointer;
+        font-family: variables.$base-font;
         transition: all 0.3s ease-in-out;
-        border: 1px solid gray;
- 
+        border: 1px solid variables.$card-border-color;
         &:hover {
-            color: white;
-            background-color: rgb(40, 41, 55);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            color: variables.$card-font-color-hovered;
+            background-color: variables.$card-color-hovered;
         }
     }
     h1 {

@@ -63,19 +63,21 @@
       }
 
       .Icon {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         display: flex;
         justify-content: center;
         align-items: center;
         width: 6rem;
         height: 6rem;
-        background-color: rgb(40, 41, 55);
+        background-color: variables.$card-color;
         border-radius: 50%;
-        border: 1px solid gray;
+        border: 1px solid variables.$card-border-color;
         transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
         &:hover {
-          color: black;
-          background-color: white;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          color: variables.$card-font-color-hovered;
+          background-color: variables.$card-color-hovered;
         }
 
         @media screen and (max-width: 768px) {

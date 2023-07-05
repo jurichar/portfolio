@@ -1,8 +1,29 @@
 // _variables.scss
-$primary-color: #011520;
-$font-color: #d1dae4;
-$secondary-color: #abcdef;
-$navbar-border-color: #1f2c3d;
-$sidebar-border-color: #1f2c3d;
+
+// Base colors
+$primary-color: #a07862; 
+$secondary-color: #a5a58d;
+$font-color: #ffe8d6;
+
+// Hover colors are 10% lighter versions of the base colors
+$primary-color-hovered: lighten($primary-color, 10%);
+$secondary-color-hovered: lighten($secondary-color, 10%);
+$font-color-hovered: lighten($font-color, 10%);
+
 $base-font: 'Roboto Mono', monospace;
 $base-font-size: 16px;
+
+// Cards
+$card-font-color: #6b705c;
+$card-font-color-hovered: $font-color-hovered;
+
+$card-color: #a5a58d;
+$card-color-hovered: $secondary-color-hovered;
+
+// Card borders are the same color as the text
+$card-border-color: $font-color;
+$card-border-color-hovered: $font-color-hovered;
+
+// Card hover borders are the same as the card hover colors
+$card-hover-border-color: $card-color-hovered;
+$card-hover-border-color-hovered: $card-color-hovered;
