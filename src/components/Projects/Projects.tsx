@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Projects.scss";
 import ReactMarkdown from 'react-markdown';
 import Modal from 'react-modal';
+import 'github-markdown-css/github-markdown.css';
 
 Modal.setAppElement('#root');
 
@@ -72,7 +73,9 @@ const Projects = ({ data }) => {
           }
         }}
       >
-        <ReactMarkdown>{readmeContent}</ReactMarkdown>
+        <div className="markdown-body" id="markdown-body">
+          <ReactMarkdown>{readmeContent}</ReactMarkdown>
+        </div>
       </Modal>
     </header>
   );

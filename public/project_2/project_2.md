@@ -1,69 +1,32 @@
-# Hello World
+# Minishell
 
-Ceci est un exemple de fichier README pour le projet "Hello World".
+## Description
 
-## 0
+Minishell is a simple implementation of a terminal written in C. This project was created as part of a school assignment, using the 'libft' library.
 
-## 1
+## Installation
 
-## 2
+To install Minishell, follow these steps:
 
-## 3
+```bash
+git clone https://github.com/jurichar/minisheII.git minishell
+cd minishell
+make
+```
 
-## 4
+## Usage
 
-## 5
+To run Minishell, simply use the following command:
 
-## 6
+```
+./minishell
+```
 
-## 7
+## Features
 
-## 8
+Minishell can execute basic commands like `ls`, `cd`, `echo`, etc. 
+More information on the specific supported commands will be provided later.
 
-## 9
+## Contributing
 
-## 10
-
-## 0
-
-## 1
-
-## 2
-
-## 3
-
-## 4
-
-## 5
-
-## 6
-
-## 7
-
-## 8
-
-## 9
-
-## 10
-
-## 0
-
-## 1
-
-## 2
-
-## 3
-
-## 4
-
-## 5
-
-## 6
-
-## 7
-
-## 8
-
-## 9
-
-## 10
+Contributions are welcome! Feel free to open an issue or create a pull request.

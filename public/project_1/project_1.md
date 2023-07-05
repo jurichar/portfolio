@@ -1,69 +1,43 @@
-# Hello World
+# Frontend Mentor - QR code component (Custom)
 
-Ceci est un exemple de fichier README pour le projet "Hello World".
+![Design preview for the QR code component coding challenge](/project_1/project_1.gif)
 
-## 0
+## Bienvenue! 👋
 
-## 1
+Merci d'avoir vérifié ce défi de codage front-end.
 
-## 2
+Ce projet est un générateur de QR Code construit comme une alternative au défi proposé par Frontend Mentor. Il vous permet de générer vos propres codes QR personnalisés avec facilité.
 
-## 3
+## Defi
 
-## 4
+Le défi était de construire un composant de QR code et de le faire ressembler autant que possible à la conception donnée.
 
-## 5
+Vous pouvez comparer mon implémentation avec le design original pour voir comment j'ai relevé le défi.
 
-## 6
+## Où trouver tout
 
-## 7
+Vous pouvez trouver les détails du design dans le dossier /design.
 
-## 8
+Vous y trouverez à la fois une version mobile et une version desktop du design.
 
-## 9
+Tous les assets requis se trouvent dans le dossier /images.
 
-## 10
+## Comment utiliser le générateur de QR Code
 
-## 0
+Entrez le texte ou l'URL que vous souhaitez encoder dans le champ de saisie.
 
-## 1
+Cliquez sur le bouton "Générer" pour créer le code QR.
 
-## 2
+Vous pouvez maintenant utiliser ce code QR comme vous le souhaitez.
 
-## 3
+## Déploiement
 
-## 4
+Le projet est actuellement déployé [ici](https://qrcode-generator-livid.vercel.app/).
 
-## 5
+Vous pouvez visiter le site pour essayer le générateur de QR Code
 
-## 6
+## Contributions
 
-## 7
+Les contributions sont les bienvenues ! 
 
-## 8
-
-## 9
-
-## 10
-
-## 0
-
-## 1
-
-## 2
-
-## 3
-
-## 4
-
-## 5
-
-## 6
-
-## 7
-
-## 8
-
-## 9
-
-## 10
+N'hésitez pas à ouvrir une issue ou à créer une pull request si vous trouvez un bug ou si vous pensez à une fonctionnalité qui pourrait améliorer le projet.
