@@ -1,5 +1,23 @@
 @use "../../variables";
 
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-10%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 .Projects {
   display: flex;
   flex-direction: column;
@@ -60,9 +78,6 @@
         height: 10.4rem;
         margin: auto;
         transition: all 0.3s ease-in-out;
-        &:hover {
-          border-color: white;
-        }
       }
 
       h3 {
