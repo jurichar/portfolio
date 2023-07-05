@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Projects.scss";
 import ReactMarkdown from 'react-markdown';
 import Modal from 'react-modal';
@@ -56,15 +56,16 @@ const Projects = ({ data }) => {
         onRequestClose={closeModal}
         style={{
           overlay: {
-            backgroundColor: 'rgba(0, 0, 0, 0.35)',
-            animation: `${modalIsOpen ? 'appear' : ''} 0.3s`,  // Ajoute l'animation d'apparition
+            backgroundColor: 'rgba(0, 0, 0, 0.75)',
+            animation: `${modalIsOpen ? 'appear' : ''} 0.3s`,
           },
           content: {
-            backgroundColor: '#1e1e1e',
+            backgroundColor: '#ffe8d6',
+            color: '#997461',
             inset: '60px',
             border: 'none',
             borderRadius: '10px',
-            animation: `${modalIsOpen ? 'appear' : ''} 0.3s`,  // Ajoute l'animation d'apparition
+            animation: `${modalIsOpen ? 'appear' : ''} 0.3s`,
           }
         }}
       >
