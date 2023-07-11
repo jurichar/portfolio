@@ -16,7 +16,6 @@ import {
   faGears,
   faGem,
   faPuzzlePiece,
-  faRobot,
   faTerminal,
 } from "@fortawesome/free-solid-svg-icons";
 import { Tooltip } from "@mui/material";
