@@ -1,4 +1,4 @@
-# Portfolio
+# Portfolio 🖥️
 
 <div align="center">
   <img src="main-image-url" alt="Project image">
@@ -11,87 +11,81 @@
 
 ---
 
-## Table of Contents
+## Table of Contents 📋
 
 - [Context](#context)
-- [Goal](#goal)
+- [Objective](#objective)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
-- [Features ideas](#features-ideas)
+- [Contributing](#contributing)
 - [License](#license)
 
-## Context
+## Context 🌎
 
-This project was developed to solve the problem of the traditional CV, which is far too small to show the scope of the projects carried out in the developer's profession.
+In today's digital world, a simple CV does not suffice to highlight the range of projects and skills a developer possesses. This portfolio project is an attempt to solve that issue and provide an engaging, comprehensive overview of my work.
 
-## Goal
+## Objective 🎯
 
-The main aim was to create a showcase for my projects, my background and my universe.
+The primary objective of this portfolio is to showcase my projects, professional background, and unique aspects of my approach to programming.
 
-## Features
+## Features 🎁
 
-The key features of the app include:
+The portfolio includes the following features:
 
-- Fluid animations
-- Totally modular web site
-- A very intuitive user interface
+### Home:
 
-## Technologies Used
 
-- React with Vite for the base
-- SCSS for the style
-- Json files for data
+### About:
 
-## Installation
 
-To install the project on your local machine:
+### Projects:
+
+
+### Techs:
+
+
+### Contact-me:
+
+
+### General:
+
+## Technologies Used 💻
+
+The portfolio is developed using the following technologies:
+
+- React with Vite for a fast, modern front-end framework 🚀
+- SCSS for advanced styling capabilities 🎨
+- JSON files for data storage and manipulation 📂
+
+## Installation 🛠️
+
+To set up the project on your local machine:
 
 1. Clone the repository
-2. Open it in your IDE
-3. Build the project with npm run dev.
+2. Open the project in your preferred IDE
+3. Run the project using `npm run dev`
 
-## Usage
+## Usage 🧭
 
-To use the app:
+Navigating the portfolio is simple:
 
-1. Scroll and explore the site
-2. Enjoy
+1. Scroll through the website to explore different sections 🚶‍♂️
+2. Enjoy the journey! 🌟
 
-## Screenshots
+## Screenshots 📸
 
 <div align="center">
   <img src="screenshot-url" alt="Screenshot of the app">
 </div>
 
-## Features ideas
+## Contributing 🤝
 
-### About :
+This project is open to contributions. Feel free to fork the project and submit your pull requests.
 
-- Add GIF on the isometric images
-- Add More specified infos
-- Add images for thoses new infos
-- Invert dates
-
-### Projects :
-
-- Do and add ft_hangouts
-- Do and add swifty compagnon
-- Do and add THP's ROR project
-- Do and add 42's web projects
-
-### Contact-me :
-
-- True mailer
-
-### General :
-
-- Reviews section
-- Add images on README
-
-## License
+## License ⚖️
 
 This project is licensed under the terms of the MIT license.
 
@@ -100,5 +94,3 @@ This project is licensed under the terms of the MIT license.
 <div align="center">
   <b>End of Document</b><br>
 </div>
-
-
