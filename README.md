@@ -73,6 +73,7 @@ To use the app:
 - Add GIF on the isometric images
 - Add More specified infos
 - Add images for thoses new infos
+- Invert dates
 
 ### Projects :
 
@@ -88,6 +89,7 @@ To use the app:
 ### General :
 
 - Reviews section
+- Add images on README
 
 ## License
 
