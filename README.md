@@ -37,20 +37,50 @@ The portfolio includes the following features:
 
 ### Home:
 
+- [x] Message d'accueil interactif
+- [x] Liens vers mes reseaux sociaux
 
 ### About:
 
+- [x] Une chronologie montrant votre parcours professionnel
+- [x] Des images en 3D isometrique pour illustrer (faite avec Illustrator)
+- [ ] Ajout de d'autres exp avec des images correspondante
+- [ ] Ajouter des GIF pour remplacer les images
+- [ ] Un CV téléchargeable
 
 ### Projects:
 
+- [x] Intégration d'un système de filtrage de projets par technologie ou type
+- [x] Une page dédiée pour chaque projet avec plus de détails
+- [ ] Intégration de témoignages ou d'avis sur les projets (ajout d'une section "review")
+- [ ] Mise a jour des README
+- [ ] Ajout de GIF pour illustrer les projets
+- [ ] Ajout du projet "portfolio"
+- [ ] Ajout du projet "ft_hangouts"
+- [ ] Ajout de projets THP en ROR
+- [ ] Ajout de projets 42 en JS
 
 ### Techs:
 
+- [x] Affichage visuel de la maîtrise de chaque technologie
+- [ ] Certifications ?
 
 ### Contact-me:
 
+- [x] Un formulaire de contact pour une communication directe
+- [ ] Un vrai mailer ou une vrai messagerie
+- [ ] Liens vers les profils de réseaux sociaux a deplacer depuis home.
 
 ### General:
+
+- [x] Transitions fluides qui améliorent l'expérience utilisateur
+- [x] Un site web entièrement modulaire qui permet des mises à jour et des ajouts faciles
+- [x] Une interface utilisateur intuitive qui assure une navigation fluide
+- [x] Full responsive
+- [ ] Animations a ajouter
+- [ ] Interrupteur Mode Sombre/Mode Clair pour la préférence de l'utilisateur
+- [ ] Ajouter des GIF pour le README
+- [ ] Tri des fichiers et renommer images
 
 ## Technologies Used 💻
 
