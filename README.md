@@ -68,9 +68,19 @@ To use the app:
 
 ## Features ideas
 
+### About :
+
+- Add GIF on the isometric images
+- Add More specified infos
+- Add images for thoses new infos
+
 ### Contact-me :
 
-- ajouter un vrai mailer
+- True mailer
+
+### General :
+
+- Reviews section
 
 ## License
 
