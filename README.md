@@ -37,21 +37,21 @@ The portfolio includes the following features:
 
 ### Home:
 
-- [x] Message d'accueil interactif
-- [x] Liens vers mes reseaux sociaux
+- [x] Interactive welcome message
+- [x] Links to my social networks
 
 ### About:
 
-- [x] Une chronologie montrant votre parcours professionnel
-- [x] Des images en 3D isometrique pour illustrer (faite avec Illustrator)
+- [x] A timeline showing your professional journey
+- [x] Isometric 3D images to illustrate (made with Illustrator)
 - [ ] Ajout de d'autres exp avec des images correspondante
 - [ ] Ajouter des GIF pour remplacer les images
 - [ ] Un CV téléchargeable
 
 ### Projects:
 
-- [x] Intégration d'un système de filtrage de projets par technologie ou type
-- [x] Une page dédiée pour chaque projet avec plus de détails
+- [x] Integration of a project filtering system by technology or type
+- [x] A dedicated page for each project with more details
 - [ ] Intégration de témoignages ou d'avis sur les projets (ajout d'une section "review")
 - [ ] Mise a jour des README
 - [ ] Ajout de GIF pour illustrer les projets
@@ -62,21 +62,21 @@ The portfolio includes the following features:
 
 ### Techs:
 
-- [x] Affichage visuel de la maîtrise de chaque technologie
+- [x] Visual display of mastery of each technology
 - [ ] Certifications ?
 
 ### Contact-me:
 
-- [x] Un formulaire de contact pour une communication directe
+- [x] A contact form for direct communication
 - [ ] Un vrai mailer ou une vrai messagerie
 - [ ] Liens vers les profils de réseaux sociaux a deplacer depuis home.
 
 ### General:
 
-- [x] Transitions fluides qui améliorent l'expérience utilisateur
-- [x] Un site web entièrement modulaire qui permet des mises à jour et des ajouts faciles
-- [x] Une interface utilisateur intuitive qui assure une navigation fluide
-- [x] Full responsive
+- [x] Smooth transitions that enhance the user experience
+- [x] A fully modular website that allows for easy updates and additions
+- [x] An intuitive user interface that ensures smooth navigation
+- [x] Fully responsive
 - [ ] Animations a ajouter
 - [ ] Interrupteur Mode Sombre/Mode Clair pour la préférence de l'utilisateur
 - [ ] Ajouter des GIF pour le README
