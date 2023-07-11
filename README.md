@@ -74,6 +74,13 @@ To use the app:
 - Add More specified infos
 - Add images for thoses new infos
 
+### Projects :
+
+- Do and add ft_hangouts
+- Do and add swifty compagnon
+- Do and add THP's ROR project
+- Do and add 42's web projects
+
 ### Contact-me :
 
 - True mailer
