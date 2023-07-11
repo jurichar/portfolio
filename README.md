@@ -13,15 +13,15 @@
 
 ## Table of Contents 📋
 
-- [Context](#context)
-- [Objective](#objective)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
+- [Context](#context-)
+- [Objective](#objective-)
+- [Features](#features-)
+- [Technologies Used](#technologies-used-)
+- [Installation](#installation-)
+- [Usage](#usage-)
+- [Screenshots](#screenshots-)
+- [Contributing](#contributing-)
+- [License](#license-)
 
 ## Context 🌎
 
