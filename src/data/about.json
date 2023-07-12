@@ -1,39 +1,16 @@
 {
   "aboutData": [
     {
-      "date": "2017",
-      "title": "University of Paris",
+      "date": "2023",
+      "title": "DevOps Engineer",
       "description": [
-        "> Computer Science",
-        "> Mathematics",
-        "> Algorithms",
-        "> Basic web dev"
+        "> Continuous Integration",
+        "> Continuous Deployment",
+        "> Infrastructure as Code",
+        "> MLOps"
       ],
-      "image": "about_pics/isometric.png",
-      "image_alt": "University of Paris"
-    },
-    {
-      "date": "2018",
-      "title": "Educational Engineer",
-      "description": [
-        "> Pedagogical Skills",
-        "> Programming Instruction",
-        "> Basic Robotics"
-      ],
-      "image": "about_pics/school.png",
-      "image_alt": "Educational Engineer"
-    },
-    {
-      "date": "2020",
-      "title": "School 42 Paris",
-      "description": [
-        "> Peer Learning",
-        "> C, C++ Programming",
-        "> FullStack Development",
-        "> Project-based Learning"
-      ],
-      "image": "about_pics/42_school.png",
-      "image_alt": "School 42 Paris"
+      "image": "about_pics/devops.png",
+      "image_alt": "DevOps Engineer"
     },
     {
       "date": "2022",
@@ -48,16 +25,39 @@
       "image_alt": "Software Engineer"
     },
     {
-      "date": "2023",
-      "title": "DevOps Engineer",
+      "date": "2020",
+      "title": "School 42 Paris",
       "description": [
-        "> Continuous Integration",
-        "> Continuous Deployment",
-        "> Infrastructure as Code",
-        "> MLOps"
+        "> Peer Learning",
+        "> C, C++ Programming",
+        "> FullStack Development",
+        "> Project-based Learning"
       ],
-      "image": "about_pics/devops.png",
-      "image_alt": "DevOps Engineer"
+      "image": "about_pics/42_school.png",
+      "image_alt": "School 42 Paris"
+    },
+    {
+      "date": "2018",
+      "title": "Educational Engineer",
+      "description": [
+        "> Pedagogical Skills",
+        "> Programming Instruction",
+        "> Basic Robotics"
+      ],
+      "image": "about_pics/school.png",
+      "image_alt": "Educational Engineer"
+    },
+    {
+      "date": "2017",
+      "title": "University of Paris",
+      "description": [
+        "> Computer Science",
+        "> Mathematics",
+        "> Algorithms",
+        "> Basic web dev"
+      ],
+      "image": "about_pics/university.png",
+      "image_alt": "University of Paris"
     }
   ]
 }

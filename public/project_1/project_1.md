@@ -1,43 +1,103 @@
-# Frontend Mentor - QR code component (Custom)
+# Portfolio
 
-![Design preview for the QR code component coding challenge](/project_1/project_1.gif)
+## Context 🌎
 
-## Bienvenue! 👋
+In today's digital world, a simple CV does not suffice to highlight the range of projects and skills a developer possesses. This portfolio project is an attempt to solve that issue and provide an engaging, comprehensive overview of my work.
 
-Merci d'avoir vérifié ce défi de codage front-end.
+## Objective 🎯
 
-Ce projet est un générateur de QR Code construit comme une alternative au défi proposé par Frontend Mentor. Il vous permet de générer vos propres codes QR personnalisés avec facilité.
+The primary objective of this portfolio is to showcase my projects, professional background, and unique aspects of my approach to programming.
 
-## Defi
+## Features 🎁
 
-Le défi était de construire un composant de QR code et de le faire ressembler autant que possible à la conception donnée.
+The portfolio includes the following features:
 
-Vous pouvez comparer mon implémentation avec le design original pour voir comment j'ai relevé le défi.
+### Home:
 
-## Où trouver tout
+- [x] Interactive welcome message
+- [x] Links to my social networks
 
-Vous pouvez trouver les détails du design dans le dossier /design.
+### About:
 
-Vous y trouverez à la fois une version mobile et une version desktop du design.
+- [x] A timeline showing your professional journey
+- [x] Isometric 3D images to illustrate (made with Illustrator)
+- [ ] Ajout de d'autres exp avec des images correspondante
+- [ ] Ajouter des GIF pour remplacer les images
+- [ ] Un CV téléchargeable
 
-Tous les assets requis se trouvent dans le dossier /images.
+### Projects:
 
-## Comment utiliser le générateur de QR Code
+- [x] Integration of a project filtering system by technology or type
+- [x] A dedicated page for each project with more details
+- [ ] Intégration de témoignages ou d'avis sur les projets (ajout d'une section "review")
+- [ ] Mise a jour des README
+- [ ] Ajout de GIF pour illustrer les projets
+- [ ] Ajout du projet "portfolio"
+- [ ] Ajout du projet "ft_hangouts"
+- [ ] Ajout de projets THP en ROR
+- [ ] Ajout de projets 42 en JS
 
-Entrez le texte ou l'URL que vous souhaitez encoder dans le champ de saisie.
+### Techs:
 
-Cliquez sur le bouton "Générer" pour créer le code QR.
+- [x] Visual display of mastery of each technology
+- [ ] Certifications ?
 
-Vous pouvez maintenant utiliser ce code QR comme vous le souhaitez.
+### Contact-me:
 
-## Déploiement
+- [x] A contact form for direct communication
+- [ ] Un vrai mailer ou une vrai messagerie
+- [ ] Liens vers les profils de réseaux sociaux a deplacer depuis home.
 
-Le projet est actuellement déployé [ici](https://qrcode-generator-livid.vercel.app/).
+### General:
 
-Vous pouvez visiter le site pour essayer le générateur de QR Code
+- [x] Smooth transitions that enhance the user experience
+- [x] A fully modular website that allows for easy updates and additions
+- [x] An intuitive user interface that ensures smooth navigation
+- [x] Fully responsive
+- [ ] Animations a ajouter
+- [ ] Interrupteur Mode Sombre/Mode Clair pour la préférence de l'utilisateur
+- [ ] Ajouter des GIF pour le README
+- [ ] Tri des fichiers et renommer images
 
-## Contributions
+## Technologies Used 💻
 
-Les contributions sont les bienvenues ! 
+The portfolio is developed using the following technologies:
 
-N'hésitez pas à ouvrir une issue ou à créer une pull request si vous trouvez un bug ou si vous pensez à une fonctionnalité qui pourrait améliorer le projet.
+- React with Vite for a fast, modern front-end framework 🚀
+- SCSS for advanced styling capabilities 🎨
+- JSON files for data storage and manipulation 📂
+
+## Installation 🛠️
+
+To set up the project on your local machine:
+
+1. Clone the repository
+2. Open the project in your preferred IDE
+3. Run the project using `npm run dev`
+
+## Usage 🧭
+
+Navigating the portfolio is simple:
+
+1. Scroll through the website to explore different sections 🚶‍♂️
+2. Enjoy the journey! 🌟
+
+## Screenshots 📸
+
+<div align="center">
+  <img src="example.gif" alt="Screenshot of the app">
+</div>
+
+## Contributing 🤝
+
+This project is open to contributions. Feel free to fork the project and submit your pull requests.
+
+## License ⚖️
+
+This project is licensed under the terms of the MIT license.
+
+---
+
+<div align="center">
+  <b>End of Document</b><br>
+</div>

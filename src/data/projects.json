@@ -1,39 +1,39 @@
 {
   "projectsData": [
     {
-      "title": "QR Code Generator",
+      "title": "portfolio",
       "description": [
-        "> HTML / CSS",
-        "> JavaScript",
-        "> JavaScript",
-        "> Basic web dev"
+        "> React",
+        "> TypeScript",
+        "> HTML / SCSS",
+        "> UI / UX"
       ],
-      "image_alt": "University of Paris",
-      "image": "project_1/project_1.gif",
+      "image_alt": "portfolio",
+      "image": "example.gif",
       "readme": "project_1/project_1.md"
+    },
+    {
+      "title": "ft_hangouts",
+      "description": [
+        "> Swift",
+        "> SwiftUI",
+        "> iOS",
+        "> Message app"
+      ],
+      "image_alt": "ft_hangouts_pic",
+      "image": "example.gif",
+      "readme": "project_2/project_2.md"
     },
     {
       "title": "swifty_companion",
       "description": [
         "> Swift",
+        "> SwiftUI",
         "> iOS",
-        "> iOS",
-        "> iOS"
+        "> 42's API"
       ],
-      "image_alt": "University of Paris",
-      "image": "project_2/project_2.gif",
-      "readme": "project_2/project_2.md"
-
-    },
-    {
-      "title": "ft_project3",
-      "description": [
-        "> Mathematics",
-        "> Algorithms",
-        "> Algorithms",
-        "> Basic web dev"],
-      "image_alt": "University of Paris",
-      "image": "project_3/project_3.gif",
+      "image_alt": "swifty_companion_pic",
+      "image": "example.gif",
       "readme": "project_3/project_3.md"
     }
   ]
