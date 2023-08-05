@@ -1,32 +1,27 @@
-# Minishell
+# Swifty Companion
+
+![GitHub last commit](https://img.shields.io/github/last-commit/jurichar/swifty-companion)
+![GitHub stars](https://img.shields.io/github/stars/jurichar/swifty-companion)
+![GitHub forks](https://img.shields.io/github/forks/jurichar/swifty-companion)
 
 ## Description
 
-Minishell is a simple implementation of a terminal written in C. This project was created as part of a school assignment, using the 'libft' library.
+This project is a simple iOS application that allows you to search for a 42 student and display his/her information.
 
-## Installation
+It also display the skills of the student and the projects he/she has done.
 
-To install Minishell, follow these steps:
+## Technologies
 
-```bash
-git clone https://github.com/jurichar/minisheII.git minishell
-cd minishell
-make
-```
+- Swift
+- SwiftUI
+- Xcode
+- iOS
+- API
 
-## Usage
+## Userflow
 
-To run Minishell, simply use the following command:
+![userflow](/project_2/userflow.png)
 
-```
-./minishell
-```
+## Design
 
-## Features
-
-Minishell can execute basic commands like `ls`, `cd`, `echo`, etc. 
-More information on the specific supported commands will be provided later.
-
-## Contributing
-
-Contributions are welcome! Feel free to open an issue or create a pull request.
+![design](/project_2/design.png)
