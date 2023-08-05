@@ -1,39 +1,38 @@
 {
   "projectsData": [
     {
-      "title": "portfolio",
+      "title": "Portfolio",
       "description": [
-        "> React",
-        "> TypeScript",
         "> HTML / SCSS",
-        "> UI / UX"
+        "> TypeScript",
+        "> React",
+        "> Basic web dev"
       ],
       "image_alt": "portfolio",
-      "image": "example.gif",
+      "image": "project_1/project_1.gif",
       "readme": "project_1/project_1.md"
     },
     {
-      "title": "ft_hangouts",
+      "title": "Swifty Companion",
       "description": [
         "> Swift",
         "> SwiftUI",
         "> iOS",
-        "> Message app"
+        "> API"
       ],
-      "image_alt": "ft_hangouts_pic",
-      "image": "example.gif",
+      "image_alt": "swifty companion",
+      "image": "project_2/project_2.gif",
       "readme": "project_2/project_2.md"
     },
     {
-      "title": "swifty_companion",
+      "title": "Ft_hangouts",
       "description": [
         "> Swift",
         "> SwiftUI",
         "> iOS",
-        "> 42's API"
-      ],
-      "image_alt": "swifty_companion_pic",
-      "image": "example.gif",
+        "> Messaging"],
+      "image_alt": "ft_hangouts",
+      "image": "project_3/project_3.gif",
       "readme": "project_3/project_3.md"
     }
   ]

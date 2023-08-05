@@ -39,7 +39,9 @@ const Projects = ({ data }) => {
             return (
               <div className="event" key={key} onClick={() => fetchReadme(event.readme)}>
                 <h3>{event.title}</h3>
-                  <img className="event-image" src={event.image} alt={event.image_alt} />
+                <div className="event-image">
+                  <img src={event.image} alt={event.image_alt} />
+                </div>
                 <p>
                   {event?.description?.map((line: any, i: any) => (
                     <span key={i}>
