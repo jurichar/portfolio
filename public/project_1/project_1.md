@@ -1,4 +1,10 @@
-# Portfolio
+# Portfolio 🖥️
+
+![GitHub last commit](https://img.shields.io/github/last-commit/jurichar/jurichar.github.io)
+![GitHub stars](https://img.shields.io/github/stars/jurichar/jurichar.github.io)
+![GitHub forks](https://img.shields.io/github/forks/jurichar/jurichar.github.io)
+
+---
 
 ## Context 🌎
 
@@ -84,20 +90,8 @@ Navigating the portfolio is simple:
 
 ## Screenshots 📸
 
-<div align="center">
-  <img src="example.gif" alt="Screenshot of the app">
-</div>
+![screenshots](/project_1/screenshots.png)
 
 ## Contributing 🤝
 
 This project is open to contributions. Feel free to fork the project and submit your pull requests.
-
-## License ⚖️
-
-This project is licensed under the terms of the MIT license.
-
----
-
-<div align="center">
-  <b>End of Document</b><br>
-</div>
