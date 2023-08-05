@@ -1,9 +1,5 @@
 # Portfolio 🖥️
 
-<div align="center">
-  <img src="main-image-url" alt="Project image">
-</div>
-
 ![GitHub last commit](https://img.shields.io/github/last-commit/jurichar/jurichar.github.io)
 ![GitHub stars](https://img.shields.io/github/stars/jurichar/jurichar.github.io)
 ![GitHub forks](https://img.shields.io/github/forks/jurichar/jurichar.github.io)
@@ -106,10 +102,6 @@ Navigating the portfolio is simple:
 2. Enjoy the journey! 🌟
 
 ## Screenshots 📸
-
-<div align="center">
-  <img src="screenshot-url" alt="Screenshot of the app">
-</div>
 
 ## Contributing 🤝
 
