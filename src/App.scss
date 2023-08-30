@@ -30,16 +30,9 @@ html {
   height: 100vh;
   scroll-snap-type: y mandatory;
   overflow-y: auto;
+  background: linear-gradient(-45deg, #1a2a6c, #b21f66, #fdbb2d, #38a3a5);
 
-  background: linear-gradient(
-    -45deg,
-    #38a3a5,
-    darken(#22577a, 10%),
-    darken(#22577a, 30%),
-    darken(#22577a, 30%),
-    darken(#22577a, 10%),
-    #38a3a5
-  );
+  // background: linear-gradient(-45deg, #38a3a5, rgb(5, 10, 24), rgb(6, 11, 25));
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
 }
