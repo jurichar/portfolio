@@ -1,66 +1,67 @@
-@use '../../variables';
+@use "../../variables";
 
+.Contact,
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem 1rem;
 
-.Contact, form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  input,
+  textarea {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     width: 100%;
-    height: 100vh;
-    padding: 2rem 1rem;
-    cursor: default;
-
-    input, textarea {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border: 1px solid variables.$card-border-color;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: variables.$base-font;
+    width: 50%;
+    outline: none;
+    &:focus {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+  #message-input {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 50%;
+    outline: none;
+  }
+  button {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: variables.$card-color;
+    color: variables.$card-font-color;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: variables.$base-font;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid variables.$card-border-color;
+    &:hover {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      color: variables.$card-font-color-hovered;
+      background-color: variables.$card-color-hovered;
+    }
+  }
+  h1 {
+    margin-bottom: 2rem;
+  }
+  @media (max-width: 768px) {
+    form {
+      width: 100%;
+      input,
+      textarea,
+      button {
         width: 100%;
-        padding: 10px;
-        border: 1px solid variables.$card-border-color;
-        border-radius: 5px;
-        font-size: 1.2rem;
-        font-family: variables.$base-font;
-        width: 50%;
-        outline: none;
-        &:focus {
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        }
+      }
     }
-    #message-input {
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        height: 50%;
-        outline: none;
-    }
-    button {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        background-color: variables.$card-color;
-        color: variables.$card-font-color;
-        outline: none;
-        border: none;
-        border-radius: 5px;
-        width: 50%;
-        padding: 10px 20px;
-        font-size: 1.2rem;
-        cursor: pointer;
-        font-family: variables.$base-font;
-        transition: all 0.3s ease-in-out;
-        border: 1px solid variables.$card-border-color;
-        &:hover {
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            color: variables.$card-font-color-hovered;
-            background-color: variables.$card-color-hovered;
-        }
-    }
-    h1 {
-        margin-bottom: 2rem;
-    }
-    @media (max-width: 768px) {
-        form {
-            width: 100%;
-            input, textarea, button {
-                width: 100%;
-            }
-        }        
-    }
+  }
 }

@@ -38,7 +38,6 @@
   padding: 2rem 0;
 
   .title {
-    cursor: default;
     font-size: 2rem;
     color: variables.$font-color;
     margin-bottom: 2rem;
@@ -57,7 +56,6 @@
     scroll-snap-type: x mandatory;
 
     .event {
-      cursor: default;
       scroll-snap-align: center;
       display: flex;
       flex-direction: column;

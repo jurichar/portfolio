@@ -12,7 +12,7 @@ html {
   flex-direction: column;
 }
 
-@keyframes gradientAnimation1 {
+@keyframes gradient {
   0% {
     background-position: 0% 50%;
   }
@@ -21,18 +21,6 @@ html {
   }
   100% {
     background-position: 0% 50%;
-  }
-}
-
-@keyframes gradientAnimation2 {
-  0% {
-    background-position: 100% 50%;
-  }
-  50% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
   }
 }
 
@@ -44,31 +32,16 @@ html {
   overflow-y: auto;
 
   background: linear-gradient(
-    90deg,
+    -45deg,
+    #38a3a5,
     darken(#22577a, 10%),
-    darken(#1d4e89, 10%),
-    darken(#1b3c72, 10%)
+    darken(#22577a, 30%),
+    darken(#22577a, 30%),
+    darken(#22577a, 10%),
+    #38a3a5
   );
-  background-size: 300% 300%;
-  animation: gradientAnimation1 20s ease infinite;
-
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    background: linear-gradient(
-      90deg,
-      darken(#1d4e89, 20%),
-      darken(#1b3c72, 20%),
-      darken(#152a45, 20%)
-    );
-    background-size: 300% 300%;
-    animation: gradientAnimation2 30s ease infinite;
-  }
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
 }
 
 .Home,

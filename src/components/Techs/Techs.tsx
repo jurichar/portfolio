@@ -41,9 +41,9 @@ const iconGroup = () => {
       </div>
       <div className="Icon_group_line">
         <Tooltip title="Ruby (on rails)" arrow>
-            <div className="Icon">
-                <FontAwesomeIcon id="Gem_icon" icon={faGem} size="2xl" />
-            </div>
+          <div className="Icon">
+            <FontAwesomeIcon id="Gem_icon" icon={faGem} size="2xl" />
+          </div>
         </Tooltip>
         <Tooltip title="React TS" arrow>
           {icon(faReact)}
@@ -65,8 +65,8 @@ const iconGroup = () => {
 };
 
 const iconGroup2 = () => {
-    return (
-        <div className="Icon_group">
+  return (
+    <div className="Icon_group">
       <div className="Icon_group_line">
         <Tooltip title="Kubernetes cluster" arrow>
           {icon(faDharmachakra)}
@@ -76,7 +76,7 @@ const iconGroup2 = () => {
         </Tooltip>
       </div>
       <div className="Icon_group_line">
-      <Tooltip title="Linux systems" arrow>
+        <Tooltip title="Linux systems" arrow>
           {icon(faUbuntu)}
         </Tooltip>
         <Tooltip title="Containers" arrow>
