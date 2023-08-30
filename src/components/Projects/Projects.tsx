@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./Projects.scss";
-import ReactMarkdown from 'react-markdown';
-import Modal from 'react-modal';
-import 'github-markdown-css/github-markdown.css';
+import ReactMarkdown from "react-markdown";
+import Modal from "react-modal";
+import "github-markdown-css/github-markdown.css";
 
-Modal.setAppElement('#root');
+Modal.setAppElement("#root");
 
 const Projects = ({ data }) => {
   const isSmallScreen = window.innerWidth < 768;
@@ -14,11 +14,11 @@ const Projects = ({ data }) => {
   const openModal = (readme) => {
     setReadmeContent(readme);
     setModalIsOpen(true);
-  }
+  };
 
   const closeModal = () => {
     setModalIsOpen(false);
-  }
+  };
 
   const fetchReadme = async (readmeUrl) => {
     try {
@@ -28,7 +28,7 @@ const Projects = ({ data }) => {
     } catch (error) {
       console.error("Error fetching readme: ", error);
     }
-  }
+  };
 
   return (
     <header className="Project-header">
@@ -37,7 +37,11 @@ const Projects = ({ data }) => {
         <div className="events">
           {data.map((event: any, key: any) => {
             return (
-              <div className="event" key={key} onClick={() => fetchReadme(event.readme)}>
+              <div
+                className="event"
+                key={key}
+                onClick={() => fetchReadme(event.readme)}
+              >
                 <h3>{event.title}</h3>
                 <div className="event-image">
                   <img src={event.image} alt={event.image_alt} />
@@ -60,19 +64,18 @@ const Projects = ({ data }) => {
         onRequestClose={closeModal}
         style={{
           overlay: {
-            backgroundColor: 'rgba(0, 0, 0, 0.75)',
-            animation: `${modalIsOpen ? 'appear' : ''} 0.3s`,
+            backgroundColor: "rgba(0, 0, 0, 0.75)",
+            animation: `${modalIsOpen ? "appear" : ""} 0.3s`,
           },
           content: {
-            backgroundColor: '#22577a',
-            color: '#a8dadc',
-            margin: '5vh 0 0 0',
-            inset: isSmallScreen ? '20px' : '60px',
-            border: 'none',
-            borderRadius: '10px',
-            animation: `${modalIsOpen ? 'appear' : ''} 0.3s`,
-
-          }
+            backgroundColor: "rgba(0, 0, 0, 0.8)",
+            // color: "rgba(0, 0, 0, 0.75)",
+            margin: "5vh 0 0 0",
+            inset: isSmallScreen ? "20px" : "60px",
+            border: "none",
+            borderRadius: "10px",
+            animation: `${modalIsOpen ? "appear" : ""} 0.3s`,
+          },
         }}
       >
         <div className="markdown-body" id="markdown-body">

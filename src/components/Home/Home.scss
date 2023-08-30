@@ -16,6 +16,7 @@
     border-radius: 5px;
     background-color: variables.$card-color;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-variant-numeric: tabular-nums;
     &:hover {
       background-color: variables.$card-color-hovered;
       color: variables.$font-color-hovered;

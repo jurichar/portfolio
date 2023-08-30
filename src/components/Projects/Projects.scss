@@ -143,7 +143,7 @@
 
 #markdown-body {
   pre {
-    background-color: variables.$card-color-hovered;
+    // background-color: white;
     border-radius: 5px;
     color: variables.$font-color-hovered;
     padding: 1rem;
@@ -152,9 +152,10 @@
     overflow: scroll;
     font-family: variables.$base-font;
   }
+  // font color
   color: variables.$font-color;
   font-family: variables.$base-font;
-  background-color: variables.$card-color;
+  background-color: rgba(0, 0, 0, 0);
   border-bottom: 1px solid variables.$card-border-color;
   h1,
   h2 {

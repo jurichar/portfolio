@@ -4,8 +4,8 @@ import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-const phrase = "fullstack developper";
+const letters = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
+const phrase = "oooo";
 
 const icon = (name: IconProp, link: string) => {
   return (
@@ -22,7 +22,7 @@ const Home = () => {
   const intervalRef = useRef(0);
 
   const onMouseOver = () => {
-    let iterations = 0;
+    let iterations = 3;
 
     if (intervalRef.current) clearInterval(intervalRef.current);
 
@@ -34,7 +34,7 @@ const Home = () => {
             if (index < iterations) {
               return phrase[index];
             } else {
-              return letters[Math.floor(Math.random() * 52)];
+              return letters[Math.floor(Math.random() * 30)];
             }
           })
           .join("")
@@ -42,8 +42,8 @@ const Home = () => {
 
       if (iterations >= phrase.length) clearInterval(intervalRef.current);
 
-      iterations += 1 / 3;
-    }, 25);
+      // iterations += 1 / 3;
+    }, 40);
   };
 
   useEffect(() => {
