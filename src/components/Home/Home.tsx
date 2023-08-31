@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 const letters = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
-const phrase = "oooo";
+const phrase = "fullstack developper";
 
 const icon = (name: IconProp, link: string) => {
   return (
@@ -22,7 +22,7 @@ const Home = () => {
   const intervalRef = useRef(0);
 
   const onMouseOver = () => {
-    let iterations = 3;
+    let iterations = 0;
 
     if (intervalRef.current) clearInterval(intervalRef.current);
 
@@ -42,7 +42,7 @@ const Home = () => {
 
       if (iterations >= phrase.length) clearInterval(intervalRef.current);
 
-      // iterations += 1 / 3;
+      iterations += 1 / 3;
     }, 40);
   };
 
