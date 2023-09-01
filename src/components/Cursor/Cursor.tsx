@@ -4,18 +4,13 @@ import "./Cursor.scss";
 const Cursor = () => {
   useEffect(() => {
     const customCursor = document.getElementById("custom-cursor");
+    window.addEventListener("mousemove", (e) => {
+      const x = e.clientX;
+      const y = e.clientY;
 
-    const moveCursor = (e) => {
-      const { clientX: x, clientY: y } = e;
       customCursor.style.left = `${x}px`;
       customCursor.style.top = `${y}px`;
-    };
-
-    document.addEventListener("mousemove", moveCursor);
-
-    return () => {
-      document.removeEventListener("mousemove", moveCursor);
-    };
+    });
   }, []);
 
   return <div id="custom-cursor"></div>;

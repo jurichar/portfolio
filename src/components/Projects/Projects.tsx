@@ -9,6 +9,7 @@ Modal.setAppElement("#root");
 const Projects = ({ data }) => {
   const isSmallScreen = window.innerWidth < 768;
   const [modalIsOpen, setModalIsOpen] = useState(false);
+
   const [readmeContent, setReadmeContent] = useState("");
 
   const openModal = (readme) => {
@@ -43,9 +44,13 @@ const Projects = ({ data }) => {
                 onClick={() => fetchReadme(event.readme)}
               >
                 <h3>{event.title}</h3>
-                <div className="event-image">
-                  <img src={event.image} alt={event.image_alt} />
-                </div>
+                <div
+                  className="event-image"
+                  style={{
+                    backgroundImage: `url(${event.image})`,
+                    backgroundSize: "cover",
+                  }}
+                ></div>
                 <p>
                   {event?.description?.map((line: any, i: any) => (
                     <span key={i}>
@@ -69,7 +74,6 @@ const Projects = ({ data }) => {
           },
           content: {
             backgroundColor: "rgba(0, 0, 0, 0.8)",
-            // color: "rgba(0, 0, 0, 0.75)",
             margin: "5vh 0 0 0",
             inset: isSmallScreen ? "20px" : "60px",
             border: "none",
