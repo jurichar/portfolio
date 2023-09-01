@@ -72,7 +72,7 @@
         border-radius: 50%;
         border: 1px solid variables.$card-border-color;
         transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-        color: variables.$card-font-color;
+        // color: variables.$card-font-color;
         &:hover {
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
           color: variables.$card-font-color-hovered;
