@@ -14,7 +14,11 @@ const Contact = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ email, message, name }),
+      body: JSON.stringify({
+        email: email,
+        message: message,
+        name: name,
+      }),
     })
       .then((response) => response.json())
       .then((data) => console.log(data))
