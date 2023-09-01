@@ -7,13 +7,14 @@ export default async function handler(req, res) {
     const { email, message, name } = req.body;
 
     const content = {
-      to: "joricha01@gmail.com", // Ton email
-      from: email, // Email de l'expéditeur
+      to: "joricha01@gmail.com",
+      from: email,
       subject: `Nouveau message de ${name}`,
       text: message,
-      html: `<p>${message}</p>`,
+      html: `<p> VOICI UN MESSAGE : ${message} </p>`,
     };
 
+    console.log("ca envoi le mail ?");
     try {
       await sgMail.send(content);
       res.status(200).send("Message envoyé avec succès");

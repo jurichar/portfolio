@@ -8,6 +8,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     fetch("/api/sendEmail", {
       method: "POST",
       headers: {
@@ -23,9 +24,9 @@ const Contact = () => {
       .then((data) => console.log(data))
       .catch((error) => console.log("Erreur:", error));
 
-    setName("");
-    setEmail("");
-    setMessage("");
+    // setName("");
+    // setEmail("");
+    // setMessage("");
   };
 
   return (
