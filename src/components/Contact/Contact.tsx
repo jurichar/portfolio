@@ -6,30 +6,26 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  //   const handleSubmit = (e) => {
-  //     e.preventDefault();
-
-  //     window.location.href = `mailto:joricha01@gmail.com?subject=Contact from ${name} &body=${message} From: ${email}`;
-
-  //     setName("");
-  //     setEmail("");
-  //     setMessage("");
-  //   };
-
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     fetch("/api/sendEmail", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        email: "joricha01@gmail.com",
-        message: "Salut !",
+        email: { email },
+        message: { message },
+        name: { name },
       }),
     })
       .then((response) => response.json())
       .then((data) => console.log(data))
       .catch((error) => console.log("Erreur:", error));
+
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
