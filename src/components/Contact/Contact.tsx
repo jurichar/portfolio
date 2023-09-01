@@ -6,19 +6,15 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = () => {
+    // e.preventDefault();
 
     fetch("/api/sendEmail", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        email: { email },
-        message: { message },
-        name: { name },
-      }),
+      body: JSON.stringify({ email, message, name }),
     })
       .then((response) => response.json())
       .then((data) => console.log(data))

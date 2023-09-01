@@ -11,13 +11,12 @@ export default async function handler(req, res) {
       from: email,
       subject: `Nouveau message de ${name}`,
       text: message,
-      html: `<p> VOICI UN MESSAGE : ${message} </p>`,
+      html: `<p>${message} </p>`,
     };
 
-    console.log("ca envoi le mail ?");
     try {
       await sgMail.send(content);
-      res.status(200).send("Message envoyé avec succès");
+      res.status(200).json({ message: "Message envoyé avec succès" });
     } catch (error) {
       console.log("ERROR", error);
       res.status(400).send("Erreur lors de l'envoi du message");
