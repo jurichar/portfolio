@@ -3,6 +3,7 @@ import "./Home.scss";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 
 const letters = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
 const phrase = "fullstack developper";
@@ -17,6 +18,15 @@ const icon = (name: IconProp, link: string) => {
   );
 };
 
+const icon_download = (name: IconProp, link: string) => {
+  return (
+    <div className="Icon">
+      <a href={link} target="_blank" rel="noopener noreferrer" download>
+        <FontAwesomeIcon icon={name} size="xl" />
+      </a>
+    </div>
+  );
+};
 const Home = () => {
   const [title, setTitle] = useState(phrase);
   const intervalRef = useRef(0);
@@ -78,6 +88,7 @@ const Home = () => {
         <div className="buttons">
           {icon(faGithubSquare, "https://github.com/jurichar/")}
           {icon(faLinkedin, "https://www.linkedin.com/in/julien-rchd/")}
+          {icon_download(faFilePdf, "./public/Julien_RICHARD_CV.pdf")}
         </div>
       </header>
     </div>
