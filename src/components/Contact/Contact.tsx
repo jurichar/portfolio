@@ -16,7 +16,7 @@ const Contact = () => {
   //     setMessage("");
   //   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = () => {
     fetch("/api/sendEmail", {
       method: "POST",
       headers: {
