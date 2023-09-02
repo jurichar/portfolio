@@ -42,7 +42,7 @@ The portfolio includes the following features:
 - [x] Isometric 3D images to illustrate (made with Illustrator)
 - [ ] Ajout de d'autres exp avec des images correspondante
 - [ ] Ajouter des GIF pour remplacer les images
-- [ ] Un CV téléchargeable
+- [x] Un CV téléchargeable
 
 ### Projects:
 
@@ -50,9 +50,9 @@ The portfolio includes the following features:
 - [x] A dedicated page for each project with more details
 - [ ] Intégration de témoignages ou d'avis sur les projets (ajout d'une section "review")
 - [ ] Mise a jour des README
-- [ ] Ajout de GIF pour illustrer les projets
+- [x] Ajout de GIF pour illustrer les projets
 - [ ] Ajout du projet "portfolio"
-- [ ] Ajout du projet "ft_hangouts"
+- [x] Ajout du projet "ft_hangouts"
 - [ ] Ajout de projets THP en ROR
 - [ ] Ajout de projets 42 en JS
 
@@ -64,7 +64,7 @@ The portfolio includes the following features:
 ### Contact-me:
 
 - [x] A contact form for direct communication
-- [ ] Un vrai mailer ou une vrai messagerie
+- [x] Un vrai mailer ou une vrai messagerie
 - [ ] Liens vers les profils de réseaux sociaux a deplacer depuis home.
 
 ### General:
@@ -76,7 +76,7 @@ The portfolio includes the following features:
 - [ ] Animations a ajouter
 - [ ] Interrupteur Mode Sombre/Mode Clair pour la préférence de l'utilisateur
 - [ ] Ajouter des GIF pour le README
-- [ ] Tri des fichiers et renommer images
+- [x] Tri des fichiers et renommer images
 
 ## Technologies Used 💻
 

@@ -3,7 +3,7 @@ import "./Home.scss";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
 
 const letters = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
 const phrase = "fullstack developper";
@@ -88,7 +88,7 @@ const Home = () => {
         <div className="buttons">
           {icon(faGithubSquare, "https://github.com/jurichar/")}
           {icon(faLinkedin, "https://www.linkedin.com/in/julien-rchd/")}
-          {icon_download(faFilePdf, "./public/Julien_RICHARD_CV.pdf")}
+          {icon_download(faFileAlt, "./public/Julien_RICHARD_CV.pdf")}
         </div>
       </header>
     </div>
