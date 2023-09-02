@@ -1,12 +1,29 @@
 import "./Contact.scss";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isButtonDisabled, setButtonDisabled] = useState(false);
 
-  const handleSubmit = () => {
+  const notify = () =>
+    toast.success("Email envoyer avec succès!", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: false,
+      progress: undefined,
+      theme: "colored",
+    });
+
+  const handleSubmit = (e) => {
+    setButtonDisabled(true);
+    e.preventDefault();
     fetch("/api/sendEmail", {
       method: "POST",
       headers: {
@@ -25,6 +42,9 @@ const Contact = () => {
     setName("");
     setEmail("");
     setMessage("");
+    setTimeout(() => {
+      setButtonDisabled(false);
+    }, 10000);
   };
 
   return (
@@ -52,9 +72,16 @@ const Contact = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
-          <button type="submit" id="send-button">
+          <button
+            type="submit"
+            id="send-button"
+            onClick={notify}
+            disabled={isButtonDisabled}
+            style={{ opacity: isButtonDisabled ? 0.5 : 1 }}
+          >
             Send
           </button>
+          <ToastContainer />
         </form>
       </div>
     </header>

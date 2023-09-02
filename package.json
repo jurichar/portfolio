@@ -30,6 +30,7 @@
     "react-scroll": "^1.8.9",
     "react-scroll-into-view": "^1.12.1",
     "react-scroll-to-top": "^3.0.0",
+    "react-toastify": "^9.1.3",
     "sass": "^1.63.4",
     "three": "^0.153.0"
   },

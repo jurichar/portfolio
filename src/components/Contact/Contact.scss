@@ -32,7 +32,7 @@ form {
     height: 50%;
     outline: none;
   }
-  button {
+  #send-button {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background-color: variables.$card-color;
     color: variables.$card-font-color;
@@ -45,7 +45,7 @@ form {
     font-family: variables.$base-font;
     transition: all 0.3s ease-in-out;
     border: 1px solid variables.$card-border-color;
-    &:hover {
+    &:hover:enabled {
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
       color: variables.$card-font-color-hovered;
       background-color: variables.$card-color-hovered;
@@ -59,7 +59,7 @@ form {
       width: 100%;
       input,
       textarea,
-      button {
+      #send-button {
         width: 100%;
       }
     }
