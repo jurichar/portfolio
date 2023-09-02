@@ -9,7 +9,6 @@ Modal.setAppElement("#root");
 const Projects = ({ data }) => {
   const isSmallScreen = window.innerWidth < 768;
   const [modalIsOpen, setModalIsOpen] = useState(false);
-
   const [readmeContent, setReadmeContent] = useState("");
 
   const openModal = (readme) => {

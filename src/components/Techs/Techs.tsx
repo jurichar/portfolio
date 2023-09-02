@@ -5,7 +5,7 @@ import {
   faSass,
   faDocker,
   faUbuntu,
-  faNodeJs,
+  faVuejs,
   faGithub,
   faPython,
   faFigma,
@@ -40,12 +40,12 @@ const iconGroup = () => {
         </Tooltip>
       </div>
       <div className="Icon_group_line">
-        <Tooltip title="Ruby (on rails)" arrow>
+        <Tooltip title="Ruby on rails" arrow>
           <div className="Icon">
             <FontAwesomeIcon id="Gem_icon" icon={faGem} size="2xl" />
           </div>
         </Tooltip>
-        <Tooltip title="React TS" arrow>
+        <Tooltip title="ReactJS" arrow>
           {icon(faReact)}
         </Tooltip>
         <Tooltip title="Figma" arrow>
@@ -53,11 +53,11 @@ const iconGroup = () => {
         </Tooltip>
       </div>
       <div className="Icon_group_line">
-        <Tooltip title="Databases / SQL" arrow>
+        <Tooltip title="Databases - SQL" arrow>
           {icon(faDatabase)}
         </Tooltip>
-        <Tooltip title="NodeJS" arrow>
-          {icon(faNodeJs)}
+        <Tooltip title="VueJS" arrow>
+          {icon(faVuejs)}
         </Tooltip>
       </div>
     </div>
@@ -68,7 +68,7 @@ const iconGroup2 = () => {
   return (
     <div className="Icon_group">
       <div className="Icon_group_line">
-        <Tooltip title="Kubernetes cluster" arrow>
+        <Tooltip title="K8s" arrow>
           {icon(faDharmachakra)}
         </Tooltip>
         <Tooltip title="Git" arrow>
