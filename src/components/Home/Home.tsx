@@ -88,7 +88,7 @@ const Home = () => {
         <div className="buttons">
           {icon(faGithubSquare, "https://github.com/jurichar/")}
           {icon(faLinkedin, "https://www.linkedin.com/in/julien-rchd/")}
-          {icon_download(faFileAlt, "./public/Julien_RICHARD_CV.pdf")}
+          {icon_download(faFileAlt, "./public/CV.pdf")}
         </div>
       </header>
     </div>
