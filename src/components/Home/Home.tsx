@@ -79,10 +79,7 @@ const Home = () => {
         <div className="buttons">
           {icon(faGithubSquare, "https://github.com/jurichar/")}
           {icon(faLinkedin, "https://www.linkedin.com/in/julien-rchd/")}
-          {icon(
-            faFileAlt,
-            "https://github.com/jurichar/jurichar.github.io/blob/c01860c6a2e4dbe4a89246711703aa29136083d7/public/CV.pdf"
-          )}
+          {icon(faFileAlt, "https://github.com/jurichar/cv/blob/main/CV.pdf")}
         </div>
       </header>
     </div>
