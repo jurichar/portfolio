@@ -18,15 +18,6 @@ const icon = (name: IconProp, link: string) => {
   );
 };
 
-const icon_download = (name: IconProp, link: string) => {
-  return (
-    <div className="Icon">
-      <a href={link} target="_blank" rel="noopener noreferrer" download>
-        <FontAwesomeIcon icon={name} size="xl" />
-      </a>
-    </div>
-  );
-};
 const Home = () => {
   const [title, setTitle] = useState(phrase);
   const intervalRef = useRef(0);
@@ -88,7 +79,10 @@ const Home = () => {
         <div className="buttons">
           {icon(faGithubSquare, "https://github.com/jurichar/")}
           {icon(faLinkedin, "https://www.linkedin.com/in/julien-rchd/")}
-          {icon_download(faFileAlt, "./public/CV.pdf")}
+          {icon(
+            faFileAlt,
+            "https://github.com/jurichar/jurichar.github.io/blob/c01860c6a2e4dbe4a89246711703aa29136083d7/public/CV.pdf"
+          )}
         </div>
       </header>
     </div>
