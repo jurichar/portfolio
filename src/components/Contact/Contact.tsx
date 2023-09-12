@@ -10,7 +10,14 @@ const Contact = () => {
   const [isButtonDisabled, setButtonDisabled] = useState(false);
 
   const notify = () => {
-    if (name !== "" && email !== "" && message !== "") {
+    if (
+      name !== "" &&
+      email !== "" &&
+      message !== "" &&
+      checkEmail(email) &&
+      checkName(name) &&
+      checkMessage(message)
+    ) {
       toast.success("Email envoyé avec succès!", {
         position: "top-center",
         autoClose: 5000,
@@ -33,6 +40,21 @@ const Contact = () => {
         theme: "colored",
       });
     }
+  };
+
+  const checkEmail = (email) => {
+    const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]{2,}\.[a-z]{2,4}$/;
+    return regex.test(email);
+  };
+
+  const checkName = (name) => {
+    const regex = /^[a-zA-Z0-9._-]{2,}$/;
+    return regex.test(name);
+  };
+
+  const checkMessage = (message) => {
+    const regex = /^[a-zA-Z0-9._-]{2,}$/;
+    return regex.test(message);
   };
 
   const handleSubmit = (e) => {
