@@ -9,17 +9,31 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [isButtonDisabled, setButtonDisabled] = useState(false);
 
-  const notify = () =>
-    toast.success("Email envoyer avec succès!", {
-      position: "top-center",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: false,
-      progress: undefined,
-      theme: "colored",
-    });
+  const notify = () => {
+    if (name !== "" && email !== "" && message !== "") {
+      toast.success("Email envoyé avec succès!", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: false,
+        progress: undefined,
+        theme: "colored",
+      });
+    } else {
+      toast.error("Veuillez remplir tous les champs!", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: false,
+        progress: undefined,
+        theme: "colored",
+      });
+    }
+  };
 
   const handleSubmit = (e) => {
     setButtonDisabled(true);
