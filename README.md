@@ -78,6 +78,13 @@ The portfolio includes the following features:
 - [ ] Ajouter des GIF pour le README
 - [x] Tri des fichiers et renommer images
 
+### To Fix :
+
+- [ ] Sliders sur chrome
+- [ ] Mail send (correct error)
+- [ ] Cursor (retirer)
+- [ ] Dark mode
+
 ## Technologies Used 💻
 
 The portfolio is developed using the following technologies:
