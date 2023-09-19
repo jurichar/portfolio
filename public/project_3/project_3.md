@@ -1,6 +1,6 @@
 # Portfolio 🖥️
 
-![presentation](/public/project_3/project_3.gif)
+![presentation](/project_3/project_3.gif)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/jurichar/jurichar.github.io)
 ![GitHub stars](https://img.shields.io/github/stars/jurichar/jurichar.github.io)
@@ -104,7 +104,7 @@ Navigating the portfolio is simple:
 
 ## Screenshots 📸
 
-![screenshots](/public/project_3/images/presentation.gif)
+![screenshots](/project_3/images/presentation.gif)
 
 ## Contributing 🤝
 

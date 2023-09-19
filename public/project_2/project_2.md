@@ -2,7 +2,7 @@
 
 ---
 
-![presentation](/public/project_2/project_2.gif)
+![presentation](/project_2/project_2.gif)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/jurichar/swifty-companion)
 ![GitHub stars](https://img.shields.io/github/stars/jurichar/swifty-companion)
@@ -32,8 +32,8 @@ It also display the skills of the student and the projects he/she has done.
 
 ## Userflow
 
-![userflow](/public/project_2/images/userflow.png)
+![userflow](/project_2/images/userflow.png)
 
 ## Design
 
-![design](/public/project_2/images/design.png)
+![design](/project_2/images/design.png)

@@ -79,19 +79,19 @@ To use the app:
 
 ### Sign in with 42 Intra or Discord
 
-![signin_with](/public/project_1/images/signin_with.gif)
+![signin_with](/project_1/images/signin_with.gif)
 
 ### Theme selection and matchmaking
 
-![theme_matchmaking](/public/project_1/images/theme_matchmaking.gif)
+![theme_matchmaking](/project_1/images/theme_matchmaking.gif)
 
 ### 2FA and modifying profile picture
 
-![2fa_change_pic](/public/project_1/images/2fa_change_pic.gif)
+![2fa_change_pic](/project_1/images/2fa_change_pic.gif)
 
 ### Chat, create channels, invite participants to play pong
 
-![chat_matchmaking](/public/project_1/images/chat_matchmaking.gif)
+![chat_matchmaking](/project_1/images/chat_matchmaking.gif)
 
 ## Contirbutors
 
