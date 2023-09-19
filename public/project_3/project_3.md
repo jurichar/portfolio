@@ -1,6 +1,6 @@
 # ft_transcendence - 42 School Project
 
-![presentation](./images/presentation.png)
+![presentation](./presentation.png)
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/jurichar/ft_transcendence)
 ![GitHub last commit](https://img.shields.io/github/last-commit/davidarbib/ft_transcendence)
@@ -79,19 +79,19 @@ To use the app:
 
 ### Sign in with 42 Intra or Discord
 
-![signin_with](./images/signin_with.gif)
+![signin_with](./signin_with.gif)
 
 ### Theme selection and matchmaking
 
-![theme_matchmaking](./images/theme_matchmaking.gif)
+![theme_matchmaking](./theme_matchmaking.gif)
 
 ### 2FA and modifying profile picture
 
-![2fa_change_pic](./images/2fa_change_pic.gif)
+![2fa_change_pic](./2fa_change_pic.gif)
 
 ### Chat, create channels, invite participants to play pong
 
-![chat_matchmaking](./images/chat_matchmaking.gif)
+![chat_matchmaking](./chat_matchmaking.gif)
 
 ## Contirbutors
 
