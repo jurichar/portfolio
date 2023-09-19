@@ -42,22 +42,22 @@ const Contact = () => {
     }
   };
 
-  const checkEmail = (email) => {
-    const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]{2,}\.[a-z]{2,4}$/;
+  const checkEmail = (email: string) => {
+    const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]{2,}\.[a-z]{2,}$/;
     return regex.test(email);
   };
 
-  const checkName = (name) => {
+  const checkName = (name: string) => {
     const regex = /^[a-zA-Z0-9._-]{2,}$/;
     return regex.test(name);
   };
 
-  const checkMessage = (message) => {
+  const checkMessage = (message: string) => {
     const regex = /^[a-zA-Z0-9._-]{2,}$/;
     return regex.test(message);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     setButtonDisabled(true);
     e.preventDefault();
     fetch("/api/sendEmail", {

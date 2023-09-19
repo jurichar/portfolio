@@ -17,24 +17,23 @@
   // mix-blend-mode: difference;
 }
 
-#trail1 {
-  height: 50px;
-  width: 50px;
-  border: 5px solid rgba(255, 255, 255, 0.6);
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+// #trail1 {
+//   height: 50px;
+//   width: 50px;
+//   border: 5px solid rgba(255, 255, 255, 0.6);
+//   border-radius: 50%;
+//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
-  position: fixed;
-  z-index: 9998;
-  top: 0;
-  left: 0;
+//   position: fixed;
+//   z-index: 9998;
+//   top: 0;
+//   left: 0;
 
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 500ms ease;
-}
+//   pointer-events: none;
+//   opacity: 0;
+//   transition: opacity 500ms ease;
+// }
 
-body:hover #custom-cursor,
-body:hover #trail1 {
+body:hover #custom-cursor {
   opacity: 1;
 }

@@ -13,17 +13,17 @@ const Cursor = () => {
       customCursor.style.left = `${x}px`;
       customCursor.style.top = `${y}px`;
 
-      setTimeout(() => {
-        trail1.style.left = `${x - 15}px`;
-        trail1.style.top = `${y - 15}px`;
-      }, 100);
+      // setTimeout(() => {
+      // trail1.style.left = `${x - 15}px`;
+      // trail1.style.top = `${y - 15}px`;
+      // }, 100);
     });
   }, []);
 
   return (
     <div>
       <div id="custom-cursor"></div>
-      <div id="trail1"></div>
+      {/* <div id="trail1"></div> */}
     </div>
   );
 };

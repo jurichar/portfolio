@@ -14,24 +14,15 @@
     },
     {
       "title": "Swifty Companion",
-      "description": [
-        "> Swift",
-        "> SwiftUI",
-        "> iOS",
-        "> API"
-      ],
+      "description": ["> Swift", "> SwiftUI", "> iOS", "> API"],
       "image_alt": "swifty companion",
       "image": "project_2/project_2.gif",
       "readme": "project_2/project_2.md"
     },
     {
-      "title": "Ft_hangouts",
-      "description": [
-        "> Swift",
-        "> SwiftUI",
-        "> iOS",
-        "> Messaging"],
-      "image_alt": "ft_hangouts",
+      "title": "Ft_transcendence",
+      "description": ["> VueJS", "> NestJS", "> PostgreSQL", "> Docker"],
+      "image_alt": "ft_transcendence",
       "image": "project_3/project_3.gif",
       "readme": "project_3/project_3.md"
     }
