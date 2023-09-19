@@ -1,6 +1,6 @@
 # ft_transcendence - 42 School Project
 
-![presentation](/public/project_1/images/presentation.png)
+![presentation](/project_1/images/presentation.png)
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/jurichar/ft_transcendence)
 ![GitHub last commit](https://img.shields.io/github/last-commit/davidarbib/ft_transcendence)
