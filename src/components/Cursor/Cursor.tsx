@@ -4,7 +4,7 @@ import "./Cursor.scss";
 const Cursor = () => {
   useEffect(() => {
     const customCursor = document.getElementById("custom-cursor");
-    const trail1 = document.getElementById("trail1");
+    // const trail1 = document.getElementById("trail1");
 
     window.addEventListener("mousemove", (e) => {
       const x = e.clientX;
