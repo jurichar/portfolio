@@ -1,97 +1,103 @@
-# Portfolio 🖥️
+# ft_transcendence - 42 School Project
 
-![GitHub last commit](https://img.shields.io/github/last-commit/jurichar/jurichar.github.io)
-![GitHub stars](https://img.shields.io/github/stars/jurichar/jurichar.github.io)
-![GitHub forks](https://img.shields.io/github/forks/jurichar/jurichar.github.io)
+![presentation](/public/project_1/images/presentation.png)
+
+![GitHub repo size](https://img.shields.io/github/repo-size/jurichar/ft_transcendence)
+![GitHub last commit](https://img.shields.io/github/last-commit/davidarbib/ft_transcendence)
+![GitHub stars](https://img.shields.io/github/stars/davidarbib/ft_transcendence)
 
 ---
 
-## Context 🌎
+![VueJS](https://img.shields.io/badge/-Vue-4FC08D?logo=vue.js&logoColor=white&style=flat)
+![NestJS](https://img.shields.io/badge/-NestJS-E0234E?logo=nestjs&logoColor=white&style=flat)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?logo=postgresql&logoColor=white&style=flat)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white&style=flat)
+![42 Paris](https://img.shields.io/badge/-42-000000?logo=42&logoColor=white&style=flat)
 
-In today's digital world, a simple CV does not suffice to highlight the range of projects and skills a developer possesses. This portfolio project is an attempt to solve that issue and provide an engaging, comprehensive overview of my work.
+---
 
-## Objective 🎯
+## Context
 
-The primary objective of this portfolio is to showcase my projects, professional background, and unique aspects of my approach to programming.
+This project consists of creating a website to take part in a competition of the famous game Pong!
 
-## Features 🎁
+## Features
 
-The portfolio includes the following features:
+### This application boasts an array of unique features
 
-### Home:
+- A live Pong game for real-time entertainment.
+- A matchmaking system to find suitable opponents for games.
+- Real-time text messaging for immediate communication.
+- Access to other users' profiles for better social interaction.
+- A friends list feature for each user to keep track of their contacts.
+- Comprehensive match history for users to review past games.
+- Real-time statistics for users to monitor their performance.
+- User account management for personalized settings and preferences.
 
-- [x] Interactive welcome message
-- [x] Links to my social networks
+### Further enhancing the user experience, the application also provides
 
-### About:
+- Personalizable game themes for a customized gaming experience.
+- Designated channels for text messaging to categorize conversations.
+- Administrative privileges for users over their channels.
+- The ability for users to initiate Pong games by sending invites within channels.
+- A user blocking system for privacy and safety.
+- Password encryption to ensure the security of user data.
+- Two-Factor Authentication (2FA) with options for Google or text message verification.
+- Protection against SQL injection attacks for enhanced security.
+- Alternative login options through 42 Intra or Discord.
+- Full responsive design for optimal user experience on any device.
 
-- [x] A timeline showing your professional journey
-- [x] Isometric 3D images to illustrate (made with Illustrator)
-- [ ] Ajout de d'autres exp avec des images correspondante
-- [ ] Ajouter des GIF pour remplacer les images
-- [ ] Un CV téléchargeable
+## Technologies Used
 
-### Projects:
+- Vue 3 for the front-end part
+- NestJS for the back-end part
+- PostgreSQL for database
+- 42's + Discord API for the auth
+- Docker to build the whole project
+  
+## Installation
 
-- [x] Integration of a project filtering system by technology or type
-- [x] A dedicated page for each project with more details
-- [ ] Intégration de témoignages ou d'avis sur les projets (ajout d'une section "review")
-- [ ] Mise a jour des README
-- [ ] Ajout de GIF pour illustrer les projets
-- [ ] Ajout du projet "portfolio"
-- [ ] Ajout du projet "ft_hangouts"
-- [ ] Ajout de projets THP en ROR
-- [ ] Ajout de projets 42 en JS
-
-### Techs:
-
-- [x] Visual display of mastery of each technology
-- [ ] Certifications ?
-
-### Contact-me:
-
-- [x] A contact form for direct communication
-- [ ] Un vrai mailer ou une vrai messagerie
-- [ ] Liens vers les profils de réseaux sociaux a deplacer depuis home.
-
-### General:
-
-- [x] Smooth transitions that enhance the user experience
-- [x] A fully modular website that allows for easy updates and additions
-- [x] An intuitive user interface that ensures smooth navigation
-- [x] Fully responsive
-- [ ] Animations a ajouter
-- [ ] Interrupteur Mode Sombre/Mode Clair pour la préférence de l'utilisateur
-- [ ] Ajouter des GIF pour le README
-- [ ] Tri des fichiers et renommer images
-
-## Technologies Used 💻
-
-The portfolio is developed using the following technologies:
-
-- React with Vite for a fast, modern front-end framework 🚀
-- SCSS for advanced styling capabilities 🎨
-- JSON files for data storage and manipulation 📂
-
-## Installation 🛠️
-
-To set up the project on your local machine:
+To install the project on your local machine:
 
 1. Clone the repository
-2. Open the project in your preferred IDE
-3. Run the project using `npm run dev`
+2. Open it in your IDE
+3. Add you .env file to backend/src folder
+4. Build the project with Docker
+  
+  ```bash
+  docker-compose up --build
+  ```
 
-## Usage 🧭
+## Usage
 
-Navigating the portfolio is simple:
+To use the app:
 
-1. Scroll through the website to explore different sections 🚶‍♂️
-2. Enjoy the journey! 🌟
+1. Sign up or log in
+2. Add friends
+3. Chat with your friends
 
-## Screenshots 📸
+## Screenshots
 
-![screenshots](/project_1/screenshots.png)
+### Sign in with 42 Intra or Discord
 
-## Contributing 🤝
+![signin_with](/public/project_1/images/signin_with.gif)
 
-This project is open to contributions. Feel free to fork the project and submit your pull requests.
+### Theme selection and matchmaking
+
+![theme_matchmaking](/public/project_1/images/theme_matchmaking.gif)
+
+### 2FA and modifying profile picture
+
+![2fa_change_pic](/public/project_1/images/2fa_change_pic.gif)
+
+### Chat, create channels, invite participants to play pong
+
+![chat_matchmaking](/public/project_1/images/chat_matchmaking.gif)
+
+## Contirbutors
+
+- [Julien Richard](https://github.com/jurichar)
+- [Mélanie Pochard](https://github.com/m3L4n)
+- [Maxime Crespo](https://github.com/macrespo42)
+- [David Arbib](https://github.com/davidarbib)
+
+---

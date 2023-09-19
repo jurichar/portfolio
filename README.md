@@ -1,9 +1,16 @@
 # Portfolio 🖥️
 
+![presentation](/public/project_3/project_3.gif)
+
 ![GitHub last commit](https://img.shields.io/github/last-commit/jurichar/jurichar.github.io)
 ![GitHub stars](https://img.shields.io/github/stars/jurichar/jurichar.github.io)
 ![GitHub forks](https://img.shields.io/github/forks/jurichar/jurichar.github.io)
-![License](https://img.shields.io/github/license/jurichar/jurichar.github.io)
+
+---
+
+![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=flat)
+![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white&style=flat)
+![SCSS](https://img.shields.io/badge/-SCSS-CC6699?logo=sass&logoColor=white&style=flat)
 
 ---
 
@@ -31,43 +38,41 @@ The primary objective of this portfolio is to showcase my projects, professional
 
 The portfolio includes the following features:
 
-### Home:
+### Home
 
 - [x] Interactive welcome message
 - [x] Links to my social networks
 
-### About:
+### About
 
 - [x] A timeline showing your professional journey
 - [x] Isometric 3D images to illustrate (made with Illustrator)
 - [ ] Ajout de d'autres exp avec des images correspondante
-- [ ] Ajouter des GIF pour remplacer les images
 - [x] Un CV téléchargeable
 
-### Projects:
+### Projects
 
 - [x] Integration of a project filtering system by technology or type
 - [x] A dedicated page for each project with more details
 - [ ] Intégration de témoignages ou d'avis sur les projets (ajout d'une section "review")
 - [ ] Mise a jour des README
 - [x] Ajout de GIF pour illustrer les projets
-- [ ] Ajout du projet "portfolio"
-- [x] Ajout du projet "ft_hangouts"
-- [ ] Ajout de projets THP en ROR
-- [ ] Ajout de projets 42 en JS
+- [x] Ajout du projet "portfolio"
+- [x] Ajout du projet "ft_transcendence"
+- [ ] Ajout du projet "mynextspace"
 
-### Techs:
+### Techs
 
 - [x] Visual display of mastery of each technology
 - [ ] Certifications ?
 
-### Contact-me:
+### Contact-me
 
 - [x] A contact form for direct communication
 - [x] Un vrai mailer ou une vrai messagerie
 - [ ] Liens vers les profils de réseaux sociaux a deplacer depuis home.
 
-### General:
+### General
 
 - [x] Smooth transitions that enhance the user experience
 - [x] A fully modular website that allows for easy updates and additions
@@ -78,7 +83,7 @@ The portfolio includes the following features:
 - [ ] Ajouter des GIF pour le README
 - [x] Tri des fichiers et renommer images
 
-### To Fix :
+### To Fix
 
 - [ ] Sliders sur chrome
 - [ ] Mail send (correct error)
@@ -110,6 +115,8 @@ Navigating the portfolio is simple:
 
 ## Screenshots 📸
 
+![screenshots](/public/project_3/images/presentation.gif)
+
 ## Contributing 🤝
 
 This project is open to contributions. Feel free to fork the project and submit your pull requests.
@@ -119,7 +126,3 @@ This project is open to contributions. Feel free to fork the project and submit 
 This project is licensed under the terms of the MIT license.
 
 ---
-
-<div align="center">
-  <b>End of Document</b><br>
-</div>

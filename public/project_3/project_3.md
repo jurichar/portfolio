@@ -1,103 +1,117 @@
-# ft_transcendence - 42 School Project
+# Portfolio 🖥️
 
-![presentation](./presentation.png)
+![presentation](/public/project_3/project_3.gif)
 
-![GitHub repo size](https://img.shields.io/github/repo-size/jurichar/ft_transcendence)
-![GitHub last commit](https://img.shields.io/github/last-commit/davidarbib/ft_transcendence)
-![GitHub stars](https://img.shields.io/github/stars/davidarbib/ft_transcendence)
-
----
-
-![VueJS](https://img.shields.io/badge/-Vue-4FC08D?logo=vue.js&logoColor=white&style=flat)
-![NestJS](https://img.shields.io/badge/-NestJS-E0234E?logo=nestjs&logoColor=white&style=flat)
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?logo=postgresql&logoColor=white&style=flat)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white&style=flat)
-![42 Paris](https://img.shields.io/badge/-42-000000?logo=42&logoColor=white&style=flat)
+![GitHub last commit](https://img.shields.io/github/last-commit/jurichar/jurichar.github.io)
+![GitHub stars](https://img.shields.io/github/stars/jurichar/jurichar.github.io)
+![GitHub forks](https://img.shields.io/github/forks/jurichar/jurichar.github.io)
 
 ---
 
-## Context
+![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=flat)
+![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white&style=flat)
+![SCSS](https://img.shields.io/badge/-SCSS-CC6699?logo=sass&logoColor=white&style=flat)
 
-This project consists of creating a website to take part in a competition of the famous game Pong!
+---
 
-## Features
+## Context 🌎
 
-### This application boasts an array of unique features
+In today's digital world, a simple CV does not suffice to highlight the range of projects and skills a developer possesses. This portfolio project is an attempt to solve that issue and provide an engaging, comprehensive overview of my work.
 
-- A live Pong game for real-time entertainment.
-- A matchmaking system to find suitable opponents for games.
-- Real-time text messaging for immediate communication.
-- Access to other users' profiles for better social interaction.
-- A friends list feature for each user to keep track of their contacts.
-- Comprehensive match history for users to review past games.
-- Real-time statistics for users to monitor their performance.
-- User account management for personalized settings and preferences.
+## Objective 🎯
 
-### Further enhancing the user experience, the application also provides
+The primary objective of this portfolio is to showcase my projects, professional background, and unique aspects of my approach to programming.
 
-- Personalizable game themes for a customized gaming experience.
-- Designated channels for text messaging to categorize conversations.
-- Administrative privileges for users over their channels.
-- The ability for users to initiate Pong games by sending invites within channels.
-- A user blocking system for privacy and safety.
-- Password encryption to ensure the security of user data.
-- Two-Factor Authentication (2FA) with options for Google or text message verification.
-- Protection against SQL injection attacks for enhanced security.
-- Alternative login options through 42 Intra or Discord.
-- Full responsive design for optimal user experience on any device.
+## Features 🎁
 
-## Technologies Used
+The portfolio includes the following features:
 
-- Vue 3 for the front-end part
-- NestJS for the back-end part
-- PostgreSQL for database
-- 42's + Discord API for the auth
-- Docker to build the whole project
-  
-## Installation
+### Home
 
-To install the project on your local machine:
+- [x] Interactive welcome message
+- [x] Links to my social networks
+
+### About
+
+- [x] A timeline showing your professional journey
+- [x] Isometric 3D images to illustrate (made with Illustrator)
+- [ ] Ajout de d'autres exp avec des images correspondante
+- [x] Un CV téléchargeable
+
+### Projects
+
+- [x] Integration of a project filtering system by technology or type
+- [x] A dedicated page for each project with more details
+- [ ] Intégration de témoignages ou d'avis sur les projets (ajout d'une section "review")
+- [ ] Mise a jour des README
+- [x] Ajout de GIF pour illustrer les projets
+- [x] Ajout du projet "portfolio"
+- [x] Ajout du projet "ft_transcendence"
+- [ ] Ajout du projet "mynextspace"
+<!-- - [ ] Ajout de projets 42 en JS -->
+
+### Techs
+
+- [x] Visual display of mastery of each technology
+- [ ] Certifications ?
+
+### Contact-me
+
+- [x] A contact form for direct communication
+- [x] Un vrai mailer ou une vrai messagerie
+- [ ] Liens vers les profils de réseaux sociaux a deplacer depuis home.
+
+### General
+
+- [x] Smooth transitions that enhance the user experience
+- [x] A fully modular website that allows for easy updates and additions
+- [x] An intuitive user interface that ensures smooth navigation
+- [x] Fully responsive
+- [ ] Animations a ajouter
+- [ ] Interrupteur Mode Sombre/Mode Clair pour la préférence de l'utilisateur
+- [x] Ajouter des GIF pour le README
+- [x] Tri des fichiers et renommer images
+
+### To Fix
+
+- [ ] Sliders sur chrome
+- [x] Mail send (correct error)
+- [x] Cursor (retirer)
+- [ ] Dark mode
+
+## Technologies Used 💻
+
+The portfolio is developed using the following technologies:
+
+- React with Vite for a fast, modern front-end framework 🚀
+- SCSS for advanced styling capabilities 🎨
+- JSON files for data storage and manipulation 📂
+
+## Installation 🛠️
+
+To set up the project on your local machine:
 
 1. Clone the repository
-2. Open it in your IDE
-3. Add you .env file to backend/src folder
-4. Build the project with Docker
-  
-  ```bash
-  docker-compose up --build
-  ```
+2. Open the project in your preferred IDE
+3. Run the project using `npm run dev`
 
-## Usage
+## Usage 🧭
 
-To use the app:
+Navigating the portfolio is simple:
 
-1. Sign up or log in
-2. Add friends
-3. Chat with your friends
+1. Scroll through the website to explore different sections 🚶‍♂️
+2. Enjoy the journey! 🌟
 
-## Screenshots
+## Screenshots 📸
 
-### Sign in with 42 Intra or Discord
+![screenshots](/public/project_3/images/presentation.gif)
 
-![signin_with](./signin_with.gif)
+## Contributing 🤝
 
-### Theme selection and matchmaking
+This project is open to contributions. Feel free to fork the project and submit your pull requests.
 
-![theme_matchmaking](./theme_matchmaking.gif)
+## License ⚖️
 
-### 2FA and modifying profile picture
-
-![2fa_change_pic](./2fa_change_pic.gif)
-
-### Chat, create channels, invite participants to play pong
-
-![chat_matchmaking](./chat_matchmaking.gif)
-
-## Contirbutors
-
-- [Julien Richard](https://github.com/jurichar)
-- [Mélanie Pochard](https://github.com/m3L4n)
-- [Maxime Crespo](https://github.com/macrespo42)
-- [David Arbib](https://github.com/davidarbib)
+This project is licensed under the terms of the MIT license.
 
 ---

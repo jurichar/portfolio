@@ -1,14 +1,14 @@
 {
   "projectsData": [
     {
-      "title": "Portfolio",
+      "title": "Ft_Transcendence",
       "description": [
-        "> HTML / SCSS",
-        "> TypeScript",
-        "> React",
-        "> Basic web dev"
+        "> VueJS 3",
+        "> NestJS",
+        "> PostgreSQL",
+        "> Docker / Docker-compose"
       ],
-      "image_alt": "portfolio",
+      "image_alt": "ft_transcendence",
       "image": "project_1/project_1.gif",
       "readme": "project_1/project_1.md"
     },
@@ -20,9 +20,14 @@
       "readme": "project_2/project_2.md"
     },
     {
-      "title": "Ft_transcendence",
-      "description": ["> VueJS", "> NestJS", "> PostgreSQL", "> Docker"],
-      "image_alt": "ft_transcendence",
+      "title": "Portfolio",
+      "description": [
+        "> HTML / SCSS",
+        "> TypeScript",
+        "> React",
+        "> Basic web dev"
+      ],
+      "image_alt": "portfolio",
       "image": "project_3/project_3.gif",
       "readme": "project_3/project_3.md"
     }
