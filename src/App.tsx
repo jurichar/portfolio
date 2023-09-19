@@ -9,6 +9,7 @@ import { projectsData } from "../src/data/projects.json";
 import Cursor from "./components/Cursor/Cursor";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   const scrollToTop = () => {
@@ -33,6 +34,7 @@ const App = () => {
         <Techs />
         <Contact />
       </div>
+      <Analytics />
     </>
   );
 };
