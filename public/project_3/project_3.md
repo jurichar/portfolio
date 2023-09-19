@@ -48,7 +48,6 @@ The portfolio includes the following features:
 - [x] Ajout du projet "portfolio"
 - [x] Ajout du projet "ft_transcendence"
 - [ ] Ajout du projet "mynextspace"
-<!-- - [ ] Ajout de projets 42 en JS -->
 
 ### Techs
 

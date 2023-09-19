@@ -48,6 +48,7 @@ const Projects = ({ data }) => {
                   style={{
                     backgroundImage: `url(${event.image})`,
                     backgroundSize: "cover",
+                    backgroundPosition: "center",
                   }}
                 ></div>
                 <p>

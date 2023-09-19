@@ -117,6 +117,10 @@ const Contact = () => {
           >
             Send
           </button>
+          <br />
+          <div>
+            <p>or contact : jurichar@student.42.fr</p>
+          </div>
           <ToastContainer />
         </form>
       </div>
