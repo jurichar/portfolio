@@ -79,7 +79,7 @@ const Home = () => {
         <div className="buttons">
           {icon(faGithubSquare, "https://github.com/jurichar/")}
           {icon(faLinkedin, "https://www.linkedin.com/in/julien-rchd/")}
-          {icon(faFileAlt, "https://github.com/jurichar/cv/blob/main/CV.pdf")}
+          {icon(faFileAlt, "https://github.com/jurichar/cv/blob/main/CV_FR.pdf")}
         </div>
       </header>
     </div>
