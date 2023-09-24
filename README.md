@@ -89,6 +89,7 @@ The portfolio includes the following features:
 - [ ] Mail send (correct error)
 - [ ] Cursor (retirer)
 - [ ] Dark mode
+- [ ] Links to projects in readme
 
 ## Technologies Used 💻
 
