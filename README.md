@@ -82,6 +82,7 @@ The portfolio includes the following features:
 - [ ] Interrupteur Mode Sombre/Mode Clair pour la préférence de l'utilisateur
 - [ ] Ajouter des GIF pour le README
 - [x] Tri des fichiers et renommer images
+- [ ] Ajouter une page vers tout les projets annexe par technologie
 
 ### To Fix
 
