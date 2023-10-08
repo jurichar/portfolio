@@ -48,13 +48,9 @@ const Home = () => {
   };
 
   useEffect(() => {
-    // Démarrez l'animation lors du montage du composant
     onMouseOver();
-
-    // Répétez l'animation toutes les 5 secondes
     const intervalId = setInterval(onMouseOver, 5000);
 
-    // Nettoyez l'intervalle lorsque le composant est démonté
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
       clearInterval(intervalId);
@@ -79,7 +75,10 @@ const Home = () => {
         <div className="buttons">
           {icon(faGithubSquare, "https://github.com/jurichar/")}
           {icon(faLinkedin, "https://www.linkedin.com/in/julien-rchd/")}
-          {icon(faFileAlt, "https://github.com/jurichar/cv/blob/main/CV_FR.pdf")}
+          {icon(
+            faFileAlt,
+            "https://github.com/jurichar/cv/blob/main/CV_FR.pdf"
+          )}
         </div>
       </header>
     </div>

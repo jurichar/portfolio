@@ -30,7 +30,7 @@ html {
   height: 100vh;
   scroll-snap-type: y mandatory;
   overflow-y: auto;
-  background: linear-gradient(-45deg, #1a2a6c, #b21f66, #fdbb2d, #38a3a5);
+  background: linear-gradient(-45deg, #000, #666);
 
   // background: linear-gradient(-45deg, #38a3a5, rgb(5, 10, 24), rgb(6, 11, 25));
   background-size: 400% 400%;
@@ -68,9 +68,22 @@ html {
   padding: 0.5rem;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  opacity: 0;
+  // visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
   &:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     color: variables.$card-font-color-hovered;
     background-color: variables.$card-color-hovered;
+  }
+
+  &.visible {
+    opacity: 1;
+    // visibility: visible;
+  }
+
+  &.hidden {
+    opacity: 0;
+    // visibility: hidden;
   }
 }

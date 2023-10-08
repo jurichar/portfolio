@@ -10,8 +10,20 @@ import Cursor from "./components/Cursor/Cursor";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { Analytics } from "@vercel/analytics/react";
+import { useState } from "react";
 
 const App = () => {
+  const [showArrow, setShowArrow] = useState(false);
+
+  const handleScroll = (e) => {
+    const scrollTop = e.target.scrollTop;
+    if (scrollTop > 200) {
+      setShowArrow(true);
+    } else {
+      setShowArrow(false);
+    }
+  };
+
   const scrollToTop = () => {
     const element = document.getElementById("home");
     element.scrollIntoView({
@@ -24,8 +36,12 @@ const App = () => {
   return (
     <>
       <Cursor />
-      <div className="content" id="content">
-        <a href="#" className="back-to-top" onClick={scrollToTop}>
+      <div className="content" id="content" onScroll={handleScroll}>
+        <a
+          href="#"
+          className={`back-to-top ${showArrow ? "visible" : "hidden"}`}
+          onClick={scrollToTop}
+        >
           <FontAwesomeIcon icon={faArrowUp} size="2xl" />
         </a>
         <Home />
