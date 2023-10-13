@@ -1,4 +1,5 @@
 import "./Techs.scss";
+import techs from "../../data/techs.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faReact,
@@ -10,114 +11,109 @@ import {
   faPython,
   faFigma,
 } from "@fortawesome/free-brands-svg-icons";
+import { useState, useEffect } from "react";
 import {
+  faBrain,
   faDatabase,
   faDharmachakra,
   faGears,
   faGem,
-  faPuzzlePiece,
   faTerminal,
 } from "@fortawesome/free-solid-svg-icons";
-import { Tooltip } from "@mui/material";
-
-const icon = (name) => {
-  return (
-    <div className="Icon">
-      <FontAwesomeIcon icon={name} size="2xl" />
-    </div>
-  );
-};
-
-const iconGroup = () => {
-  return (
-    <div className="Icon_group">
-      <div className="Icon_group_line">
-        <Tooltip title="Python" arrow>
-          {icon(faPython)}
-        </Tooltip>
-        <Tooltip title="Style framework" arrow>
-          {icon(faSass)}
-        </Tooltip>
-      </div>
-      <div className="Icon_group_line">
-        <Tooltip title="Ruby on rails" arrow>
-          <div className="Icon">
-            <FontAwesomeIcon id="Gem_icon" icon={faGem} size="2xl" />
-          </div>
-        </Tooltip>
-        <Tooltip title="ReactJS" arrow>
-          {icon(faReact)}
-        </Tooltip>
-        <Tooltip title="Figma" arrow>
-          {icon(faFigma)}
-        </Tooltip>
-      </div>
-      <div className="Icon_group_line">
-        <Tooltip title="Databases - SQL" arrow>
-          {icon(faDatabase)}
-        </Tooltip>
-        <Tooltip title="VueJS" arrow>
-          {icon(faVuejs)}
-        </Tooltip>
-      </div>
-    </div>
-  );
-};
-
-const iconGroup2 = () => {
-  return (
-    <div className="Icon_group">
-      <div className="Icon_group_line">
-        <Tooltip title="K8s" arrow>
-          {icon(faDharmachakra)}
-        </Tooltip>
-        <Tooltip title="Git" arrow>
-          {icon(faGithub)}
-        </Tooltip>
-      </div>
-      <div className="Icon_group_line">
-        <Tooltip title="Linux systems" arrow>
-          {icon(faUbuntu)}
-        </Tooltip>
-        <Tooltip title="Containers" arrow>
-          {icon(faDocker)}
-        </Tooltip>
-        <Tooltip title="Scripting" arrow>
-          {icon(faTerminal)}
-        </Tooltip>
-      </div>
-      <div className="Icon_group_line">
-        <Tooltip title="CI / CD" arrow>
-          {icon(faGears)}
-        </Tooltip>
-        <Tooltip title="Algorithms" arrow>
-          {icon(faPuzzlePiece)}
-        </Tooltip>
-      </div>
-    </div>
-  );
-};
-
-const groups = () => {
-  return (
-    <div className="Groups">
-      <div className="Left_group">
-        <h1>web development</h1>
-        {iconGroup()}
-      </div>
-      <div className="Right_group">
-        <h1>tools & others</h1>
-        {iconGroup2()}
-      </div>
-    </div>
-  );
-};
 
 const Techs = () => {
+  const [currentTechs, setCurrentTechs] = useState(techs);
+  const [opacity, setOpacity] = useState(1);
+
+  const iconMap = {
+    faReact: faReact,
+    faSass: faSass,
+    faDocker: faDocker,
+    faUbuntu: faUbuntu,
+    faVuejs: faVuejs,
+    faGithub: faGithub,
+    faPython: faPython,
+    faFigma: faFigma,
+    faDatabase: faDatabase,
+    faDharmachakra: faDharmachakra,
+    faGears: faGears,
+    faGem: faGem,
+    faBrain: faBrain,
+    faTerminal: faTerminal,
+  };
+
+  const icon = (name, index) => {
+    const isCenter = index === 1;
+    return (
+      <div
+        key={index}
+        className={`Icon ${isCenter ? "Icon--center" : ""}`}
+        style={{ opacity: opacity }}
+      >
+        <FontAwesomeIcon icon={iconMap[name]} size="2xl" />
+      </div>
+    );
+  };
+
+  const rotateTechs = () => {
+    setOpacity(0);
+    setTimeout(() => {
+      const lastTech = currentTechs[currentTechs.length - 1];
+      const remainingTechs = currentTechs.slice(0, currentTechs.length - 1);
+      setCurrentTechs([lastTech, ...remainingTechs]);
+      setOpacity(1);
+    }, 500);
+  };
+
+  const rotateInvertTechs = () => {
+    setOpacity(0);
+    setTimeout(() => {
+      const firstTech = currentTechs[0];
+      const remainingTechs = currentTechs.slice(1, currentTechs.length);
+      setCurrentTechs([...remainingTechs, firstTech]);
+      setOpacity(1);
+    }, 500);
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      rotateTechs();
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [currentTechs]);
+
+  const iconGroup = () => {
+    return (
+      <div className="Icon_group">
+        <button onClick={rotateInvertTechs} className="Icon_button">
+          ←
+        </button>
+        {currentTechs.slice(0, 3).map((tech, index) => icon(tech.icon, index))}
+        <button onClick={rotateTechs} className="Icon_button">
+          →
+        </button>
+      </div>
+    );
+  };
+
+  const centerTech = currentTechs[1];
+
   return (
     <header className="Techs-header">
       <div id="techs" className="Techs">
-        {groups()}
+        {iconGroup()}
+        <div className="Techs-text">
+          <h1 className="Techs-title" style={{ opacity: opacity }}>
+            {centerTech.name}
+          </h1>
+          <p
+            className="Techs-description 
+          "
+            style={{ opacity: opacity }}
+          >
+            {centerTech.description}
+          </p>
+        </div>
       </div>
     </header>
   );

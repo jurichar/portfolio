@@ -57,9 +57,12 @@ form {
   }
   @media (max-width: 768px) {
     form {
-      width: 100%;
+      // width: 100%;
       input,
       textarea,
+      #message-input {
+        width: 100%;
+      }
       #send-button {
         width: 100%;
       }

@@ -1,0 +1,73 @@
+[
+    {
+        "name": "ReactJS",
+        "icon": "faReact",
+        "description": "Library JavaScript to create user interfaces.\nPouet"
+    },
+    {
+        "name": "Sass",
+        "icon": "faSass",
+        "description": "Preprocessor for cascade style sheets."
+    },
+    {
+        "name": "Docker",
+        "icon": "faDocker",
+        "description": "Tool to create, deploy and run applications using containers."
+    },
+    {
+        "name": "Ubuntu",
+        "icon": "faUbuntu",
+        "description": "Operating system based on Debian."
+    },
+    {
+        "name": "VueJS",
+        "icon": "faVuejs",
+        "description": "JavaScript framework for building user interfaces."
+    },
+    {
+        "name": "Github",
+        "icon": "faGithub",
+        "description": "Web-based hosting service for version control using Git."
+    },
+    {
+        "name": "Python",
+        "icon": "faPython",
+        "description": "Interpreted, high-level and general-purpose programming language."
+    },
+    {
+        "name": "Figma",
+        "icon": "faFigma",
+        "description": "Vector graphics editor and prototyping tool."
+    },
+    {
+        "name": "Databases",
+        "icon": "faDatabase",
+        "description": "MySQL, PostgreSQL, MongoDB, Redis, SQLite, etc."
+    },
+    {
+        "name": "Kubernetes",
+        "icon": "faDharmachakra",
+        "description": "Open-source system for automating deployment, scaling and management of containerized applications."
+    },
+    {
+        "name": "Automation",
+        "icon": "faGears",
+        "description": "Ansible, Terraform, Packer, etc."
+    },
+    {
+        "name": "Ruby",
+        "icon": "faGem",
+        "description": "Interpreted, high-level and general-purpose programming language."
+    },
+    {
+        "name": "Problem Solving",
+        "icon": "faBrain",
+        "description": "Problem solving skills."
+    },
+    {
+        "name": "Scripting",
+        "icon": "faTerminal",
+        "description": "Bash, Zsh, Fish, etc.",
+        "projects": ""
+    }
+]

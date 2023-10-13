@@ -6,7 +6,7 @@
         "> VueJS 3",
         "> NestJS",
         "> PostgreSQL",
-        "> Docker / Docker-compose"
+        "> Docker"
       ],
       "image_alt": "ft_transcendence",
       "image": "project_1/project_1.gif",
@@ -14,7 +14,12 @@
     },
     {
       "title": "Swifty Companion",
-      "description": ["> Swift", "> SwiftUI", "> iOS", "> API"],
+      "description": [
+        "> Swift",
+        "> SwiftUI",
+        "> iOS",
+        "> API"
+      ],
       "image_alt": "swifty companion",
       "image": "project_2/project_2.gif",
       "readme": "project_2/project_2.md"
