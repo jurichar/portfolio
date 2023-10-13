@@ -1,5 +1,13 @@
 @use "../../variables";
 
+.Techs-header {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+
+  &.animate {
+    opacity: 1;
+  }
+}
 .Techs {
   display: flex;
   padding-top: 6vh;

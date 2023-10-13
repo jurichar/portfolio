@@ -1,5 +1,13 @@
 @use "../../variables";
 
+.About-header {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+
+  &.animate {
+    opacity: 1;
+  }
+}
 .About {
   display: flex;
   flex-direction: column;
