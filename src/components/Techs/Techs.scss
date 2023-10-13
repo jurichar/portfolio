@@ -10,6 +10,12 @@
   height: 100vh;
   font-size: 14px;
   gap: 2rem;
+  .title {
+    font-size: 2rem;
+    color: variables.$font-color;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
   .Icon_group {
     display: flex;
     flex-direction: row;

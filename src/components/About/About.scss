@@ -41,19 +41,6 @@
       border: 2px solid variables.$card-border-color;
       transition: all 0.3s ease-in-out;
 
-      &:hover {
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        color: variables.$card-font-color-hovered;
-        background-color: variables.$card-color-hovered;
-        border-color: variables.$card-border-color-hovered;
-
-        h3,
-        .event-date,
-        p {
-          color: variables.$card-font-color-hovered;
-        }
-      }
-
       .image-card {
         width: 13rem;
         height: 13rem * 0.8;
