@@ -1,13 +1,23 @@
 @use "../../variables";
 
-.Techs-header {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 
-  &.animate {
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
     opacity: 1;
   }
 }
+
 .Techs {
   display: flex;
   padding-top: 6vh;
@@ -119,4 +129,26 @@
   }
 }
 
-// TODO : Carousel for techs with a card who describe the tech
+.Techs .title,
+.Techs .Icon_group,
+.Techs .Techs-text,
+.Techs .Techs-text .Techs-title,
+.Techs .Techs-text .Techs-description {
+  opacity: 0;
+}
+
+.Techs-header {
+  &.animate {
+    .title {
+      animation: slideIn 1s ease-in-out forwards, fade 1s ease-in-out forwards;
+    }
+    .Icon_group {
+      animation: slideIn 0.5s ease-in-out 1s forwards,
+        fade 1s ease-in-out 1s forwards;
+    }
+    .Techs-text {
+      animation: slideIn 0.5s ease-in-out 1.5s forwards,
+        fade 1s ease-in-out 1.5s forwards;
+    }
+  }
+}

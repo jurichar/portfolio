@@ -3,11 +3,9 @@
 @keyframes slideIn {
   from {
     transform: translateY(-100%);
-    opacity: 0;
   }
   to {
     transform: translateY(0);
-    opacity: 1;
   }
 }
 
@@ -76,6 +74,22 @@
       font-size: 1rem;
       h1 {
         font-size: 1.5rem;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    .Home--image {
+      width: 30vw;
+      height: 30vw;
+    }
+    .Home--content {
+      width: 50%;
+      .buttons {
+        .Icon {
+          height: 3rem;
+        }
       }
     }
   }

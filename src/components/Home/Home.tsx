@@ -27,10 +27,11 @@ const Home = () => {
 
   return (
     <header
+      id="home"
       ref={homeRef}
       className={`Home-header ${isVisible ? "animate" : ""}`}
     >
-      <div id="home" className="Home">
+      <div className="Home">
         <div className="Home--image" />
         <div className="Home--content">
           <h1>

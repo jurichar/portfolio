@@ -1,40 +1,29 @@
 @use "../../variables";
 
-@keyframes appear {
+@keyframes fade {
   from {
     opacity: 0;
   }
   to {
-    opacity: 0.6;
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromTop {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
   }
 }
 
 @keyframes slideIn {
   from {
-    transform: translateY(-10%);
+    transform: translateY(-100%);
   }
   to {
     transform: translateY(0);
-  }
-}
-
-@keyframes pulse {
-  from,
-  to {
-    scale: 1;
-  }
-
-  50% {
-    scale: 1.08;
-  }
-}
-
-.Project-header {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-
-  &.animate {
-    opacity: 1;
   }
 }
 
@@ -76,7 +65,7 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       background-color: variables.$card-color;
       border: 2px solid variables.$card-border-color;
-      transition: all 0.3s ease-in-out;
+      // transition: all 0.3s ease-in-out;
 
       &:hover {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -163,5 +152,46 @@
   h1,
   h2 {
     border-bottom: 1px solid variables.$card-border-color;
+  }
+}
+
+.Projects .event,
+.Projects .event .event-image,
+.Projects .event h3,
+.Projects .event .event-date,
+.Projects .event p {
+  opacity: 0;
+}
+
+.Project-header {
+  &.animate {
+    .title {
+      animation: slideIn 1s ease-in-out forwards, fade 1s ease-in-out forwards;
+    }
+
+    .events .event {
+      animation: inFromLeft 0.5s ease-in-out 0.5s forwards,
+        fade 1s ease-in-out 0.5s forwards;
+    }
+
+    .events .event .event-image {
+      animation: slideIn 1s ease-in-out 1s forwards,
+        fade 1s ease-in-out 1s forwards;
+    }
+
+    .events .event h3 {
+      animation: slideIn 0.5s ease-in-out 1.5s forwards,
+        fade 1s ease-in-out 1.5s forwards;
+    }
+
+    .events .event .event-date {
+      animation: slideIn 0.5s ease-in-out 1.5s forwards,
+        fade 1s ease-in-out 1.5s forwards;
+    }
+
+    .events .event p {
+      animation: slideIn 0.5s ease-in-out 1.5s forwards,
+        fade 1s ease-in-out 1.5s forwards;
+    }
   }
 }
