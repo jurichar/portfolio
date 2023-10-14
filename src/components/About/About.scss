@@ -121,7 +121,6 @@
   &.animate {
     .About {
       animation: fade 3s ease-in-out forwards;
-      background-color: rgb(25, 25, 25);
     }
     .About-header {
       animation: slideIn 1s ease-in-out forwards, fade 1s ease-in-out forwards;

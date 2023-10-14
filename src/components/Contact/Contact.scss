@@ -3,7 +3,6 @@
 .Contact-header {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-  background-color: aqua;
   &.animate {
     opacity: 1;
   }
