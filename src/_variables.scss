@@ -9,7 +9,10 @@ $primary-color-hovered: lighten($primary-color, 10%);
 $font-color-hovered: $primary-color;
 
 $base-font: "Open Sans", sans-serif;
-$base-font-size: 16px;
+$base-font-size: 1rem;
+$paragraph-font-size: 0.7rem;
+$title-font-size: 2rem;
+$icon-font-size: 1rem;
 
 // Cards
 $card-font-color: rgb(238, 238, 238);

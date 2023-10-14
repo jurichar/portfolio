@@ -113,6 +113,7 @@ const Techs = () => {
       <div id="techs" className="Techs">
         <h1 className="title"> Techs </h1>
         {iconGroup()}
+        <div className="separator"></div>
         <div className="Techs-text">
           <h1 className="Techs-title" style={{ opacity: opacity }}>
             {centerTech.name}

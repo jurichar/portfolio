@@ -26,10 +26,10 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  font-size: 14px;
-  gap: 2rem;
+  font-size: variables.$base-font-size;
+  gap: 1rem;
   .title {
-    font-size: 2rem;
+    font-size: variables.$title-font-size;
     color: variables.$font-color;
     margin-bottom: 2rem;
     text-align: center;
@@ -41,8 +41,10 @@
     align-items: center;
     overflow: scroll;
     transition: all 0.5s ease-in-out;
-    gap: 1rem;
+    gap: 2rem;
     .Icon_button {
+      height: 2rem;
+      width: 2rem;
       outline: none;
       cursor: pointer;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -50,49 +52,34 @@
       justify-content: center;
       align-items: center;
       color: variables.$card-font-color;
-      width: 70px;
-      height: 70px;
       background-color: variables.$card-color;
       border-radius: 50%;
       border: 1px solid variables.$card-border-color;
       cursor: none;
-      transition: all 0.5s ease-in-out;
+      transition: all 0.3s ease-in-out;
       &:hover {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         color: variables.$card-font-color-hovered;
         background-color: variables.$card-color-hovered;
       }
-      @media screen and (max-width: 768px) {
-        width: 40px;
-        height: 40px;
-      }
     }
   }
-  .Icon,
-  .Icon--center {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  .separator {
+    width: 1px;
+    height: 15px;
+    background-color: variables.$card-border-color;
+    opacity: 1;
+    margin: -0.5rem 0;
+  }
+  .Icon {
+    height: 1.5rem;
+    width: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
-    background-color: variables.$card-color;
-    border-radius: 50%;
-    border: 1px solid variables.$card-border-color;
     transition: all 0.5s ease-in-out;
-    @media screen and (max-width: 768px) {
-      width: 60px;
-      height: 60px;
-    }
   }
-  .Icon--center {
-    width: 90px;
-    height: 90px;
-    @media screen and (max-width: 768px) {
-      width: 70px;
-      height: 70px;
-    }
-  }
+
   .Techs-text {
     height: 40%;
     width: 80%;
@@ -101,27 +88,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: variables.$base-font-size;
     font-family: variables.$base-font;
     font-weight: 600;
     color: variables.$card-font-color;
     padding: 1rem 2rem;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background-color: variables.$card-color;
     border: 1px solid variables.$card-border-color;
     @media screen and (min-width: 768px) {
       width: 40%;
     }
     .Techs-title {
-      font-size: 1.5rem;
+      font-size: variables.$base-font-size;
       font-weight: 700;
       margin-bottom: 1rem;
       align-self: flex-start;
       transition: all 0.5s ease-in-out;
     }
     .Techs-description {
-      font-size: 1rem;
+      font-size: variables.$paragraph-font-size;
       font-weight: 400;
       align-self: flex-start;
       transition: all 0.5s ease-in-out;
