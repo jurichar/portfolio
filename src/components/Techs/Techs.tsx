@@ -1,5 +1,4 @@
 import "./Techs.scss";
-import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 import techs from "../../data/techs.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,7 +11,7 @@ import {
   faPython,
   faFigma,
 } from "@fortawesome/free-brands-svg-icons";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import {
   faBrain,
   faDatabase,
@@ -98,18 +97,9 @@ const Techs = () => {
   };
 
   const centerTech = currentTechs[1];
-  const [isVisible, setIsVisible] = useState(false);
-  const aboutRef = useRef(null);
-
-  useIntersectionObserver(aboutRef, { threshold: 0.5 }, (entry) => {
-    setIsVisible(entry.isIntersecting);
-  });
 
   return (
-    <header
-      ref={aboutRef}
-      className={`Techs-header ${isVisible ? "animate" : ""}`}
-    >
+    <header className="Techs-header">
       <div id="techs" className="Techs">
         <h1 className="title"> Techs </h1>
         {iconGroup()}
