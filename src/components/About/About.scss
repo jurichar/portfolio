@@ -107,7 +107,6 @@
   }
 }
 
-.About,
 .About .title,
 .About .events .event,
 .About .events .event .image-card,
@@ -119,9 +118,6 @@
 
 .About-header {
   &.animate {
-    .About {
-      animation: fade 3s ease-in-out forwards;
-    }
     .About-header {
       animation: slideIn 1s ease-in-out forwards, fade 1s ease-in-out forwards;
     }
@@ -135,23 +131,23 @@
     }
 
     .events .event .image-card {
-      animation: slideIn 1s ease-in-out 1s forwards,
-        fade 1s ease-in-out 1s forwards;
+      animation: slideIn 1s ease-in-out 0.8s forwards,
+        fade 1s ease-in-out 0.8s forwards;
     }
 
     .events .event h3 {
-      animation: slideIn 0.5s ease-in-out 1.5s forwards,
-        fade 1s ease-in-out 1.5s forwards;
+      animation: slideIn 0.5s ease-in-out 1s forwards,
+        fade 1s ease-in-out 1s forwards;
     }
 
     .events .event .event-date {
-      animation: slideIn 0.5s ease-in-out 1.5s forwards,
-        fade 1s ease-in-out 1.5s forwards;
+      animation: slideIn 0.5s ease-in-out 1s forwards,
+        fade 1s ease-in-out 1s forwards;
     }
 
     .events .event p {
-      animation: slideIn 0.5s ease-in-out 1.5s forwards,
-        fade 1s ease-in-out 1.5s forwards;
+      animation: slideIn 0.5s ease-in-out 1s forwards,
+        fade 1s ease-in-out 1s forwards;
     }
   }
 }
