@@ -99,6 +99,10 @@
 .scrollIndicator {
   position: relative;
   bottom: 150px;
+  align-self: center;
+  display: flex; // Ajouté
+  justify-content: center; // Ajouté
+  align-items: center; // Ajouté
   opacity: 0;
 }
 
