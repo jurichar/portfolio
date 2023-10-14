@@ -1,13 +1,5 @@
 @use "../../variables";
 
-.Contact-header {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  &.animate {
-    opacity: 1;
-  }
-}
-
 .Contact,
 form {
   display: flex;

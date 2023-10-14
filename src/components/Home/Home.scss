@@ -1,32 +1,5 @@
 @use "../../variables";
 
-@keyframes slideIn {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideFromLeft {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
 .Home {
   display: flex;
   flex-direction: column;
@@ -36,116 +9,53 @@
   height: 100vh;
   font-size: x-large;
 
-  .Home--image {
-    width: 50vw;
-    height: 50vw;
-    background-image: url("../../../public/profil.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
-  .Home--content {
-    .separator {
-      width: 100%;
-      height: 1px;
-      background-color: variables.$font-color;
-      margin: 1rem 0;
-    }
-    .buttons {
-      display: flex;
-      height: fit-content;
-      flex-direction: row;
-      justify-content: start;
-      gap: 1rem;
-      .Icon {
-        height: 2rem;
-        a {
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-          transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-          color: variables.$font-color;
-          &:hover {
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            color: variables.$font-color-hovered;
-          }
-        }
-      }
-    }
-    @media (max-width: 768px) {
-      padding: 0 6vh;
-      font-size: 1rem;
-      h1 {
-        font-size: 1.5rem;
-      }
+  #interactive_title {
+    font-size: x-large;
+    padding: 0.5rem 0.2rem;
+    border: 1px none;
+    border-radius: 5px;
+    background-color: variables.$card-color;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-variant-numeric: tabular-nums;
+    &:hover {
+      background-color: variables.$card-color-hovered;
+      color: variables.$font-color-hovered;
     }
   }
-  @media screen and (min-width: 768px) {
+  .buttons {
+    padding: 2rem 0;
+    display: flex;
+    height: fit-content;
     flex-direction: row;
-    justify-content: space-evenly;
-    .Home--image {
-      width: 30vw;
-      height: 30vw;
-    }
-    .Home--content {
-      width: 50%;
-      .buttons {
-        .Icon {
-          height: 3rem;
+    justify-content: start;
+    gap: 1rem;
+    .Icon {
+      height: 2rem;
+      a {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        color: variables.$font-color;
+        &:hover {
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          color: variables.$font-color-hovered;
         }
       }
     }
   }
-}
-
-.scrollIndicator {
-  position: relative;
-  bottom: 150px;
-  align-self: center;
-  display: flex; // Ajouté
-  justify-content: center; // Ajouté
-  align-items: center; // Ajouté
-  opacity: 0;
-}
-
-.Home--image,
-.Home--content h1,
-.Home--content p,
-.separator,
-.buttons .Icon {
-  opacity: 0;
-}
-
-.Home-header {
-  &.animate {
-    .Home--image {
-      animation: slideIn 0.5s ease-in-out forwards, fade 1s ease-in-out forwards;
+  @media (max-width: 768px) {
+    height: 100vh;
+    padding: 6vh;
+    font-size: 1rem;
+    h1 {
+      font-size: 1.5rem;
     }
-    .Home--content h1 {
-      animation: slideIn 1s ease-in-out 0.5s forwards,
-        fade 1s ease-in-out 0.5s forwards;
-    }
-    .Home--content p {
-      animation: slideIn 1s ease-in-out 1s forwards,
-        fade 1s ease-in-out 1s forwards;
-    }
-    .separator {
-      animation: slideFromLeft 1s ease-in-out 1.5s forwards,
-        fade 0.1s ease-in-out 1.5s forwards;
-    }
-    .buttons .Icon:nth-child(1) {
-      animation: slideIn 1s ease-in-out 1.5s forwards,
-        fade 1s ease-in-out 1.5s forwards;
-    }
-    .buttons .Icon:nth-child(2) {
-      animation: slideIn 1s ease-in-out 1.7s forwards,
-        fade 1s ease-in-out 1.7s forwards;
-    }
-    .buttons .Icon:nth-child(3) {
-      animation: slideIn 1s ease-in-out 1.9s forwards,
-        fade 1s ease-in-out 1.9s forwards;
-    }
-    .scrollIndicator {
-      animation: slideIn 1s ease-in-out 2.1s forwards,
-        fade 1s ease-in-out 2.1s forwards;
+    #interactive_title {
+      font-size: 1rem;
+      background-color: variables.$card-color;
+      &:hover {
+        background-color: variables.$card-color-hovered;
+        color: variables.$font-color-hovered;
+      }
     }
   }
 }

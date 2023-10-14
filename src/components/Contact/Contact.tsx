@@ -1,12 +1,9 @@
 import "./Contact.scss";
-import { useState, useRef } from "react";
-import useIntersectionObserver from "../../hooks/useIntersectionObserver";
+import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const aboutRef = useRef(null);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -86,15 +83,8 @@ const Contact = () => {
     }, 10000);
   };
 
-  useIntersectionObserver(aboutRef, { threshold: 0.5 }, (entry) => {
-    setIsVisible(entry.isIntersecting);
-  });
-
   return (
-    <header
-      ref={aboutRef}
-      className={`Contact-header ${isVisible ? "animate" : ""}`}
-    >
+    <header className="Contact-header">
       <div id="contact" className="Contact">
         <form onSubmit={handleSubmit}>
           <h1> Contact </h1>

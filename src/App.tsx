@@ -28,7 +28,7 @@ const App = () => {
     const element = document.getElementById("home");
     element.scrollIntoView({
       behavior: "smooth",
-      block: "start",
+      block: "end",
       inline: "nearest",
     });
   };
