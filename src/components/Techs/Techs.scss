@@ -73,7 +73,7 @@
       }
     }
   }
-  .separator {
+  .separator-pointer {
     width: 1px;
     height: 15px;
     background-color: variables.$card-border-color;
@@ -109,15 +109,25 @@
       width: 40%;
     }
     .Techs-title {
+      align-self: flex-start;
       font-size: variables.$base-font-size;
       font-weight: 700;
       margin-bottom: 1rem;
-      align-self: flex-start;
-      transition: all 0.5s ease-in-out;
+      align-self: center;
+      transition: all 1s ease-in-out;
+      .Techs-title-name {
+        color: variables.$font-color;
+      }
+      .Techs-title-category {
+        color: rgba(255, 255, 255, 0.5);
+      }
     }
-    .Techs-description {
+    .Techs-experience {
+      flex: 1;
+      align-self: center;
       font-size: variables.$paragraph-font-size;
       font-weight: 400;
+      color: rgba(255, 255, 255, 0.5);
       align-self: flex-start;
       transition: all 0.5s ease-in-out;
     }

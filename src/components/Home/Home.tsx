@@ -34,7 +34,6 @@ const Home = () => {
   const homeRef = useRef(null);
 
   useIntersectionObserver(homeRef, { threshold: 0.5 }, (entry) => {
-    console.log("Is intersecting:", entry.isIntersecting);
     setIsVisible(entry.isIntersecting);
   });
 

@@ -1,25 +1,23 @@
 import "./Techs.scss";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 import techs from "../../data/techs.json";
+import { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faReact,
   faSass,
-  faDocker,
-  faUbuntu,
-  faVuejs,
-  faGithub,
+  faApple,
   faPython,
-  faFigma,
+  faVuejs,
+  faJava,
+  faDocker,
 } from "@fortawesome/free-brands-svg-icons";
-import { useState, useEffect, useRef } from "react";
 import {
-  faBrain,
   faDatabase,
   faDharmachakra,
   faGears,
-  faGem,
-  faTerminal,
+  faShieldAlt,
+  faSquareRootAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Techs = () => {
@@ -28,19 +26,17 @@ const Techs = () => {
 
   const iconMap = {
     faReact: faReact,
-    faSass: faSass,
-    faDocker: faDocker,
-    faUbuntu: faUbuntu,
     faVuejs: faVuejs,
-    faGithub: faGithub,
+    faSass: faSass,
+    faApple: faApple,
     faPython: faPython,
-    faFigma: faFigma,
+    faJava: faJava,
     faDatabase: faDatabase,
+    faShieldAlt: faShieldAlt,
+    faDocker: faDocker,
     faDharmachakra: faDharmachakra,
     faGears: faGears,
-    faGem: faGem,
-    faBrain: faBrain,
-    faTerminal: faTerminal,
+    faSquareRootAlt: faSquareRootAlt,
   };
 
   const icon = (name, index) => {
@@ -113,17 +109,15 @@ const Techs = () => {
       <div id="techs" className="Techs">
         <h1 className="title"> Techs </h1>
         {iconGroup()}
-        <div className="separator"></div>
+        <div className="separator-pointer"></div>
         <div className="Techs-text">
           <h1 className="Techs-title" style={{ opacity: opacity }}>
-            {centerTech.name}
+            <span className="Techs-title-name">{centerTech.name}</span> :{" "}
+            <span className="Techs-title-category">{centerTech.category}</span>
           </h1>
-          <p
-            className="Techs-description 
-          "
-            style={{ opacity: opacity }}
-          >
-            {centerTech.description}
+          <br />
+          <p className="Techs-experience" style={{ opacity: opacity }}>
+            {centerTech.experience}
           </p>
         </div>
       </div>

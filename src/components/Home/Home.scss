@@ -18,6 +18,15 @@
   }
 }
 
+@keyframes fadeAlt {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+
 @keyframes slideFromLeft {
   from {
     width: 0;
@@ -145,7 +154,7 @@
     }
     .scrollIndicator {
       animation: slideIn 1s ease-in-out 2.1s forwards,
-        fade 1s ease-in-out 2.1s forwards;
+        fadeAlt 1s ease-in-out 2.1s forwards;
     }
   }
 }

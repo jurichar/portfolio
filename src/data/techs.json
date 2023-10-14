@@ -1,73 +1,74 @@
 [
     {
-        "name": "ReactJS",
+        "name": "ReactJS / Next.js",
         "icon": "faReact",
-        "description": "Library JavaScript to create user interfaces."
-    },
-    {
-        "name": "Sass",
-        "icon": "faSass",
-        "description": "Preprocessor for cascade style sheets."
-    },
-    {
-        "name": "Docker",
-        "icon": "faDocker",
-        "description": "Tool to create, deploy and run applications using containers."
-    },
-    {
-        "name": "Ubuntu",
-        "icon": "faUbuntu",
-        "description": "Operating system based on Debian."
+        "category": "Frontend",
+        "experience": "Expertise in building scalable and maintainable applications with React. Proficient in hooks, state management, and component-based architecture. Extended experience in Next.js, including server-side rendering, API routes, serverless functions, and middleware."
     },
     {
         "name": "VueJS",
         "icon": "faVuejs",
-        "description": "JavaScript framework for building user interfaces."
+        "category": "Frontend",
+        "experience": "Developed an online Pong game using VueJS 3 and NestJS, showcasing a strong understanding of the Vue ecosystem."
     },
     {
-        "name": "Github",
-        "icon": "faGithub",
-        "description": "Web-based hosting service for version control using Git."
+        "name": "Sass/Tailwind",
+        "icon": "faSass",
+        "category": "Frontend",
+        "experience": "Extensive experience in styling with Sass and some experience with Tailwind. Proficient in SCSS syntax, modular design, and utility-first CSS."
+    },
+    {
+        "name": "Swift",
+        "icon": "faApple",
+        "category": "Mobile",
+        "experience": "Developed visualization tools for ligands using SceneKit for 3D modeling. Also built a messaging app, showcasing proficiency in Swift and SwiftUI."
     },
     {
         "name": "Python",
         "icon": "faPython",
-        "description": "Interpreted, high-level and general-purpose programming language."
+        "category": "Backend",
+        "experience": "Developed web scrapers, bots, and completed a cybersecurity pool. Worked professionally in MLOps."
     },
     {
-        "name": "Figma",
-        "icon": "faFigma",
-        "description": "Vector graphics editor and prototyping tool."
+        "name": "Java",
+        "icon": "faJava",
+        "category": "Backend",
+        "experience": "Completed university projects, gaining a foundational understanding of Java, object-oriented programming, and graphical interfaces."
     },
     {
-        "name": "Databases",
+        "name": "SQL",
         "icon": "faDatabase",
-        "description": "MySQL, PostgreSQL, MongoDB, Redis, SQLite, etc."
+        "category": "Database",
+        "experience": "Worked on projects using PostgreSQL at university and École 42, showcasing database design and query optimization skills."
+    },
+    {
+        "name": "Security",
+        "icon": "faShieldAlt",
+        "category": "Security",
+        "experience": "Engaged in reverse engineering, exploit development, and assembly language tasks. Completed challenges on Root-Me."
+    },
+    {
+        "name": "Docker",
+        "icon": "faDocker",
+        "category": "DevOps",
+        "experience": "Used professionally for containerization, including in a 6-month MLOps role."
     },
     {
         "name": "Kubernetes",
         "icon": "faDharmachakra",
-        "description": "Open-source system for automating deployment, scaling and management of containerized applications."
+        "category": "DevOps",
+        "experience": "Used professionally during a 6-month internship focusing on MLOps, gaining hands-on experience."
     },
     {
         "name": "Automation",
         "icon": "faGears",
-        "description": "Ansible, Terraform, Packer, etc."
+        "category": "DevOps",
+        "experience": "Used Ansible, Jenkins, Minio, ZenML, and Vagrant for automating various DevOps tasks."
     },
     {
-        "name": "Ruby",
-        "icon": "faGem",
-        "description": "Interpreted, high-level and general-purpose programming language."
-    },
-    {
-        "name": "Problem Solving",
-        "icon": "faBrain",
-        "description": "Problem solving skills."
-    },
-    {
-        "name": "Scripting",
-        "icon": "faTerminal",
-        "description": "Bash, Zsh, Fish, etc.",
-        "projects": ""
+        "name": "Mathematics",
+        "icon": "faSquareRootAlt",
+        "category": "Theory",
+        "experience": "Completed university-level courses in mathematics and computer science."
     }
 ]
