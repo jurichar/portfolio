@@ -14,13 +14,22 @@
     height: 0;
   }
   to {
-    height: 100%;
+    height: 50%;
   }
 }
 
 @keyframes slideIn {
   from {
     transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideBot {
+  from {
+    transform: translateY(100%);
   }
   to {
     transform: translateY(0);
@@ -36,7 +45,7 @@
   padding: 2rem 0;
 
   .title {
-    font-size: 2rem;
+    font-size: variables.$title-font-size;
     color: variables.$font-color;
     margin-bottom: 2rem;
     text-align: center;
@@ -63,20 +72,18 @@
       padding: 1rem 2rem;
       border-radius: 20px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      background-color: variables.$card-color;
       border: 1px solid variables.$card-border-color;
       transition: background 0.3s ease-in-out;
 
       &:hover {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        color: variables.$card-font-color-hovered;
-        background-color: variables.$card-color-hovered;
         border-color: variables.$card-border-color-hovered;
-
         h3,
-        .event-date,
         p {
           color: variables.$card-font-color-hovered;
+        }
+        .event-image {
+          opacity: 0;
         }
       }
       .event-image {
@@ -89,7 +96,7 @@
       }
 
       h3 {
-        font-size: 1.2rem;
+        font-size: variables.$base-font-size;
         color: variables.$card-font-color;
         margin-bottom: 1rem;
         transition: color 0.3s ease-in-out;
@@ -98,7 +105,7 @@
       }
 
       p {
-        font-size: 14px;
+        font-size: variables.$paragraph-font-size;
         text-align: left;
         transition: color 0.3s ease-in-out;
         color: variables.$card-font-color;
@@ -106,7 +113,7 @@
     }
   }
 
-  // grand ecran
+  // big screens
   @media screen and (min-width: 1024px) {
     .events {
       width: 100%;
@@ -116,13 +123,6 @@
         .event-image {
           height: 30vh;
           width: 25vw;
-        }
-        h3 {
-          font-size: 2rem;
-        }
-
-        p {
-          font-size: 1.4rem;
         }
       }
     }
@@ -157,7 +157,6 @@
 
 .Projects,
 .Projects .title,
-.Projects .event,
 .Projects .event .event-image,
 .Projects .event h3,
 .Projects .event .event-date,
@@ -173,20 +172,9 @@
     .title {
       animation: slideIn 1s ease-in-out forwards, fade 1s ease-in-out forwards;
     }
-
-    .events .event {
-      animation: inFromLeft 0.5s ease-in-out 0.5s forwards,
-        fade 1s ease-in-out 0.5s forwards;
-    }
-
-    .events .event .event-image {
-      animation: slideIn 1s ease-in-out 1s forwards,
-        fade 1s ease-in-out 1s forwards;
-    }
-
     .events .event h3 {
-      animation: slideIn 0.5s ease-in-out 1.5s forwards,
-        fade 1s ease-in-out 1.5s forwards;
+      animation: slideIn 0.5s ease-in-out 0.5s forwards,
+        fade 1s ease-in-out 0.5s forwards;
     }
 
     .events .event .event-date {
@@ -195,8 +183,13 @@
     }
 
     .events .event p {
-      animation: slideIn 0.5s ease-in-out 1.5s forwards,
-        fade 1s ease-in-out 1.5s forwards;
+      animation: slideIn 0.7s ease-in-out 1s forwards,
+        fade 1s ease-in-out 1s forwards;
+    }
+
+    .events .event .event-image {
+      animation: slideBot 0.7s ease-in-out 1s forwards,
+        fade 1s ease-in-out 1s forwards;
     }
   }
 }

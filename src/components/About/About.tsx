@@ -15,6 +15,7 @@ const About = ({ data }) => {
       ref={aboutRef}
       className={`About-header ${isVisible ? "animate" : ""}`}
     >
+      {" "}
       <div id="about" className="About">
         <h1 className="title"> About </h1>
         <div className="events">
@@ -23,11 +24,15 @@ const About = ({ data }) => {
               <div className="event" key={key}>
                 <div className="event-date">{event.date}</div>
                 <div className="event-card">
-                  <img
-                    className="image-card"
-                    src={event.image}
-                    alt={event.image_alt}
-                  />
+                  <div
+                    className="event-image"
+                    style={{
+                      backgroundImage: `url(${event.image})`,
+                      backgroundSize: "contain",
+                      backgroundPosition: "center",
+                      backgroundRepeat: "no-repeat",
+                    }}
+                  ></div>
                   <h3>{event.title}</h3>
                   <p>
                     {event?.description?.map((line: any, i: any) => (

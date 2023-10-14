@@ -38,7 +38,7 @@
   padding: 2rem 0;
 
   .title {
-    font-size: 2rem;
+    font-size: variables.$title-font-size;
     color: variables.$font-color;
     margin-bottom: 2rem;
     text-align: center;
@@ -56,6 +56,7 @@
     scroll-snap-type: x mandatory;
 
     .event {
+      position: relative;
       scroll-snap-align: center;
       display: flex;
       flex-direction: column;
@@ -66,25 +67,27 @@
       padding: 1rem 2rem;
       border-radius: 20px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      background-color: variables.$card-color;
       border: 1px solid variables.$card-border-color;
 
-      .image-card {
+      .event-image {
         width: 13rem;
         height: 13rem * 0.8;
-        margin: auto;
       }
-
-      h3,
-      .event-date,
-      p {
-        font-size: 1.2rem;
+      h3 {
+        font-size: variables.$base-font-size;
         color: variables.$card-font-color;
         margin-bottom: 1rem;
       }
-
+      .event-date {
+        font-size: variables.$base-font-size;
+        background-color: black;
+        position: absolute;
+        width: 30%;
+        top: -4%;
+        transform: translateY(-50%);
+      }
       p {
-        font-size: 14px;
+        font-size: variables.$paragraph-font-size;
         text-align: left;
       }
     }
@@ -93,23 +96,13 @@
   @media screen and (min-width: 768px) {
     .events {
       width: 100%;
-      .event {
-        h3,
-        .event-date {
-          font-size: 1.5rem;
-        }
-
-        p {
-          font-size: 1.2rem;
-        }
-      }
     }
   }
 }
 
 .About .title,
 .About .events .event,
-.About .events .event .image-card,
+.About .events .event .event-image,
 .About .events .event h3,
 .About .events .event .event-date,
 .About .events .event p {
@@ -126,13 +119,12 @@
     }
 
     .events .event {
-      animation: inFromLeft 0.5s ease-in-out 0.5s forwards,
-        fade 1s ease-in-out 0.5s forwards;
+      animation: inFromLeft 0.5s ease-in-out forwards,
+        fade 1s ease-in-out forwards;
     }
 
-    .events .event .image-card {
-      animation: slideIn 1s ease-in-out 0.8s forwards,
-        fade 1s ease-in-out 0.8s forwards;
+    .events .event .event-image {
+      animation: fade 1s ease-in-out 0.8s forwards;
     }
 
     .events .event h3 {
@@ -141,8 +133,7 @@
     }
 
     .events .event .event-date {
-      animation: slideIn 0.5s ease-in-out 1s forwards,
-        fade 1s ease-in-out 1s forwards;
+      animation: slideIn 0.5s ease-in-out forwards, fade 1s ease-in-out forwards;
     }
 
     .events .event p {
