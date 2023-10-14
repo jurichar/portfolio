@@ -5,7 +5,7 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 import { useState, useRef } from "react";
-import Lottie, { useLottie } from "lottie-react";
+import { useLottie } from "lottie-react";
 import animationData from "../../../public/animation.json";
 
 const defaultOptions = {
