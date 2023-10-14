@@ -5,6 +5,17 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 import { useState, useRef } from "react";
+import Lottie from "react-lottie";
+import animationData from "../../../public/animation.json";
+
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: animationData,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
 
 const icon = (name: IconProp, link: string) => {
   return (
@@ -51,6 +62,9 @@ const Home = () => {
             )}
           </div>
         </div>
+      </div>
+      <div className="scrollIndicator">
+        <Lottie options={defaultOptions} height={200} width={200} />
       </div>
     </header>
   );

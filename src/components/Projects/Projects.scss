@@ -155,6 +155,8 @@
   }
 }
 
+.Projects,
+.Projects .title,
 .Projects .event,
 .Projects .event .event-image,
 .Projects .event h3,
@@ -165,6 +167,9 @@
 
 .Project-header {
   &.animate {
+    .Projects {
+      animation: fade 1s ease-in-out forwards;
+    }
     .title {
       animation: slideIn 1s ease-in-out forwards, fade 1s ease-in-out forwards;
     }

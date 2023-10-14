@@ -107,6 +107,7 @@
   }
 }
 
+.About,
 .About .title,
 .About .events .event,
 .About .events .event .image-card,
@@ -118,6 +119,13 @@
 
 .About-header {
   &.animate {
+    .About {
+      animation: fade 3s ease-in-out forwards;
+      background-color: rgb(25, 25, 25);
+    }
+    .About-header {
+      animation: slideIn 1s ease-in-out forwards, fade 1s ease-in-out forwards;
+    }
     .title {
       animation: slideIn 1s ease-in-out forwards, fade 1s ease-in-out forwards;
     }
