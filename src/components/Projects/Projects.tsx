@@ -1,12 +1,20 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "./Projects.scss";
 import ReactMarkdown from "react-markdown";
 import Modal from "react-modal";
 import "github-markdown-css/github-markdown.css";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 Modal.setAppElement("#root");
 
 const Projects = ({ data }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const projectRef = useRef(null);
+
+  useIntersectionObserver(projectRef, { threshold: 0.5 }, (entry) => {
+    setIsVisible(entry.isIntersecting);
+  });
+
   const isSmallScreen = window.innerWidth < 768;
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [readmeContent, setReadmeContent] = useState("");
@@ -31,7 +39,11 @@ const Projects = ({ data }) => {
   };
 
   return (
-    <header className="Project-header">
+    <header
+      ref={projectRef}
+      className={`Project-header ${isVisible ? "animate" : ""}`}
+    >
+      {" "}
       <div id="projects" className="Projects">
         <h1 className="title"> Works </h1>
         <div className="events">

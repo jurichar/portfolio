@@ -8,19 +8,18 @@ $font-color: rgba(255, 255, 255, 0.8);
 $primary-color-hovered: lighten($primary-color, 10%);
 $font-color-hovered: $primary-color;
 
-$base-font: "JetBrains Mono", monospace;
+$base-font: "Open Sans", sans-serif;
 $base-font-size: 16px;
 
 // Cards
-$card-font-color: rgba(255, 255, 255, 0.6);
+$card-font-color: rgb(238, 238, 238);
 $card-font-color-hovered: rgba(255, 255, 255, 0.8);
 
-// $card-color: /#22577a;
-$card-color: rgba(255, 255, 255, 0.2);
+$card-color: rgba(93, 93, 93, 0.2);
 $card-color-hovered: rgba(255, 255, 255, 0.4);
 
 // Card borders are the same color as the text
-$card-border-color: $font-color;
+$card-border-color: rgb(68, 77, 84);
 $card-border-color-hovered: $font-color-hovered;
 
 // Card hover borders are the same as the card hover colors
