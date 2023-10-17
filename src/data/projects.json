@@ -1,40 +1,31 @@
 {
   "projectsData": [
     {
-      "title": "Ft_Transcendence",
-      "description": [
-        "> VueJS 3",
-        "> NestJS",
-        "> PostgreSQL",
-        "> Docker"
-      ],
-      "image_alt": "ft_transcendence",
-      "image": "project_1/project_1.gif",
-      "readme": "project_1/project_1.md"
+      "title": "Project_0",
+      "description": "This project is awesome!\n It's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\n",
+      "image_alt": "project_0",
+      "images": [
+        "project_0/project_0_1.png",
+        "project_0/project_0_2.png"
+      ]
     },
     {
-      "title": "Swifty Companion",
-      "description": [
-        "> Swift",
-        "> SwiftUI",
-        "> iOS",
-        "> API"
-      ],
-      "image_alt": "swifty companion",
-      "image": "project_2/project_2.gif",
-      "readme": "project_2/project_2.md"
+      "title": "Project_1",
+      "description": "",
+      "image_alt": "project_1",
+      "images": [
+        "project_0/project_0_1.png",
+        "project_0/project_0_2.png"
+      ]
     },
     {
-      "title": "Portfolio",
-      "description": [
-        "> HTML / SCSS",
-        "> TypeScript",
-        "> React",
-        "> Basic web dev"
-      ],
-      "image_alt": "portfolio",
-      "image": "project_3/project_3.gif",
-      "readme": "project_3/project_3.md"
+      "title": "Project_2",
+      "description": "",
+      "image_alt": "project_2",
+      "images": [
+        "project_0/project_0_1.png",
+        "project_0/project_0_2.png"
+      ]
     }
   ]
 }

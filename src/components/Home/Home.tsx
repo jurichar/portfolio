@@ -6,7 +6,7 @@ import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 import { useState, useRef } from "react";
 import { useLottie } from "lottie-react";
-import animationData from "../../../public/animation.json";
+import animationData from "../../animation.json";
 
 const defaultOptions = {
   loop: true,

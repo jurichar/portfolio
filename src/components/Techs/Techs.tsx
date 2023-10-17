@@ -13,6 +13,8 @@ import {
   faDocker,
 } from "@fortawesome/free-brands-svg-icons";
 import {
+  faCaretLeft,
+  faCaretRight,
   faDatabase,
   faDharmachakra,
   faGears,
@@ -83,11 +85,11 @@ const Techs = () => {
     return (
       <div className="Icon_group">
         <button onClick={rotateInvertTechs} className="Icon_button">
-          ←
+          <FontAwesomeIcon icon={faCaretLeft} />
         </button>
         {currentTechs.slice(0, 3).map((tech, index) => icon(tech.icon, index))}
         <button onClick={rotateTechs} className="Icon_button">
-          →
+          <FontAwesomeIcon icon={faCaretRight} />
         </button>
       </div>
     );
