@@ -24,6 +24,7 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  gap: 2rem;
   // padding: 2rem 0;
 
   .title {
@@ -32,7 +33,14 @@
     color: variables.$font-color;
     text-align: center;
   }
-
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    gap: 2rem;
+  }
   .slider-container {
     position: relative;
     padding-bottom: 1rem;
@@ -67,7 +75,6 @@
       right: 0;
       display: flex;
       justify-content: space-between;
-      transform: translateY(-50%);
       width: 100%;
 
       .arrow {
@@ -116,6 +123,15 @@
     transition: color 0.3s ease-in-out;
     &:hover {
       color: variables.$primary-color-hovered;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    p {
+      width: 50vw;
     }
   }
 }

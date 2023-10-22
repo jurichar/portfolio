@@ -99,8 +99,28 @@
   }
 
   @media screen and (min-width: 768px) {
+    .title {
+      font-size: variables.$title-font-size-big;
+    }
     .events {
-      width: 100%;
+      gap: 4rem;
+      padding: 2rem 4rem;
+      .event {
+        padding: 2rem 4rem;
+        .event-image {
+          width: 20rem;
+          height: 20rem * 0.8;
+        }
+        h3 {
+          font-size: variables.$title-font-size;
+        }
+        .event-date {
+          font-size: variables.$base-font-size-big;
+        }
+        p {
+          font-size: variables.$paragraph-font-size-big;
+        }
+      }
     }
   }
 }

@@ -57,43 +57,45 @@ const Project_2 = ({ data }) => {
     <header ref={projectRef} className={`Project-header ${isVisible ? "animate" : ""}`}>
       <div id="projects" className="Projects">
         <h1 className="title">{projectData.title}</h1>
-        <div>
-          <p>
-            {projectData.description}
-            <br />
-            <br />
-            <a href={projectData.link} target="_blank" rel="noopener noreferrer">learn more →</a>
-          </p>
-        </div>
-        <div className="slider-container">
-          <div className="menu">
-            {projectData.images.map((_, index) => (
-              <label
-                key={index}
-                className={`dot ${currentImageIndex === index ? "active" : ""}`}
-                onClick={() => setCurrentImageIndex(index)}
-              ></label>
-            ))}
+        <div className="content">
+          <div>
+            <p>
+              {projectData.description}
+              <br />
+              <br />
+              <a href={projectData.link} target="_blank" rel="noopener noreferrer">learn more →</a>
+            </p>
           </div>
-          <div className="arrows">
-            <button className="arrow arrow-left" onClick={goToPrevSlide}>
-              <FontAwesomeIcon icon={faCaretLeft} />
-            </button>
-            <div
-              className={`event-image`}
-              style={{
-                opacity: opacity,
-                backgroundImage: `url(${projectData.images[currentImageIndex]})`,
-                backgroundSize: "contain",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-              }}
-              onTouchStart={handleTouchStart}
-              onTouchEnd={handleTouchEnd}
-            ></div>
-            <button className="arrow arrow-right" onClick={goToNextSlide}>
-              <FontAwesomeIcon icon={faCaretRight} />
-            </button>
+          <div className="slider-container">
+            <div className="menu">
+              {projectData.images.map((_, index) => (
+                <label
+                  key={index}
+                  className={`dot ${currentImageIndex === index ? "active" : ""}`}
+                  onClick={() => setCurrentImageIndex(index)}
+                ></label>
+              ))}
+            </div>
+            <div className="arrows">
+              <button className="arrow arrow-left" onClick={goToPrevSlide}>
+                <FontAwesomeIcon icon={faCaretLeft} />
+              </button>
+              <div
+                className={`event-image`}
+                style={{
+                  opacity: opacity,
+                  backgroundImage: `url(${projectData.images[currentImageIndex]})`,
+                  backgroundSize: "contain",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
+                onTouchStart={handleTouchStart}
+                onTouchEnd={handleTouchEnd}
+              ></div>
+              <button className="arrow arrow-right" onClick={goToNextSlide}>
+                <FontAwesomeIcon icon={faCaretRight} />
+              </button>
+            </div>
           </div>
         </div>
       </div>
