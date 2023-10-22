@@ -165,9 +165,20 @@
 
 .Techs-header {
   &.animate {
+    .Techs {
+      animation: fade 1s ease-in-out forwards;
+      background: radial-gradient(
+        circle,
+        rgba(16, 16, 13, 0.6) 0%,
+        rgba(0, 0, 0, 1) 50%
+      );
+    }
     .title {
-      animation: slideIn 0.5s ease-in-out forwards,
-        fade 0.5s ease-in-out forwards;
+      animation: slideIn 1s ease-in-out forwards, fade 1s ease-in-out forwards;
+    }
+    h3 {
+      animation: slideIn 0.5s ease-in-out 0.1s forwards,
+        fade 1s ease-in-out 0.1s forwards;
     }
     .Icon_group {
       animation: slideIn 0.5s ease-in-out 0.5s forwards,

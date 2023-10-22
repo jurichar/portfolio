@@ -30,6 +30,7 @@
 }
 
 .About {
+  background: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -136,6 +137,14 @@
 
 .About-header {
   &.animate {
+    .About {
+      animation: fade 1s ease-in-out forwards;
+      background: radial-gradient(
+        circle,
+        rgba(16, 16, 13, 0.6) 0%,
+        rgba(0, 0, 0, 1) 40%
+      );
+    }
     .About-header {
       animation: slideIn 1s ease-in-out forwards, fade 1s ease-in-out forwards;
     }

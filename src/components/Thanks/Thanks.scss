@@ -168,6 +168,14 @@
 
 .Thanks-header {
   &.animate {
+    .Thanks {
+      animation: fade 1s ease-in-out forwards;
+      background: radial-gradient(
+        circle,
+        rgba(16, 16, 13, 0.6) 0%,
+        rgba(0, 0, 0, 1) 50%
+      );
+    }
     .Thanks--content h1 {
       animation: fade 1s ease-in-out forwards;
     }

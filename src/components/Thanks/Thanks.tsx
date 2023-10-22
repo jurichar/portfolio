@@ -9,7 +9,7 @@ import { useState, useRef } from "react";
 const customIcon = () => {
   return (
     <div className="Icon">
-      <a href={""} target="_blank" rel="noopener noreferrer">
+      <a href={"https://www.malt.fr/profile/jurichar"} target="_blank" rel="noopener noreferrer">
         <div className="Icon--custom">
           <div className="Icon--custom--image">
             <svg className="Icon--custom--svg" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
@@ -23,7 +23,7 @@ const customIcon = () => {
             </svg>
           </div>
           <div className="Icon--custom--text">
-            link to my malt profile
+            my malt profile
           </div>
         </div>
       </a >
@@ -67,17 +67,17 @@ const Thanks = () => {
           </p>
           <div className="separator">
             <div className="buttons">
-              {icon(faGithubSquare, "https://github.com/jurichar/", "link to my github profile")}
-              {icon(faLinkedin, "https://www.linkedin.com/in/julien-rchd/", "link to my linkedin profile")}
+              {icon(faGithubSquare, "https://github.com/jurichar/", "my github profile")}
+              {icon(faLinkedin, "https://www.linkedin.com/in/julien-rchd/", "my linkedin profile")}
               {customIcon()}
               {icon(
                 faFileAlt,
                 "https://github.com/jurichar/cv/blob/main/CV_FR.pdf"
-                , "link to my resume in french")}
+                , "my resume in french")}
               {icon(
                 faFileAlt,
-                "https://github.com/jurichar/cv/blob/main/CV_FR.pdf"
-                , "link to my resume in english")}
+                "https://github.com/jurichar/cv/blob/main/CV_EN.pdf"
+                , "my resume in english")}
 
             </div>
           </div>
