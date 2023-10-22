@@ -3,6 +3,7 @@
     {
       "title": "Pong Vice",
       "description": "The 'Pong Vice' project is a Pong gaming platform developed for 42 School. Built with Vue 3, NestJS, and PostgreSQL, all containerized in Docker, the app features real-time gaming, matchmaking, and chat. It also includes advanced user account management with Two-Factor Authentication. The design is fully responsive and offers login options through 42 Intra or Discord.",
+      "link": "google.com",
       "image_alt": "project_0",
       "images": [
         "project_0/project_0_0.jpeg",
@@ -14,7 +15,8 @@
     },
     {
       "title": "Next Space",
-      "description": "Next Space is a modern-day reinvention of the social networking site myspace.com, developed using the fullstack framework Next.js 13 and TypeScript. The project is fully serverless, using Neon database and Prisma. It also integrates NextAuth.js for robust user authentication. The entire project is deployed on Vercel, providing a complete solution for a social network without the need for a separate back-end framework.",
+      "description": "Next Space is a modern reinvention of the social networking site myspace.com, developed using the fullstack framework Next.js 13 and TypeScript. The project is fully serverless, using Neon database and Prisma. It also integrates NextAuth.js for robust user authentication. The entire project is deployed on Vercel, providing a complete solution for a social network without a separate back-end.",
+      "link": "google.com",
       "image_alt": "project_1",
       "images": [
         "project_1/project_1_0.png"
@@ -22,7 +24,8 @@
     },
     {
       "title": "swifty proteins",
-      "description": "Swifty Proteins is a biochemistry-focused iOS app crafted with Swift 5.9, UIKit, and SwiftUI. The highlight of the app is its advanced 3D ligand visualization using SceneKit. It supports iOS 17 and offers features like user authentication through Face ID or Touch ID. Users can search, interact with, and share high-definition 3D models of protein ligands, making it a valuable tool for biochemistry enthusiasts.",
+      "description": "Swifty Proteins is a biochemistry-focused iOS app crafted with Swift 5.9, UIKit, and SwiftUI. The highlight of the app is its advanced 3D ligand visualization using SceneKit. It supports iOS 17 and offers features like user authentication through Face ID or Touch ID. Users can search, interact with, and share high-definition 3D models of protein ligands.",
+      "link": "google.com",
       "image_alt": "project_2",
       "images": [
         "project_2/project_2_0.png",

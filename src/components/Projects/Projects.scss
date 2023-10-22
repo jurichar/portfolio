@@ -89,7 +89,7 @@
       align-self: center;
       border-radius: 20px;
       overflow: hidden;
-      height: 40vh;
+      height: 35vh;
       width: 100vw;
       margin-bottom: 1rem;
       transition: opacity 0.3s ease-in-out;
@@ -107,6 +107,16 @@
   p {
     width: 90vw;
     text-align: center;
+  }
+
+  a {
+    color: variables.$font-color;
+    font-family: variables.$base-font;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    &:hover {
+      color: variables.$primary-color-hovered;
+    }
   }
 }
 

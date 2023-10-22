@@ -60,6 +60,9 @@ const Project_2 = ({ data }) => {
         <div>
           <p>
             {projectData.description}
+            <br />
+            <br />
+            <a href={projectData.link} target="_blank" rel="noopener noreferrer">learn more →</a>
           </p>
         </div>
         <div className="slider-container">

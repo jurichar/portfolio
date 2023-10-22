@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "../Projects.scss";
 import useIntersectionObserver from "../../../hooks/useIntersectionObserver.ts";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -60,6 +60,9 @@ const Project_0 = ({ data }) => {
         <div>
           <p>
             {projectData.description}
+            <br />
+            <br />
+            <a href={projectData.link} target="_blank" rel="noopener noreferrer">learn more →</a>
           </p>
         </div>
         <div className="slider-container">
