@@ -17,47 +17,46 @@ form {
   width: 100%;
   height: 100vh;
   padding: 2rem 1rem;
-
+  gap: 1.2rem;
   input,
   textarea {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: variables.$font-color-secondary;
+    background-color: rgba(0, 0, 0, 0);
     width: 100%;
-    padding: 1rem;
-    border: 1px solid variables.$card-border-color;
-    border-radius: 10px;
+    border: 0px;
+    border-bottom: 1px solid variables.$font-color-secondary;
     font-size: 1.2rem;
     font-family: variables.$base-font;
     width: 50%;
     outline: none;
     &:focus {
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      color: variables.$font-color;
+      border-bottom: 1px solid variables.$font-color;
     }
   }
-  #message-input {
-    display: flex;
-    justify-content: start;
-    align-items: start;
+  textarea {
     height: 40%;
-    width: 50%;
-    outline: none;
+
+    padding: 0.5rem;
+    border: 1px solid variables.$font-color-secondary;
+    &:focus {
+      border: 1px solid variables.$font-color;
+    }
   }
   #send-button {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background-color: variables.$card-color;
-    color: variables.$card-font-color;
+    background-color: rgba(0, 0, 0, 0);
+    color: variables.$font-color-secondary;
     outline: none;
-    border: none;
+    border: 0px;
     border-radius: 5px;
     width: 50%;
     padding: 10px 20px;
     font-size: 1.2rem;
     font-family: variables.$base-font;
     transition: all 0.3s ease-in-out;
-    border: 1px solid variables.$card-border-color;
     &:hover:enabled {
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-      color: variables.$card-font-color-hovered;
-      background-color: variables.$card-color-hovered;
+      color: variables.$font-color;
+      background-color: variables.$font-color-secondary;
     }
   }
   h1 {
@@ -73,11 +72,10 @@ form {
     #send-button {
       width: 100%;
     }
-  }
-
-  .email {
-    font-size: variables.$base-font-size;
-    color: variables.$font-color-secondary;
+    .email {
+      font-size: variables.$base-font-size;
+      color: variables.$font-color-secondary;
+    }
   }
 
   @media screen and (min-width: 768px) {
