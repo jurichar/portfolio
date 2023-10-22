@@ -55,8 +55,10 @@ const Project_1 = ({ data }) => {
               className="event-image fade"
               style={{
                 backgroundImage: `url(${projectData.images[currentImageIndex]})`,
-                backgroundSize: "cover",
+                backgroundSize: "contain",
                 backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundColor: "rgb(0, 6, 9)"
               }}
             ></div>
             <button className="arrow arrow-right" onClick={goToNextSlide}>

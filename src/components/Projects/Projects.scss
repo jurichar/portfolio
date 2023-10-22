@@ -1,17 +1,35 @@
 @use "../../variables";
 
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 .Projects {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
-  padding: 2rem 0;
+  // padding: 2rem 0;
 
   .title {
+    font-weight: 400;
     font-size: variables.$title-font-size;
     color: variables.$font-color;
-    margin-bottom: 2rem;
     text-align: center;
   }
 
@@ -49,11 +67,11 @@
       right: 0;
       display: flex;
       justify-content: space-between;
-      padding: 0 1.25rem;
       transform: translateY(-50%);
       width: 100%;
 
       .arrow {
+        display: none;
         cursor: pointer;
         background: none;
         border: none;
@@ -68,34 +86,34 @@
     }
 
     .event-image {
+      opacity: 0;
       align-self: center;
-      border: 1px solid variables.$card-border-color;
       border-radius: 20px;
       overflow: hidden;
-      height: 30vh;
-      width: 50vw;
+      height: 40vh;
+      width: 100vw;
       margin-bottom: 1rem;
+      transition: opacity 0.3s ease-in;
     }
   }
 
   h3,
   p {
+    font-family: variables.$secondary-font;
+    text-indent: 1rem;
     font-size: variables.$base-font-size;
-    color: variables.$card-font-color;
-    margin-bottom: 1rem;
-    white-space: nowrap;
-    overflow: hidden;
+    color: variables.$card-color-hovered;
   }
 
   p {
-    font-size: variables.$paragraph-font-size;
-    text-align: left;
+    width: 90vw;
+    text-align: center;
   }
 }
 
+.Projects .event-image,
 .Projects .dot,
 .Projects .title,
-.Projects .event-image,
 .Projects p,
 .Projects h3 {
   opacity: 0;
@@ -116,14 +134,15 @@
         fade 1s ease-in-out 1s forwards;
     }
 
-    .event-image {
-      animation: slideBot 0.7s ease-in-out 1s forwards,
-        fade 1s ease-in-out 1s forwards;
-    }
-
     .dot {
       animation: slideBot 0.7s ease-in-out 1s forwards,
         fade 1s ease-in-out 1s forwards;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .arrow {
+    display: block;
   }
 }

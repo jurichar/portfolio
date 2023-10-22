@@ -1,30 +1,32 @@
 {
   "projectsData": [
     {
-      "title": "Project_0",
-      "description": "This project is awesome!\n It's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\n",
+      "title": "Pong Vice",
+      "description": "The 'Pong Vice' project is a Pong gaming platform developed for 42 School. Built with Vue 3, NestJS, and PostgreSQL, all containerized in Docker, the app features real-time gaming, matchmaking, and chat. It also includes advanced user account management with Two-Factor Authentication. The design is fully responsive and offers login options through 42 Intra or Discord.",
       "image_alt": "project_0",
       "images": [
+        "project_0/project_0_0.jpeg",
         "project_0/project_0_1.png",
-        "project_0/project_0_2.png"
+        "project_0/project_0_2.png",
+        "project_0/project_0_3.png",
+        "project_0/project_0_4.png"
       ]
     },
     {
-      "title": "Project_1",
-      "description": "",
+      "title": "next space",
+      "description": "This project is awesome!\n It's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\n",
       "image_alt": "project_1",
       "images": [
-        "project_0/project_0_1.png",
-        "project_0/project_0_2.png"
+        "project_1/project_1_0.png"
       ]
     },
     {
-      "title": "Project_2",
-      "description": "",
+      "title": "swifty proteins",
+      "description": "This project is awesome!\n It's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\nIt's the best project ever!\n",
       "image_alt": "project_2",
       "images": [
-        "project_0/project_0_1.png",
-        "project_0/project_0_2.png"
+        "project_2/project_2_0.png",
+        "project_2/project_2_1.gif"
       ]
     }
   ]

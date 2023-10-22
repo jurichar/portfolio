@@ -2,14 +2,16 @@
 
 // Base colors
 $primary-color: rgba(255, 255, 255, 0.8);
-$font-color: rgba(255, 255, 255, 0.8);
-
+// $font-color: rgba(255, 255, 255, 0.8);
+$font-color: rgb(255 255 228);
 // Hover colors are 10% lighter versions of the base colors
 $primary-color-hovered: lighten($primary-color, 10%);
 $font-color-hovered: $primary-color;
 
-$base-font: "Open Sans", sans-serif;
+$base-font: "Satoshi", sans-serif;
+$secondary-font: "Literata", serif;
 $base-font-size: 1rem;
+$paragraph-work-font-size: 1.3rem;
 $paragraph-font-size: 0.7rem;
 $title-font-size: 2rem;
 $icon-font-size: 1rem;
