@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "../Projects.scss";
 import useIntersectionObserver from "../../../hooks/useIntersectionObserver.ts";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
