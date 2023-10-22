@@ -58,7 +58,7 @@ const Project_2 = ({ data }) => {
       <div id="projects" className="Projects">
         <h1 className="title">{projectData.title}</h1>
         <div className="content">
-          <div>
+          <div className="content--description">
             <p>
               {projectData.description}
               <br />

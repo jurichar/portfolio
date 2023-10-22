@@ -107,9 +107,6 @@
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border: 1px solid variables.$card-border-color;
-    @media screen and (min-width: 768px) {
-      width: 40%;
-    }
     .Techs-title {
       align-self: flex-start;
       font-size: variables.$base-font-size;
@@ -133,6 +130,27 @@
       font-family: variables.$secondary-font;
       align-self: flex-start;
       transition: all 0.3s ease-in-out;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .title {
+      font-size: variables.$title-font-size-big;
+    }
+    .Icon_group {
+      .Icon_button {
+        height: 3rem;
+        width: 3rem;
+      }
+    }
+    .Techs-text {
+      width: 80%;
+      .Techs-title {
+        font-size: variables.$base-font-size-big;
+      }
+      .Techs-experience {
+        font-size: variables.$paragraph-font-size-big;
+      }
     }
   }
 }

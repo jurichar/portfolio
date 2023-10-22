@@ -25,7 +25,6 @@
   align-items: center;
   width: 100%;
   gap: 2rem;
-  // padding: 2rem 0;
 
   .title {
     font-weight: 400;
@@ -109,6 +108,7 @@
     text-indent: 1rem;
     font-size: variables.$base-font-size;
     color: variables.$font-color-secondary;
+    padding: 0 1rem;
   }
 
   p {
@@ -127,11 +127,39 @@
   }
 
   @media screen and (min-width: 768px) {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    p {
-      width: 50vw;
+    width: 100%;
+    .title {
+      font-size: variables.$title-font-size-big;
+    }
+    .content {
+      width: 90%;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      gap: 2rem;
+      .content--description {
+        width: 60%;
+        margin-left: 5rem;
+        display: flex;
+        align-items: end;
+        align-self: baseline;
+        p {
+          width: 100%;
+          text-align: left;
+          font-size: variables.$paragraph-font-size-big;
+        }
+      }
+      .slider-container {
+        width: 40%;
+        .event-image {
+          height: 50vh;
+          width: 50vw;
+        }
+        .arrow {
+          display: block;
+          font-size: 3rem;
+        }
+      }
     }
   }
 }
