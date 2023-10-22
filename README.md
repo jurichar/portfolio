@@ -88,7 +88,6 @@ The portfolio includes the following features:
 
 - [ ] Sliders sur chrome
 - [ ] Mail send (correct error)
-- [ ] Cursor (retirer)
 - [ ] Dark mode
 - [ ] Links to projects in readme
 

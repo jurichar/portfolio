@@ -9,15 +9,6 @@
   }
 }
 
-@keyframes slideFromTop {
-  from {
-    height: 0;
-  }
-  to {
-    height: 50%;
-  }
-}
-
 @keyframes slideIn {
   from {
     transform: translateY(-100%);
@@ -27,138 +18,160 @@
   }
 }
 
-@keyframes slideBot {
-  from {
-    transform: translateY(100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
 .Projects {
+  background: black;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
-  padding: 2rem 0;
+  gap: 2rem;
 
   .title {
+    font-weight: 400;
     font-size: variables.$title-font-size;
     color: variables.$font-color;
-    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .content {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    gap: 2rem;
+  }
+  .slider-container {
+    position: relative;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+
+    .menu {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 0.5rem;
+
+      .dot {
+        width: 0.625rem;
+        height: 0.625rem;
+        // background-color: variables.$card-border-color;
+        border-radius: 50%;
+        cursor: pointer;
+
+        // &.active {
+        //   background-color: variables.$primary-color;
+        // }
+      }
+    }
+
+    .arrows {
+      position: relative;
+      top: 50%;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .arrow {
+        display: none;
+        cursor: pointer;
+        background: none;
+        border: none;
+        margin: 0 1rem;
+        font-size: 1.5rem;
+        color: #333;
+        transition: color 0.3s ease-in-out;
+        &:hover {
+          color: variables.$primary-color;
+        }
+      }
+    }
+
+    .event-image {
+      align-self: center;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 35vh;
+      width: 100vw;
+      margin-bottom: 1rem;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+
+  h3,
+  p {
+    font-family: variables.$secondary-font;
+    text-indent: 1rem;
+    font-size: variables.$base-font-size;
+    color: variables.$font-color-secondary;
+    padding: 0 1rem;
+  }
+
+  p {
+    width: 90vw;
     text-align: center;
   }
 
-  .events {
-    width: 100%;
-    overflow: scroll;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2rem;
-    overflow-y: auto;
-    padding: 2rem;
-    scroll-snap-type: x mandatory;
-    .event {
-      scroll-snap-align: center;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      gap: 1rem;
-      height: fit-content;
-      padding: 1rem 2rem;
-      border-radius: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      border: 1px solid variables.$card-border-color;
-      transition: all 0.3s ease-in-out;
-      &:hover {
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        border-color: variables.$card-border-color-hovered;
-        h3,
-        p {
-          color: variables.$card-font-color-hovered;
-        }
-        .event-image {
-          opacity: 0;
-        }
-      }
-      .event-image {
-        align-self: center;
-        border: 1px solid variables.$card-border-color;
-        border-radius: 20px;
-        overflow: hidden;
-        height: 30vh;
-        width: 50vw;
-      }
-
-      h3 {
-        font-size: variables.$base-font-size;
-        color: variables.$card-font-color;
-        margin-bottom: 1rem;
-        transition: color 0.3s ease-in-out;
-        white-space: nowrap;
-        overflow: hidden;
-      }
-
-      p {
-        font-size: variables.$paragraph-font-size;
-        text-align: left;
-        transition: color 0.3s ease-in-out;
-        color: variables.$card-font-color;
-      }
-    }
-  }
-
-  // big screens
-  @media screen and (min-width: 1024px) {
-    .events {
-      width: 100%;
-      .event {
-        height: fit-content;
-        width: 30vw;
-        .event-image {
-          height: 30vh;
-          width: 25vw;
-        }
-      }
-    }
-  }
-  @media screen and (min-width: 1280px) {
-    .events {
-      justify-content: center;
-    }
-  }
-}
-
-#markdown-body {
-  pre {
-    border-radius: 5px;
-    color: variables.$font-color-hovered;
-    padding: 1rem;
-    margin: 1rem 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    overflow: scroll;
+  a {
+    color: variables.$font-color;
     font-family: variables.$base-font;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    &:hover {
+      color: variables.$primary-color-hovered;
+    }
   }
-  // font color
-  color: variables.$font-color;
-  font-family: variables.$base-font;
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom: 1px solid variables.$card-border-color;
-  h1,
-  h2 {
-    border-bottom: 1px solid variables.$card-border-color;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    .title {
+      font-size: variables.$title-font-size-big;
+    }
+    .content {
+      width: 90%;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      gap: 2rem;
+      .content--description {
+        width: 60%;
+        margin-left: 5rem;
+        display: flex;
+        align-items: end;
+        align-self: baseline;
+        p {
+          width: 100%;
+          text-align: left;
+          font-size: variables.$paragraph-font-size-big;
+        }
+      }
+      .slider-container {
+        width: 40%;
+        .event-image {
+          height: 50vh;
+          width: 50vw;
+        }
+        .arrow {
+          display: block;
+          font-size: 3rem;
+        }
+      }
+    }
   }
 }
 
-.Projects,
+.Projects .event-image,
+.Projects .dot,
 .Projects .title,
-.Projects .event .event-image,
-.Projects .event h3,
-.Projects .event .event-date,
-.Projects .event p {
+.Projects .slider-container,
+.Projects p,
+.Projects h3 {
   opacity: 0;
 }
 
@@ -166,28 +179,36 @@
   &.animate {
     .Projects {
       animation: fade 1s ease-in-out forwards;
+      background: radial-gradient(
+        circle,
+        rgba(16, 16, 13, 0.6) 0%,
+        rgba(0, 0, 0, 1) 50%
+      );
     }
     .title {
       animation: slideIn 1s ease-in-out forwards, fade 1s ease-in-out forwards;
     }
-    .events .event h3 {
-      animation: slideIn 0.5s ease-in-out 0.5s forwards,
-        fade 1s ease-in-out 0.5s forwards;
+    h3 {
+      animation: slideIn 0.5s ease-in-out 0.1s forwards,
+        fade 1s ease-in-out 0.1s forwards;
     }
+    p {
+      animation: slideIn 0.5s ease-in-out 0.3s forwards,
+        fade 1s ease-in-out 0.3s forwards;
+    }
+    .slider-container {
+      animation: slideBot 0.5s ease-in-out 0.3s forwards,
+        fade 1s ease-in-out 0.3s forwards;
+    }
+    .dot {
+      animation: slideBot 0.5s ease-in-out 0.3s forwards,
+        fade 1s ease-in-out 0.3s forwards;
+    }
+  }
+}
 
-    .events .event .event-date {
-      animation: slideIn 0.5s ease-in-out 1.5s forwards,
-        fade 1s ease-in-out 1.5s forwards;
-    }
-
-    .events .event p {
-      animation: slideIn 0.7s ease-in-out 1s forwards,
-        fade 1s ease-in-out 1s forwards;
-    }
-
-    .events .event .event-image {
-      animation: slideBot 0.7s ease-in-out 1s forwards,
-        fade 1s ease-in-out 1s forwards;
-    }
+@media (min-width: 768px) {
+  .arrow {
+    display: block;
   }
 }

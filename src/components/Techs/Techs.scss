@@ -40,6 +40,7 @@
   .title {
     font-size: variables.$title-font-size;
     color: variables.$font-color;
+    font-weight: 400;
     margin-bottom: 2rem;
     text-align: center;
   }
@@ -64,7 +65,6 @@
       background-color: variables.$card-color;
       border-radius: 50%;
       border: 1px solid variables.$card-border-color;
-      cursor: none;
       transition: all 0.3s ease-in-out;
       &:hover {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -73,6 +73,7 @@
       }
     }
   }
+
   .separator-pointer {
     width: 1px;
     height: 15px;
@@ -80,6 +81,7 @@
     opacity: 1;
     margin: -0.5rem 0;
   }
+
   .Icon {
     height: 1.5rem;
     width: 1.5rem;
@@ -105,9 +107,6 @@
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border: 1px solid variables.$card-border-color;
-    @media screen and (min-width: 768px) {
-      width: 40%;
-    }
     .Techs-title {
       align-self: flex-start;
       font-size: variables.$base-font-size;
@@ -119,7 +118,7 @@
         color: variables.$font-color;
       }
       .Techs-title-category {
-        color: rgba(255, 255, 255, 0.5);
+        color: variables.$font-color-secondary;
       }
     }
     .Techs-experience {
@@ -127,9 +126,31 @@
       align-self: center;
       font-size: variables.$paragraph-font-size;
       font-weight: 400;
-      color: rgba(255, 255, 255, 0.5);
+      color: variables.$font-color-secondary;
+      font-family: variables.$secondary-font;
       align-self: flex-start;
-      transition: all 0.5s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .title {
+      font-size: variables.$title-font-size-big;
+    }
+    .Icon_group {
+      .Icon_button {
+        height: 3rem;
+        width: 3rem;
+      }
+    }
+    .Techs-text {
+      width: 80%;
+      .Techs-title {
+        font-size: variables.$base-font-size-big;
+      }
+      .Techs-experience {
+        font-size: variables.$paragraph-font-size-big;
+      }
     }
   }
 }
@@ -144,16 +165,28 @@
 
 .Techs-header {
   &.animate {
+    .Techs {
+      animation: fade 1s ease-in-out forwards;
+      background: radial-gradient(
+        circle,
+        rgba(16, 16, 13, 0.6) 0%,
+        rgba(0, 0, 0, 1) 50%
+      );
+    }
     .title {
       animation: slideIn 1s ease-in-out forwards, fade 1s ease-in-out forwards;
     }
+    h3 {
+      animation: slideIn 0.5s ease-in-out 0.1s forwards,
+        fade 1s ease-in-out 0.1s forwards;
+    }
     .Icon_group {
       animation: slideIn 0.5s ease-in-out 0.5s forwards,
-        fade 1s ease-in-out 0.5s forwards;
+        fade 0.5s ease-in-out 0.5s forwards;
     }
     .Techs-text {
-      animation: slideBot 0.5s ease-in-out 1s forwards,
-        fade 1s ease-in-out 1s forwards;
+      animation: slideBot 0.5s ease-in-out 0.5s forwards,
+        fade 0.5s ease-in-out 0.5s forwards;
     }
   }
 }

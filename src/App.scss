@@ -6,6 +6,7 @@ html {
   font-size: variables.$base-font-size;
   color: variables.$font-color;
   font-family: variables.$base-font;
+  font-weight: 400;
   background-color: variables.$primary-color;
   width: 100vw;
   display: flex;
@@ -27,6 +28,7 @@ html {
 .About,
 .Projects,
 .Techs,
+.Thanks,
 .Contact {
   height: 100vh;
   scroll-snap-align: start;
@@ -72,4 +74,11 @@ html {
     opacity: 0;
     // visibility: hidden;
   }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: variables.$card-border-color;
+  opacity: 0.8;
 }

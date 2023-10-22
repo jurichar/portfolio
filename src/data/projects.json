@@ -1,40 +1,36 @@
 {
   "projectsData": [
     {
-      "title": "Ft_Transcendence",
-      "description": [
-        "> VueJS 3",
-        "> NestJS",
-        "> PostgreSQL",
-        "> Docker"
-      ],
-      "image_alt": "ft_transcendence",
-      "image": "project_1/project_1.gif",
-      "readme": "project_1/project_1.md"
+      "title": "Pong Vice",
+      "description": "The 'Pong Vice' project is a Pong gaming platform developed for 42 School. Built with Vue 3, NestJS, and PostgreSQL, all containerized in Docker, the app features real-time gaming, matchmaking, and chat. It also includes advanced user account management with Two-Factor Authentication. The design is fully responsive and offers login options through 42 Intra or Discord.",
+      "link": "https://github.com/jurichar/ft_transcendence",
+      "image_alt": "project_0",
+      "images": [
+        "project_0/project_0_0.jpeg",
+        "project_0/project_0_1.png",
+        "project_0/project_0_2.png",
+        "project_0/project_0_3.png",
+        "project_0/project_0_4.png"
+      ]
     },
     {
-      "title": "Swifty Companion",
-      "description": [
-        "> Swift",
-        "> SwiftUI",
-        "> iOS",
-        "> API"
-      ],
-      "image_alt": "swifty companion",
-      "image": "project_2/project_2.gif",
-      "readme": "project_2/project_2.md"
+      "title": "Next Space",
+      "description": "Next Space is a modern reinvention of the social networking site myspace.com, developed using the fullstack framework Next.js 13 and TypeScript. The project is fully serverless, using Neon database and Prisma. It also integrates NextAuth.js for robust user authentication. The entire project is deployed on Vercel, providing a complete solution for a social network without a separate back-end.",
+      "link": "https://github.com/jurichar/mynextspace",
+      "image_alt": "project_1",
+      "images": [
+        "project_1/project_1_0.png"
+      ]
     },
     {
-      "title": "Portfolio",
-      "description": [
-        "> HTML / SCSS",
-        "> TypeScript",
-        "> React",
-        "> Basic web dev"
-      ],
-      "image_alt": "portfolio",
-      "image": "project_3/project_3.gif",
-      "readme": "project_3/project_3.md"
+      "title": "Swifty Proteins",
+      "description": "Swifty Proteins is a biochemistry-focused iOS app crafted with Swift 5.9, UIKit, and SwiftUI. The highlight of the app is its advanced 3D ligand visualization using SceneKit. It supports iOS 17 and offers features like user authentication through Face ID or Touch ID. Users can search, interact with, and share high-definition 3D models of protein ligands.",
+      "link": "https://github.com/llescure/swifty-protein",
+      "image_alt": "project_2",
+      "images": [
+        "project_2/project_2_0.png",
+        "project_2/project_2_1.gif"
+      ]
     }
   ]
 }

@@ -61,11 +61,31 @@ form {
     }
   }
   h1 {
+    font-weight: 400;
     margin-bottom: 2rem;
   }
-  @media (max-width: 768px) {
+  form {
+    input,
+    textarea,
+    #message-input {
+      width: 100%;
+    }
+    #send-button {
+      width: 100%;
+    }
+  }
+
+  .email {
+    font-size: variables.$base-font-size;
+    color: variables.$font-color-secondary;
+  }
+
+  @media screen and (min-width: 768px) {
+    h1 {
+      font-size: variables.$base-font-size-big;
+    }
     form {
-      // width: 100%;
+      width: 50%;
       input,
       textarea,
       #message-input {
@@ -75,5 +95,8 @@ form {
         width: 100%;
       }
     }
+  }
+  .email {
+    font-size: variables.$base-font-size-big;
   }
 }

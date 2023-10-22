@@ -6,7 +6,7 @@ import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 import { useState, useRef } from "react";
 import { useLottie } from "lottie-react";
-import animationData from "../../../public/animation.json";
+import animationData from "../../animation.json";
 
 const defaultOptions = {
   loop: true,
@@ -52,7 +52,10 @@ const Home = () => {
             </strong>
           </h1>
           <br />
-          <p>and I'm a fullstack developer.</p>
+          <p>and I'm a <a>
+            fullstack developer.
+          </a>
+          </p>
           <div className="separator"></div>
           <div className="buttons">
             {icon(faGithubSquare, "https://github.com/jurichar/")}
