@@ -82,7 +82,7 @@ const Thanks = () => {
             </div>
           </div>
         </div>
-        <p>You can also contact me by scrolling one more time</p>
+        <p className="Thanks-message">You can also contact me by scrolling one more time</p>
       </div>
     </header>
   );
