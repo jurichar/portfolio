@@ -12,6 +12,7 @@ import { useState } from "react";
 import Project_0 from "./components/Projects/Project_0/Project_0";
 import Project_1 from "./components/Projects/Project_1/Project_1";
 import Project_2 from "./components/Projects/Project_2/Project_2";
+import Thanks from "./components/Thanks/Thanks";
 
 const App = () => {
   const [showArrow, setShowArrow] = useState(false);
@@ -55,7 +56,7 @@ const App = () => {
         <Project_2 data={projectsData} />
         <div className="divider"></div>
         <Techs />
-        <Contact />
+        <Thanks />
         <Contact />
       </div>
       <Analytics />

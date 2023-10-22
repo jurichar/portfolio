@@ -52,7 +52,10 @@ const Home = () => {
             </strong>
           </h1>
           <br />
-          <p>and I'm a fullstack developer.</p>
+          <p>and I'm a <a>
+            fullstack developer.
+          </a>
+          </p>
           <div className="separator"></div>
           <div className="buttons">
             {icon(faGithubSquare, "https://github.com/jurichar/")}

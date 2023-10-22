@@ -68,22 +68,28 @@
       gap: 1rem;
       .Icon {
         height: 2rem;
+        z-index: 1;
         a {
+          cursor: pointer;
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
           transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-          color: variables.$font-color;
+          color: variables.$font-color-secondary;
           &:hover {
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            color: variables.$font-color-hovered;
+            color: variables.$font-color;
           }
         }
       }
     }
-    @media (max-width: 768px) {
-      padding: 0 6vh;
-      font-size: 1rem;
-      h1 {
-        font-size: 1.5rem;
+    padding: 0 6vh;
+    font-size: 1rem;
+    h1 {
+      font-size: 1.5rem;
+    }
+    p {
+      color: variables.$font-color-secondary;
+      a {
+        color: variables.$font-color;
       }
     }
   }
@@ -109,9 +115,9 @@
   position: relative;
   bottom: 150px;
   align-self: center;
-  display: flex; // Ajouté
-  justify-content: center; // Ajouté
-  align-items: center; // Ajouté
+  display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 0;
 }
 

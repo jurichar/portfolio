@@ -40,6 +40,7 @@
   .title {
     font-size: variables.$title-font-size;
     color: variables.$font-color;
+    font-weight: 400;
     margin-bottom: 2rem;
     text-align: center;
   }
@@ -75,11 +76,13 @@
       }
       h3 {
         font-size: variables.$base-font-size;
-        color: variables.$card-font-color;
+        color: variables.$font-color;
+        font-weight: 400;
         margin-bottom: 1rem;
       }
       .event-date {
         font-size: variables.$base-font-size;
+        color: variables.$font-color-secondary;
         background-color: black;
         position: absolute;
         width: 30%;
@@ -87,6 +90,8 @@
         transform: translateY(-50%);
       }
       p {
+        font-family: variables.$secondary-font;
+        color: variables.$font-color-secondary;
         font-size: variables.$paragraph-font-size;
         text-align: left;
       }
@@ -119,7 +124,7 @@
     }
 
     .events .event {
-      animation: inFromLeft 0.5s ease-in-out forwards,
+      animation: inFromLeft 1.5s ease-in-out forwards,
         fade 1s ease-in-out forwards;
     }
 

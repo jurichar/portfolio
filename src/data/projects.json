@@ -23,7 +23,7 @@
       ]
     },
     {
-      "title": "swifty proteins",
+      "title": "Swifty Proteins",
       "description": "Swifty Proteins is a biochemistry-focused iOS app crafted with Swift 5.9, UIKit, and SwiftUI. The highlight of the app is its advanced 3D ligand visualization using SceneKit. It supports iOS 17 and offers features like user authentication through Face ID or Touch ID. Users can search, interact with, and share high-definition 3D models of protein ligands.",
       "link": "google.com",
       "image_alt": "project_2",
