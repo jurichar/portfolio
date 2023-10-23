@@ -58,6 +58,18 @@
       ],
       "image": "about_pics/university.png",
       "image_alt": "University of Paris"
+    },
+    {
+      "date": "2014",
+      "title": "Coding for fun",
+      "description": [
+        "⁃ Python's basics",
+        "⁃ Video games's development",
+        "⁃ Algorithms",
+        ""
+      ],
+      "image": "about_pics/software.png",
+      "image_alt": "University of Paris"
     }
   ]
 }
