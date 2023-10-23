@@ -21,17 +21,19 @@
 .Projects {
   background: black;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  justify-content: space-around;
+  min-height: 100vh;
+  height: 95%;
   align-items: center;
   width: 100%;
-  gap: 2rem;
 
   .title {
     font-weight: 400;
     font-size: variables.$title-font-size;
     color: variables.$font-color;
     text-align: center;
+    margin-bottom: 1rem;
   }
   .content {
     background-color: rgba(0, 0, 0, 0);
@@ -50,7 +52,7 @@
 
     .menu {
       position: absolute;
-      bottom: 0;
+      bottom: 10px;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
@@ -59,7 +61,7 @@
       .dot {
         width: 0.625rem;
         height: 0.625rem;
-        background-color: variables.$font-color-secondary;
+        background-color: variables.$font-color-tertiary;
         border-radius: 50%;
         cursor: pointer;
         &.active {
@@ -129,6 +131,7 @@
 
   @media screen and (min-width: 768px) {
     width: 100%;
+    justify-content: space-around;
     .title {
       font-size: variables.$title-font-size-big;
     }

@@ -1,8 +1,7 @@
 import { useRef, useState } from "react";
 import "../Projects.scss";
 import useIntersectionObserver from "../../../hooks/useIntersectionObserver.ts";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
 
 const Project_2 = ({ data }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -67,18 +66,9 @@ const Project_2 = ({ data }) => {
             </p>
           </div>
           <div className="slider-container">
-            <div className="menu">
-              {projectData.images.map((_, index) => (
-                <label
-                  key={index}
-                  className={`dot ${currentImageIndex === index ? "active" : ""}`}
-                  onClick={() => setCurrentImageIndex(index)}
-                ></label>
-              ))}
-            </div>
             <div className="arrows">
               <button className="arrow arrow-left" onClick={goToPrevSlide}>
-                <FontAwesomeIcon icon={faCaretLeft} />
+                <SlArrowLeft />
               </button>
               <div
                 className={`event-image`}
@@ -93,8 +83,17 @@ const Project_2 = ({ data }) => {
                 onTouchEnd={handleTouchEnd}
               ></div>
               <button className="arrow arrow-right" onClick={goToNextSlide}>
-                <FontAwesomeIcon icon={faCaretRight} />
+                <SlArrowRight />
               </button>
+            </div>
+            <div className="menu">
+              {projectData.images.map((_, index) => (
+                <label
+                  key={index}
+                  className={`dot ${currentImageIndex === index ? "active" : ""}`}
+                  onClick={() => setCurrentImageIndex(index)}
+                ></label>
+              ))}
             </div>
           </div>
         </div>

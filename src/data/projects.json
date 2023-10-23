@@ -7,10 +7,11 @@
       "image_alt": "project_0",
       "images": [
         "project_0/project_0_0.jpeg",
-        "project_0/project_0_1.png",
+        "project_0/project_0_1.gif",
         "project_0/project_0_2.png",
         "project_0/project_0_3.png",
-        "project_0/project_0_4.png"
+        "project_0/project_0_4.png",
+        "project_0/project_0_5.png"
       ]
     },
     {
@@ -29,7 +30,12 @@
       "image_alt": "project_2",
       "images": [
         "project_2/project_2_0.png",
-        "project_2/project_2_1.gif"
+        "project_2/project_2_1.gif",
+        "project_2/project_2_2.png",
+        "project_2/project_2_3.png",
+        "project_2/project_2_4.png",
+        "project_2/project_2_5.png",
+        "project_2/project_2_6.png"
       ]
     }
   ]

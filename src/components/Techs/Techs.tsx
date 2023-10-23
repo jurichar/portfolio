@@ -13,8 +13,6 @@ import {
   faDocker,
 } from "@fortawesome/free-brands-svg-icons";
 import {
-  faCaretLeft,
-  faCaretRight,
   faDatabase,
   faDharmachakra,
   faGears,
@@ -106,11 +104,8 @@ const Techs = () => {
   }, []);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      rotateTechs();
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [currentTechs]);
+    updateCurrentTechs(currentImageIndex);
+  }, []);
 
   const iconGroup = () => {
     const numIcons = isLargeScreen ? 5 : 3;
@@ -168,7 +163,7 @@ const Techs = () => {
           </button>
           <div className="Techs-text">
             <h1 className="Techs-title" style={{ opacity: opacity }}>
-              <span className="Techs-title-name">{centerTech.name}</span> :{" "}
+              <span className="Techs-title-name">{centerTech.name}</span>{" "}
               <span className="Techs-title-category">{centerTech.category}</span>
             </h1>
             <br />

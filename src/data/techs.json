@@ -1,74 +1,74 @@
 [
     {
-        "name": "ReactJS / Next.js",
+        "name": "ReactJS, Next.js",
         "icon": "faReact",
-        "category": "Frontend",
-        "experience": "Expertise in building scalable and maintainable applications with React. Proficient in hooks, state management, and component-based architecture. Extended experience in Next.js, including server-side rendering, API routes, serverless functions, and middleware."
+        "category": "- Frontend Development",
+        "experience": "Expertise in building scalable and maintainable applications with React. Proficient in hooks, state management, and component-based architecture. Extended experience in Next.js 13, including server-side rendering, API routes, serverless functions, and middleware."
     },
     {
         "name": "VueJS",
         "icon": "faVuejs",
-        "category": "Frontend",
+        "category": "- Frontend Development",
         "experience": "Developed an online Pong game using VueJS 3 and NestJS, showcasing a strong understanding of the Vue ecosystem."
     },
     {
-        "name": "Sass/Tailwind",
+        "name": "Sass, Tailwind",
         "icon": "faSass",
-        "category": "Frontend",
+        "category": "- Frontend Development",
         "experience": "Extensive experience in styling with Sass and some experience with Tailwind. Proficient in SCSS syntax, modular design, and utility-first CSS."
     },
     {
-        "name": "Swift",
+        "name": "Swift, SwiftUI",
         "icon": "faApple",
-        "category": "Mobile",
-        "experience": "Developed visualization tools for ligands using SceneKit for 3D modeling. Also built a messaging app, showcasing proficiency in Swift and SwiftUI."
+        "category": "- Mobile Development",
+        "experience": "I did some projects in Swift, including a messaging app, companion for 42 School and a 3D visualization tool for ligands. For those projects, I used some of the most popular frameworks, including SceneKit, SwiftUI, UIKit and Core Data."
     },
     {
         "name": "Python",
         "icon": "faPython",
-        "category": "Backend",
-        "experience": "Developed web scrapers, bots, and completed a cybersecurity pool. Worked professionally in MLOps."
+        "category": "- Backend Development",
+        "experience": "Developed web scrapers, bots, and completed a cybersecurity pool, I also use Python to make personal tools and train algorithms. Used NumPy, Pandas, and Matplotlib for data analysis and visualization. Used professionally for one year as MLOps."
     },
     {
         "name": "Java",
         "icon": "faJava",
-        "category": "Backend",
-        "experience": "Completed university projects, gaining a foundational understanding of Java, object-oriented programming, and graphical interfaces."
+        "category": "- Backend Development",
+        "experience": "Completed university projects, gaining a foundational understanding of Java, object-oriented programming, and graphical interfaces. I'm also familiar with Spring Boot."
     },
     {
         "name": "SQL",
         "icon": "faDatabase",
-        "category": "Database",
-        "experience": "Worked on projects using PostgreSQL at university and École 42, showcasing database design and query optimization skills."
+        "category": "- Backend Development",
+        "experience": "Worked on projects using PostgreSQL, MariaDB, FireBase and MySQL at university, 42 School Paris and professionally, showcasing database design, query optimization and relational algebra skills."
     },
     {
         "name": "Security",
         "icon": "faShieldAlt",
-        "category": "Security",
-        "experience": "Engaged in reverse engineering, exploit development, and assembly language tasks. Completed challenges on Root-Me."
+        "category": "- Cybersecurity",
+        "experience": "Engaged in reverse engineering, exploit development, web security and disassemble programs. Completed challenges on Root-Me, completed a cybersecurity pool, and completed a 42 School Paris security project."
     },
     {
         "name": "Docker",
         "icon": "faDocker",
-        "category": "DevOps",
-        "experience": "Used professionally for containerization, including in a 6-month MLOps role."
+        "category": "- DevOps & Operations",
+        "experience": "Used personally and professionally for containerization of projects and to run identical development environments, including in a one year MLOps role."
     },
     {
         "name": "Kubernetes",
         "icon": "faDharmachakra",
-        "category": "DevOps",
-        "experience": "Used professionally during a 6-month internship focusing on MLOps, gaining hands-on experience."
+        "category": "- DevOps & Operations",
+        "experience": "Used professionally during one year as MLOps engineer, gaining hands-on experience. Also used to deploy and manage machine learning pipelines."
     },
     {
         "name": "Automation",
         "icon": "faGears",
-        "category": "DevOps",
-        "experience": "Used Ansible, Jenkins, Minio, ZenML, and Vagrant for automating various DevOps tasks."
+        "category": "- DevOps & Operations",
+        "experience": "Used automation tools in personal projects and used Ansible, Jenkins, Minio, ZenML, Pachyderm, AzureCloud, ShellScripts and Vagrant for automating various machine learning pipelines and development as MLOps. "
     },
     {
         "name": "Mathematics",
         "icon": "faSquareRootAlt",
-        "category": "Theory",
-        "experience": "Completed university-level courses in mathematics and computer science."
+        "category": "- Computer Science & Theory",
+        "experience": "Completed university-level courses in mathematics and computer science such as linear algebra, matrix operations, statistics, and discrete mathematics."
     }
 ]

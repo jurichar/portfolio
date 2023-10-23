@@ -5,6 +5,7 @@ $primary-color: rgba(255, 255, 255, 0.8);
 // $font-color: rgba(255, 255, 255, 0.8);
 $font-color: rgb(255 255 228);
 $font-color-secondary: rgba(255, 255, 228, 0.6);
+$font-color-tertiary: rgba(255, 255, 228, 0.2);
 // Hover colors are 10% lighter versions of the base colors
 $primary-color-hovered: lighten($primary-color, 10%);
 $font-color-hovered: $primary-color;
