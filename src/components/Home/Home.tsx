@@ -53,7 +53,7 @@ const Home = () => {
           </h1>
           <br />
           <p>and I'm a <a>
-            fullstack developer.
+            developer since 2014.
           </a>
           </p>
           <div className="separator"></div>
