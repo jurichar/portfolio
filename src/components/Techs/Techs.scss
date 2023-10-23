@@ -46,32 +46,14 @@
   }
   .Icon_group {
     display: flex;
+    width: 100%;
+    height: 10%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     overflow: scroll;
     transition: all 0.5s ease-in-out;
     gap: 2rem;
-    .Icon_button {
-      height: 2rem;
-      width: 2rem;
-      outline: none;
-      cursor: pointer;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: variables.$card-font-color;
-      background-color: variables.$card-color;
-      border-radius: 50%;
-      border: 1px solid variables.$card-border-color;
-      transition: all 0.3s ease-in-out;
-      &:hover {
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        color: variables.$card-font-color-hovered;
-        background-color: variables.$card-color-hovered;
-      }
-    }
   }
 
   .separator-pointer {
@@ -90,46 +72,68 @@
     align-items: center;
     transition: all 0.5s ease-in-out;
   }
-
-  .Techs-text {
+  .Techs-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     height: 40%;
     width: 80%;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: variables.$base-font-size;
-    font-family: variables.$base-font;
-    font-weight: 600;
-    color: variables.$card-font-color;
-    padding: 1rem 2rem;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border: 1px solid variables.$card-border-color;
-    .Techs-title {
-      align-self: flex-start;
+    .flickity-button {
+      display: none;
+    }
+    .Techs-text {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
       font-size: variables.$base-font-size;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      align-self: center;
-      transition: all 1s ease-in-out;
-      .Techs-title-name {
-        color: variables.$font-color;
+      font-family: variables.$base-font;
+      font-weight: 600;
+      color: variables.$card-font-color;
+      padding: 1rem 2rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-top: 1px solid variables.$card-border-color;
+      border-bottom: 1px solid variables.$card-border-color;
+      .Techs-title {
+        align-self: flex-start;
+        font-size: variables.$base-font-size;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        align-self: center;
+        transition: all 1s ease-in-out;
+        .Techs-title-name {
+          color: variables.$font-color;
+        }
+        .Techs-title-category {
+          color: variables.$font-color-secondary;
+        }
       }
-      .Techs-title-category {
+      .Techs-experience {
+        flex: 1;
+        align-self: center;
+        font-size: variables.$paragraph-font-size;
+        font-weight: 400;
         color: variables.$font-color-secondary;
+        font-family: variables.$secondary-font;
+        align-self: flex-start;
+        transition: all 0.3s ease-in-out;
       }
     }
-    .Techs-experience {
-      flex: 1;
-      align-self: center;
-      font-size: variables.$paragraph-font-size;
-      font-weight: 400;
-      color: variables.$font-color-secondary;
-      font-family: variables.$secondary-font;
-      align-self: flex-start;
-      transition: all 0.3s ease-in-out;
+  }
+  .menu {
+    opacity: 1;
+    display: flex;
+    gap: 0.5rem;
+    .dot {
+      width: 0.625rem;
+      height: 0.625rem;
+      background-color: variables.$font-color-secondary;
+      border-radius: 50%;
+      cursor: pointer;
+      &.active {
+        background-color: variables.$font-color;
+      }
     }
   }
 
@@ -143,19 +147,42 @@
         width: 3rem;
       }
     }
-    .Techs-text {
-      width: 80%;
-      .Techs-title {
-        font-size: variables.$base-font-size-big;
+    .Techs-content {
+      .Techs-text {
+        width: 80%;
+        .Techs-title {
+          font-size: variables.$base-font-size-big;
+        }
+        .Techs-experience {
+          font-size: variables.$paragraph-font-size-big;
+        }
       }
-      .Techs-experience {
-        font-size: variables.$paragraph-font-size-big;
+      .flickity-button {
+        display: flex;
+        width: 3rem;
+        background-color: rgba(0, 0, 0, 0);
+        border: 0px;
+        transition: all 0.3s ease-in-out;
+        .flickity-button-icon {
+          fill: variables.$font-color-secondary;
+          &:hover {
+            fill: variables.$font-color;
+          }
+        }
+      }
+    }
+    .menu {
+      .dot {
+        width: 1rem;
+        height: 1rem;
       }
     }
   }
 }
 
 .Techs .title,
+.dot,
+.flickity-button,
 .Techs .Icon_group,
 .Techs .Techs-text,
 .Techs .Techs-text .Techs-title,
@@ -172,6 +199,14 @@
         rgba(16, 16, 13, 0.6) 0%,
         rgba(0, 0, 0, 1) 50%
       );
+    }
+    .dot {
+      animation: slideIn 0.5s ease-in-out 0.1s forwards,
+        fade 1s ease-in-out 0.1s forwards;
+    }
+    .flickity-button {
+      animation: slideIn 0.5s ease-in-out 0.1s forwards,
+        fade 1s ease-in-out 0.1s forwards;
     }
     .title {
       animation: slideIn 1s ease-in-out forwards, fade 1s ease-in-out forwards;

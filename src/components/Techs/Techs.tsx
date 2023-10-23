@@ -25,6 +25,20 @@ import {
 const Techs = () => {
   const [currentTechs, setCurrentTechs] = useState(techs);
   const [opacity, setOpacity] = useState(1);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
+
+  const updateCurrentTechs = (newIndex) => {
+    const prev = newIndex === 0 ? techs.length - 1 : newIndex - 1;
+    const next = newIndex === techs.length - 1 ? 0 : newIndex + 1;
+    const newCurrentTechs = [techs[prev], techs[newIndex], techs[next]];
+    setCurrentTechs(newCurrentTechs);
+    setCurrentImageIndex(newIndex);
+  };
+
+  const handleDotClick = (index) => {
+    updateCurrentTechs(index);
+  };
 
   const iconMap = {
     faReact: faReact,
@@ -41,25 +55,11 @@ const Techs = () => {
     faSquareRootAlt: faSquareRootAlt,
   };
 
-  const icon = (name, index) => {
-    const isCenter = index === 1;
-    return (
-      <div
-        key={index}
-        className={`Icon ${isCenter ? "Icon--center" : ""}`}
-        style={{ opacity: opacity }}
-      >
-        <FontAwesomeIcon icon={iconMap[name]} size="2xl" />
-      </div>
-    );
-  };
-
   const rotateTechs = () => {
     setOpacity(0);
     setTimeout(() => {
-      const lastTech = currentTechs[currentTechs.length - 1];
-      const remainingTechs = currentTechs.slice(0, currentTechs.length - 1);
-      setCurrentTechs([lastTech, ...remainingTechs]);
+      const newIndex = (currentImageIndex + 1) % techs.length;
+      updateCurrentTechs(newIndex);
       setOpacity(1);
     }, 500);
   };
@@ -67,12 +67,43 @@ const Techs = () => {
   const rotateInvertTechs = () => {
     setOpacity(0);
     setTimeout(() => {
-      const firstTech = currentTechs[0];
-      const remainingTechs = currentTechs.slice(1, currentTechs.length);
-      setCurrentTechs([...remainingTechs, firstTech]);
+      const newIndex = (currentImageIndex - 1 + techs.length) % techs.length;
+      updateCurrentTechs(newIndex);
       setOpacity(1);
     }, 500);
   };
+
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  const handleTouchStart = (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  };
+
+  const handleTouchEnd = (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  };
+
+  const handleSwipe = () => {
+    if (touchEndX < touchStartX) {
+      rotateTechs();
+    }
+    if (touchEndX > touchStartX) {
+      rotateInvertTechs();
+    }
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth >= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -82,15 +113,30 @@ const Techs = () => {
   }, [currentTechs]);
 
   const iconGroup = () => {
+    const numIcons = isLargeScreen ? 5 : 3;
+    const centerIndex = Math.floor(numIcons / 2);
+    const start = (currentImageIndex - centerIndex + techs.length) % techs.length;
+    const iconsToShow = Array.from({ length: numIcons }, (_, i) => {
+      return techs[(start + i) % techs.length];
+    });
+
     return (
       <div className="Icon_group">
-        <button onClick={rotateInvertTechs} className="Icon_button">
-          <FontAwesomeIcon icon={faCaretLeft} />
-        </button>
-        {currentTechs.slice(0, 3).map((tech, index) => icon(tech.icon, index))}
-        <button onClick={rotateTechs} className="Icon_button">
-          <FontAwesomeIcon icon={faCaretRight} />
-        </button>
+        {iconsToShow.map((tech, index) =>
+          icon(tech.icon, index, index === centerIndex))}
+      </div>
+    );
+  };
+
+
+  const icon = (name, index, isCenter) => {
+    return (
+      <div
+        key={index}
+        className={`Icon ${isCenter ? (isLargeScreen ? "Icon--center-large" : "Icon--center") : ""}`}
+        style={{ opacity: opacity }}
+      >
+        <FontAwesomeIcon icon={iconMap[name]} size="2xl" />
       </div>
     );
   };
@@ -112,18 +158,42 @@ const Techs = () => {
         <h1 className="title"> Techs </h1>
         {iconGroup()}
         <div className="separator-pointer"></div>
-        <div className="Techs-text">
-          <h1 className="Techs-title" style={{ opacity: opacity }}>
-            <span className="Techs-title-name">{centerTech.name}</span> :{" "}
-            <span className="Techs-title-category">{centerTech.category}</span>
-          </h1>
-          <br />
-          <p className="Techs-experience" style={{ opacity: opacity }}>
-            {centerTech.experience}
-          </p>
+        <div className="Techs-content" onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}>
+          <button className="flickity-button flickity-prev-next-button previous" type="button" aria-label="Previous" onClick={rotateInvertTechs}>
+            <svg className="flickity-button-icon" viewBox="0 0 100 100">
+              <path d="M 10,50 L 60,100 L 65,95 L 20,50  L 65,5 L 60,0 Z" className="arrow">
+              </path>
+            </svg>
+          </button>
+          <div className="Techs-text">
+            <h1 className="Techs-title" style={{ opacity: opacity }}>
+              <span className="Techs-title-name">{centerTech.name}</span> :{" "}
+              <span className="Techs-title-category">{centerTech.category}</span>
+            </h1>
+            <br />
+            <p className="Techs-experience" style={{ opacity: opacity }}>
+              {centerTech.experience}
+            </p>
+          </div>
+          <button className="flickity-button flickity-prev-next-button next" type="button" aria-label="Next" onClick={rotateTechs}>
+            <svg className="flickity-button-icon" viewBox="0 0 100 100">
+              <path d="M 10,50 L 60,100 L 65,95 L 20,50  L 65,5 L 60,0 Z" className="arrow" transform="translate(100, 100) rotate(180) ">
+              </path>
+            </svg>
+          </button>
+        </div>
+        <div className="menu">
+          {techs.map((_, index) => (
+            <label
+              key={index}
+              className={`dot ${currentImageIndex === index ? "active" : ""}`}
+              onClick={() => handleDotClick(index)}
+            ></label>
+          ))}
         </div>
       </div>
-    </header>
+    </header >
   );
 };
 
