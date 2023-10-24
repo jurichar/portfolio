@@ -11,6 +11,9 @@ html {
   width: 100vw;
   display: flex;
   flex-direction: column;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .content {
@@ -32,6 +35,9 @@ html {
 .Contact {
   height: 100vh;
   scroll-snap-align: start;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 html {

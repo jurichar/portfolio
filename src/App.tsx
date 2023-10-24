@@ -29,8 +29,8 @@ const App = () => {
   const scrollToTop = () => {
     const element = document.getElementById("home");
     element.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
+      behavior: "auto",
+      block: "end",
       inline: "nearest",
     });
   };
