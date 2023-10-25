@@ -28,6 +28,15 @@ const icon = (name: IconProp, link: string) => {
   );
 };
 
+const scrollToNext = () => {
+  const element = document.getElementById("about");
+  element.scrollIntoView({
+    behavior: "smooth",
+    block: "end",
+    inline: "nearest",
+  });
+};
+
 const Home = () => {
   const { View } = useLottie(defaultOptions, { height: 200, width: 200 });
   const [isVisible, setIsVisible] = useState(false);
@@ -67,7 +76,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="scrollIndicator">{View}</div>
+      <div className="scrollIndicator" onClick={scrollToNext}>{View}</div>
     </header>
   );
 };

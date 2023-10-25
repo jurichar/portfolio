@@ -54,7 +54,7 @@ const Project_0 = ({ data }) => {
 
   return (
     <header ref={projectRef} className={`Project-header ${isVisible ? "animate" : ""}`}>
-      <div id="projects" className="Projects">
+      <div id="projects project_0" className="Projects">
         <h1 className="title">{projectData.title}</h1>
         <div className="content">
           <div className="content--description">
@@ -62,7 +62,12 @@ const Project_0 = ({ data }) => {
               {projectData.description}
               <br />
               <br />
-              <a href={projectData.link} target="_blank" rel="noopener noreferrer">learn more →</a>
+              <div className="learn-more">
+                <a href={projectData.link} target="_blank" rel="noopener noreferrer">learn more {" "}</a>
+                <div className="learn-more-arrow" >
+                  <a href={projectData.link} target="_blank" rel="noopener noreferrer">→</a>
+                </div>
+              </div>
             </p>
           </div>
           <div className="slider-container">
