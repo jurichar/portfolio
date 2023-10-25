@@ -58,7 +58,7 @@ const Project_0 = ({ data }) => {
         <h1 className="title">{projectData.title}</h1>
         <div className="content">
           <div className="content--description">
-            <p>
+            <div className="content--paragraph">
               {projectData.description}
               <br />
               <br />
@@ -68,7 +68,7 @@ const Project_0 = ({ data }) => {
                   <a href={projectData.link} target="_blank" rel="noopener noreferrer">→</a>
                 </div>
               </div>
-            </p>
+            </div>
           </div>
           <div className="slider-container">
             <div className="arrows">
