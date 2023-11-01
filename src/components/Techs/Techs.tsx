@@ -25,6 +25,7 @@ const Techs = () => {
   const [opacity, setOpacity] = useState(1);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
+  const [swipeClass, setSwipeClass] = useState('swipe-in-right');
 
   const updateCurrentTechs = (newIndex) => {
     const prev = newIndex === 0 ? techs.length - 1 : newIndex - 1;
@@ -54,20 +55,20 @@ const Techs = () => {
   };
 
   const rotateTechs = () => {
-    setOpacity(0);
+    setSwipeClass('swipe-out-left');
     setTimeout(() => {
       const newIndex = (currentImageIndex + 1) % techs.length;
       updateCurrentTechs(newIndex);
-      setOpacity(1);
+      setSwipeClass('swipe-in-right');
     }, 500);
   };
 
   const rotateInvertTechs = () => {
-    setOpacity(0);
+    setSwipeClass('swipe-out-right');
     setTimeout(() => {
       const newIndex = (currentImageIndex - 1 + techs.length) % techs.length;
       updateCurrentTechs(newIndex);
-      setOpacity(1);
+      setSwipeClass('swipe-in-left');
     }, 500);
   };
 
@@ -128,8 +129,7 @@ const Techs = () => {
     return (
       <div
         key={index}
-        className={`Icon ${isCenter ? (isLargeScreen ? "Icon--center-large" : "Icon--center") : ""}`}
-        style={{ opacity: opacity }}
+        className={`Icon ${isCenter ? (isLargeScreen ? "Icon--center-large" : "Icon--center") : ""} ${swipeClass}`}
       >
         <FontAwesomeIcon icon={iconMap[name]} size="2xl" />
       </div>
@@ -161,7 +161,7 @@ const Techs = () => {
               </path>
             </svg>
           </button>
-          <div className="Techs-text">
+          <div className={`Techs-text ${swipeClass}`}>
             <h1 className="Techs-title" style={{ opacity: opacity }}>
               <span className="Techs-title-name">{centerTech.name}</span>{" "}
               <span className="Techs-title-category">{centerTech.category}</span>
