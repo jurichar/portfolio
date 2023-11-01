@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import "../Projects.scss";
 import useIntersectionObserver from "../../../hooks/useIntersectionObserver.ts";
 import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
+import Linkify from 'react-linkify';
 
 const Project_1 = ({ data }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -59,7 +60,7 @@ const Project_1 = ({ data }) => {
         <div className="content">
           <div className="content--description">
             <div className="content--paragraph">
-              {projectData.description}
+              <Linkify>{projectData.description}</Linkify>
               <br />
               <br />
               <div className="learn-more">
