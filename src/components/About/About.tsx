@@ -18,6 +18,7 @@ const About = ({ data }) => {
       {" "}
       <div id="about" className="About">
         <h1 className="title"> About </h1>
+        <div className="line"></div>
         <div className="events">
           {data.map((event: any, key: any) => {
             return (
@@ -33,14 +34,23 @@ const About = ({ data }) => {
                       backgroundRepeat: "no-repeat",
                     }}
                   ></div>
-                  <h3>{event.title}</h3>
-                  <p>
-                    {event?.description?.map((line: any, i: any) => (
-                      <span key={i}>
-                        {line}
-                        <br />
-                      </span>
-                    ))}
+                  <h3>
+                    <span>
+                      {event.title}
+                    </span>
+                    <br />
+                    <span className="event-at">
+                      {" @"}
+                      {event.at}
+                    </span>
+                  </h3>
+                  <p className="event-description">
+                    {event?.description}
+                  </p>
+                  <br />
+                  <p className="event-skills">
+                    <span>Skills: </span>
+                    {event?.skills}
                   </p>
                 </div>
               </div>
@@ -48,7 +58,7 @@ const About = ({ data }) => {
           })}
         </div>
       </div>
-    </header>
+    </header >
   );
 };
 
