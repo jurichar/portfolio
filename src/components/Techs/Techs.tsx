@@ -22,7 +22,7 @@ import {
 
 const Techs = () => {
   const [currentTechs, setCurrentTechs] = useState(techs);
-  const [opacity, setOpacity] = useState(1);
+  const [opacity] = useState(1);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
   const [swipeClass, setSwipeClass] = useState('swipe-in-right');

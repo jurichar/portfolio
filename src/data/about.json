@@ -2,12 +2,21 @@
   "aboutData": [
     {
       "date": "2023",
+      "title": "Front-end Engineer",
+      "at": "Freelance",
+      "description": "As a freelance front-end engineer, I have worked on a variety of projects, including a web application for a startup and a website for a small business. These projects have given me the opportunity to work with a wide range of technologies, including Next, React, Styled Components, and Figma. I have also gained valuable experience in front-end development, which has been instrumental in my career as a front-end engineer.",
+      "skills": "Next, React, Styled Components, Figma, Front-end Development",
+      "image": "about_pics/software.png",
+      "image_alt": "Front-end Engineer"
+    },
+    {
+      "date": "2023",
       "title": "MLOps Engineer",
       "at": "ExxactRobotics",
       "description": "During my time at ExxactRobotics as an MLOps, I played a crucial role in optimizing data processing pipelines. By refactoring the pipelines in Python and automating processes with tools such as Jenkins, Azure, Minio, ZenML, Kubernetes (K8s), and Ansible, we were able to dramatically speed up data processing. In fact, our code enabled speeds up to 30 times faster than before. This significant improvement in data processing speed had a direct impact on the overall efficiency of the company, reducing wait times and enabling quicker decision-making.",
       "skills": "Kubernetes, Minio, ZenML, Linux, Azure DevOps, Docker Products, Python",
       "image": "about_pics/devops.png",
-      "image_alt": "DevOps Engineer"
+      "image_alt": "MLOps Engineer"
     },
     {
       "date": "2022",

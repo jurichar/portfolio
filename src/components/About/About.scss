@@ -22,7 +22,7 @@
 
 @keyframes inFromLeft {
   from {
-    transform: translateX(-100%);
+    transform: translateX(-150%);
     opacity: 0;
   }
 
@@ -142,13 +142,19 @@
   @media screen and (min-width: 768px) {
     .title {
       font-size: variables.$title-font-size-big;
+      margin-bottom: 5rem;
     }
 
     .events {
-      padding: 2rem 4rem;
+      padding: 2rem 14rem;
 
       .event {
         padding: 4rem;
+        min-height: auto;
+
+        .event-card {
+          gap: 2rem;
+        }
 
         .event-image {
           width: 20rem;
@@ -166,6 +172,7 @@
 
         .event-description,
         .event-skills {
+          text-align: center;
           font-size: variables.$paragraph-font-size-big;
         }
       }
@@ -204,7 +211,7 @@
     }
 
     .events .event {
-      animation: inFromLeft 1.5s ease-in-out forwards,
+      animation: inFromLeft 2s ease-in-out forwards,
         fade 1s ease-in-out forwards;
     }
 
