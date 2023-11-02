@@ -28,18 +28,19 @@
       ]
     },
     {
-      "title": "Swifty Proteins",
-      "description": "Swifty Proteins is a biochemistry-focused iOS app crafted with Swift 5.9, UIKit, and SwiftUI. The highlight of the app is its advanced 3D ligand visualization using SceneKit. It supports iOS 17 and offers features like user authentication through Face ID or Touch ID. Users can search, interact with, and share high-definition 3D models of protein ligands.",
-      "link": "https://github.com/llescure/swifty-protein",
+      "title": "Space Tourism",
+      "description": "Space Tourism is a space tourism website developed using Next and TypeScript. The project is fully responsive and features custom carousels and design constraints. The website is deployed on Vercel and can be accessed at https://space-tourism-jurichar.vercel.app/",
+      "link": "https://github.com/jurichar/space-tourism",
       "image_alt": "project_2",
       "images": [
-        "project_2/project_2_0.png",
-        "project_2/project_2_1.gif",
+        "project_2/logo.svg",
+        "project_2/project_2_1.png",
         "project_2/project_2_2.png",
         "project_2/project_2_3.png",
         "project_2/project_2_4.png",
         "project_2/project_2_5.png",
-        "project_2/project_2_6.png"
+        "project_2/project_2_6.png",
+        "project_2/project_2_7.png"
       ]
     }
   ]
