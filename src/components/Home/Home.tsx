@@ -2,7 +2,7 @@ import "./Home.scss";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
+import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 import { useState, useRef } from "react";
 import { useLottie } from "lottie-react";
@@ -70,8 +70,8 @@ const Home = () => {
             {icon(faGithubSquare, "https://github.com/jurichar/")}
             {icon(faLinkedin, "https://www.linkedin.com/in/julien-rchd/")}
             {icon(
-              faFileAlt,
-              "https://github.com/jurichar/cv/blob/main/CV_FR.pdf"
+              faCalendar,
+              "https://calendly.com/julienrichard/let-s-talk-about-your-project"
             )}
           </div>
         </div>

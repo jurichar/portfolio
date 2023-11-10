@@ -12,11 +12,7 @@ interface Event {
   image_alt: string;
 }
 
-interface AboutData {
-  aboutData: Event[];
-}
-
-const About = ({ aboutData }: AboutData) => {
+const About = ({ data }) => {
   const [isVisible, setIsVisible] = useState(false);
   const aboutRef = useRef(null);
 
@@ -34,7 +30,7 @@ const About = ({ aboutData }: AboutData) => {
         <h1 className="title"> About </h1>
         <div className="line"></div>
         <div className="events">
-          {aboutData.map((event: Event, key: number) => {
+          {data.map((event: Event, key: number) => {
             return (
               <div className="event" key={key}>
                 <div className="event-date">{event.date}</div>
