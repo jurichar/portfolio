@@ -2,10 +2,10 @@
   "aboutData": [
     {
       "date": "2023",
-      "title": "Front-end Engineer",
+      "title": "Fullstack Engineer",
       "at": "Freelance",
-      "description": "As a freelance front-end engineer, I have worked on a variety of projects, including a web application for a startup and a website for a small business. These projects have given me the opportunity to work with a wide range of technologies, including Next, React, Styled Components, and Figma. I have also gained valuable experience in front-end development, which has been instrumental in my career as a front-end engineer.",
-      "skills": "Next, React, Styled Components, Figma, Front-end Development",
+      "description": "As a freelance front-end engineer, I work on a variety of projects, including a web applications and websites for small business and with a wide range of technologies, including Next, React, Django, Tailwind and more. I have also gained valuable experiences in back-end development.",
+      "skills": "Next, React, Vue, Django, Tailwind, Wordpress, Front-end Development, Back-end Development",
       "image": "about_pics/software.png",
       "image_alt": "Front-end Engineer"
     },

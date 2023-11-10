@@ -2,7 +2,7 @@ import "./Thanks.scss";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
+import { faCalendar, faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 import { useState, useRef } from "react";
 
@@ -67,6 +67,7 @@ const Thanks = () => {
           </p>
           <div className="separator">
             <div className="buttons">
+              {icon(faCalendar, "https://calendly.com/julienrichard/let-s-talk-about-your-project", "take an appointment")}
               {icon(faGithubSquare, "https://github.com/jurichar/", "my github profile")}
               {icon(faLinkedin, "https://www.linkedin.com/in/julien-rchd/", "my linkedin profile")}
               {customIcon()}

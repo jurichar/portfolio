@@ -2,7 +2,21 @@ import "./About.scss";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 import { useRef, useState } from "react";
 
-const About = ({ data }) => {
+interface Event {
+  date: string;
+  title: string;
+  at: string;
+  description: string;
+  skills: string;
+  image: string;
+  image_alt: string;
+}
+
+interface AboutData {
+  aboutData: Event[];
+}
+
+const About = ({ aboutData }: AboutData) => {
   const [isVisible, setIsVisible] = useState(false);
   const aboutRef = useRef(null);
 
@@ -20,7 +34,7 @@ const About = ({ data }) => {
         <h1 className="title"> About </h1>
         <div className="line"></div>
         <div className="events">
-          {data.map((event: any, key: any) => {
+          {aboutData.map((event: Event, key: number) => {
             return (
               <div className="event" key={key}>
                 <div className="event-date">{event.date}</div>

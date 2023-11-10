@@ -106,7 +106,7 @@ const Techs = () => {
 
   useEffect(() => {
     updateCurrentTechs(currentImageIndex);
-  }, []);
+  }, [currentImageIndex]);
 
   const iconGroup = () => {
     const numIcons = isLargeScreen ? 5 : 3;
