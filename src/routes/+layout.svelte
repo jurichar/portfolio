@@ -5,9 +5,9 @@
 	import Navbar from "./Navbar.svelte";
 </script>
 
-<div class="h-screen w-screen bg-black">
+<div class="h-screen w-screen bg-black flex flex-col">
   <Navbar />
-  <div class="bg-black text-white w-full h-full p-16">
+  <div class="bg-black text-white flex-1 p-16 overflow-y-auto">
     <slot />
   </div>
 </div>
