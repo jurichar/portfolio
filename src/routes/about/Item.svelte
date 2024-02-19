@@ -44,7 +44,7 @@ div.active {
 }
 
 button.active {
-  transform: rotate(-180deg);
+  transform: rotate(135deg);
   transition: transform 500ms;
 }
 

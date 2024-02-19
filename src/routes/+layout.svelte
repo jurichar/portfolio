@@ -7,7 +7,7 @@
 
 <div class="h-screen w-screen bg-black flex flex-col">
   <Navbar />
-  <div class="bg-black text-white flex-1 p-16 overflow-y-auto">
+  <div class="bg-black text-white flex-1 p-8 px-[16vw] overflow-y-auto">
     <slot />
   </div>
 </div>
