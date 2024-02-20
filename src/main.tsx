@@ -1,11 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
-import "./index.scss";
-import "./_variables.scss";
+// main.tsx
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <React.StrictMode>
+import ReactDOM from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom';
+import App from './App.tsx'
+import './index.css'
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <BrowserRouter>
     <App />
-  </React.StrictMode>
-);
+  </BrowserRouter>
+)
