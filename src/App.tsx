@@ -7,7 +7,7 @@ import Navbar from './Components/Navbar'
 
 function App() {
   return (
-    <div className='flex-1 bg-black'>
+    <div className='max-w-screen grid place-items-center bg-black'>
       <Navbar />
       <div className="h-20" />
       <Routes>
