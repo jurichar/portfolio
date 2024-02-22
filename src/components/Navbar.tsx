@@ -26,7 +26,7 @@ function Navbar() {
     <>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className='fixed top-4 left-4 z-20'
+        className='fixed top-4 left-4 z-50'
       >
         <img
           src="/src/assets/icons/Plus.svg"
@@ -40,7 +40,7 @@ function Navbar() {
         FR/EN
       </button>
       <nav
-        className={`text-white fixed flex justify-around items-center flex-col top-0 left-0 w-screen h-screen backdrop-blur-3xl z-10 p-16 py-32 transform transition-transform duration-500 ease-in-bounce ${isOpen ? 'translate-y-0' : '-translate-y-full'
+        className={`text-white fixed flex justify-around items-center flex-col top-0 left-0 w-screen h-screen backdrop-blur-3xl z-40 p-16 py-32 transform transition-transform duration-500 ease-in-out ${isOpen ? 'translate-y-0' : '-translate-y-full'
           }`}
       >
         <AnimatePresence>
