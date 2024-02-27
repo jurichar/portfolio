@@ -31,22 +31,17 @@ function Navbar() {
           className={`h-10 w-10 transition-transform hover:scale-110 hover:text-yellow-200 duration-300 ease-in-out ${isOpen ? 'rotate-[135deg]' : ''}`}
         />
       </button >
-      <button
-        className='fixed top-4 right-4 z-50 text-white'
-      >
-        FR/EN
-      </button>
       <motion.nav
         initial={{ opacity: 0, height: 0, y: -500 }}
         animate={{ opacity: isOpen ? 1 : 0, height: isOpen ? '100%' : 0, y: isOpen ? 0 : -500 }}
         transition={{ duration: 0.5 }}
-        className={`text-white fixed flex justify-around items-center flex-col top-0 left-0 w-screen h-screen backdrop-blur-3xl ${isOpen ? 'z-50' : 'z-0'} p-16 py-32`}
+        className={`text-white fixed flex justify-around items-center flex-col top-0 left-0 w-screen h-screen backdrop-blur-3xl ${isOpen ? 'z-50' : 'z-0'} p-8 md:p-16 py-32`}
       >
         <AnimatePresence>
           {isOpen &&
             links.map((link, index) => (
               <motion.li
-                className='border-b-4 border-white text-7xl w-full list-none overflow-hidden'
+                className='border-b-4 border-white text-5xl md:text-7xl w-full list-none overflow-hidden'
                 key={index}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

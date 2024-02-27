@@ -50,15 +50,29 @@ function About() {
 
   return (
     <div className="text-white h-full min-h-screen w-full px-20">
-      <div className='h-16 overflow-hidden'>
+      <div className='h-16 overflow-hidden mb-14 md:mb-24'>
         <motion.h1
           initial={{ opacity: 1, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: [0.76, 0, 0.24, 1] }}
-          className='text-6xl text-center mb-24 font-bold'>ABOUT</motion.h1>
+          className='text-6xl text-center font-bold'>ABOUT</motion.h1>
       </div>
-      <div className="flex flex-col gap-10 justify-center items-center">
-        <img src="public/profil.png" alt="random" className='w-[50vw]' />
+      <div className='flex flex-col gap-10'>
+        <div className="flex flex-col-reverse md:flex-row gap-10 justify-center items-center">
+          <div>
+            <h1 className='font-bold'>Lorem Ipsum</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere, orci sit amet ullamcorper mattis, felis nulla malesuada erat, quis tristique augue diam rutrum nulla. Quisque varius sagittis purus, vitae porttitor risus congue in. Mauris rutrum, ante sed egestas pharetra, sapien elit placerat urna, quis faucibus tellus nunc in dui. Nunc hendrerit tellus ac ante eleifend finibus porta sed arcu. Proin sagittis ante at auctor ultricies. Aliquam lacinia commodo metus id fringilla. Vivamus convallis blandit blandit.</p>
+          </div>
+          <img src="public/profil.png" alt="random" className='w-[50vw]' />
+        </div>
+        <div>
+          <h1 className='font-bold'>Experience</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere, orci sit amet ullamcorper mattis, felis nulla malesuada erat, quis tristique augue diam rutrum nulla. Quisque varius sagittis purus, vitae porttitor risus congue in. Mauris rutrum, ante sed egestas pharetra, sapien elit placerat urna, quis faucibus tellus nunc in dui. Nunc hendrerit tellus ac ante eleifend finibus porta sed arcu. Proin sagittis ante at auctor ultricies. Aliquam lacinia commodo metus id fringilla. Vivamus convallis blandit blandit.</p>
+        </div>
+        <div>
+          <h1 className='font-bold'>Skills</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere, orci sit amet ullamcorper mattis, felis nulla malesuada erat, quis tristique augue diam rutrum nulla. Quisque varius sagittis purus, vitae porttitor risus congue in. Mauris rutrum, ante sed egestas pharetra, sapien elit placerat urna, quis faucibus tellus nunc in dui. Nunc hendrerit tellus ac ante eleifend finibus porta sed arcu. Proin sagittis ante at auctor ultricies. Aliquam lacinia commodo metus id fringilla. Vivamus convallis blandit blandit.</p>
+        </div>
       </div>
     </div>
   )
