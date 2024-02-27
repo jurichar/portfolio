@@ -1,70 +1,83 @@
 // Components/Navbar.tsx
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import { useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
   const links = [
     { name: 'HOME', to: '/' },
     { name: 'ABOUT', to: '/about' },
-    { name: 'WORKS', to: '/' },
-    { name: 'CONTACT', to: '/' },
+    { name: 'WORKS', to: '/works' },
+    { name: 'CONTACT', to: '/contact' },
     { name: 'RESUME', to: '/' },
   ];
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
-  }, [isOpen]);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+    window.scrollTo(0, 0);
+  }
 
   return (
     <>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className='fixed top-4 left-4 z-50'
+        className='fixed top-4 left-4 z-[99]'
       >
         <img
           src="/src/assets/icons/Plus.svg"
           alt="Plus icon"
-          className={`h-10 w-10 transition-transform duration-300 ease-in-out ${isOpen ? 'rotate-[135deg]' : ''}`}
+          className={`h-10 w-10 transition-transform hover:scale-110 hover:text-yellow-200 duration-300 ease-in-out ${isOpen ? 'rotate-[135deg]' : ''}`}
         />
-      </button>
+      </button >
       <button
-        className='fixed top-4 right-4 z-20 text-white'
+        className='fixed top-4 right-4 z-50 text-white'
       >
         FR/EN
       </button>
-      <nav
-        className={`text-white fixed flex justify-around items-center flex-col top-0 left-0 w-screen h-screen backdrop-blur-3xl z-40 p-16 py-32 transform transition-transform duration-500 ease-in-out ${isOpen ? 'translate-y-0' : '-translate-y-full'
-          }`}
+      <motion.nav
+        initial={{ opacity: 0, height: 0, y: -500 }}
+        animate={{ opacity: isOpen ? 1 : 0, height: isOpen ? '100%' : 0, y: isOpen ? 0 : -500 }}
+        transition={{ duration: 0.5 }}
+        className={`text-white fixed flex justify-around items-center flex-col top-0 left-0 w-screen h-screen backdrop-blur-3xl ${isOpen ? 'z-50' : 'z-0'} p-16 py-32`}
       >
         <AnimatePresence>
-          {isOpen && (
+          {isOpen &&
             links.map((link, index) => (
-              <Link
-                to={link.to}
+              <motion.li
+                className='border-b-4 border-white text-7xl w-full list-none overflow-hidden'
                 key={index}
-                onClick={() => setIsOpen(!isOpen)}
-                className='hover:font-bold border-b-2 border-white transition-all ease-in text-7xl w-full'
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{
+                  duration: 1
+                  , ease: [0.76, 0, 0.24, 1]
+                }}
               >
-                <motion.p
-                  key={index}
-                  initial={{ opacity: 0, x: -100 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 + 0.2 }}
-                  exit={{ opacity: 0, x: -100 }}
+                <motion.div
+                  initial={{ y: 100 }}
+                  animate={{ y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.2, ease: [0.76, 0, 0.24, 1] }}
+                  className='w-full h-full'
                 >
-                  {link.name}
-                </motion.p>
-              </Link>
-            )))}
-        </AnimatePresence>
-      </nav>
+                  <Link
+                    to={link.to}
+                    key={index}
+                    onClick={() => handleClick()}
+                    className='w-full h-full hover:tracking-[0.3em] hover:text-[#FFD700] transition-all duration-300'
+                  >
+                    <p className='font-bold'>
+                      {link.name}
+                    </p>
+                  </Link>
+                </motion.div>
+              </motion.li>
+            ))
+          }
+        </AnimatePresence >
+      </motion.nav >
     </>
   );
 }
