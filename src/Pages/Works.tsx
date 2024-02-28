@@ -66,79 +66,79 @@ function Works() {
   const works = [
     {
       "title": "Youtube Clone with Torrent Streaming",
-      "link": "./src/assets/JS.svg",
+      "link": "./public/assets/JS.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["Django", "React", "Web"]
     },
     {
       "title": "Showcase Websites",
-      "link": "./src/assets/JS.svg",
+      "link": "./public/assets/JS.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["Django", "React", "Web"]
     },
     {
       "title": "MLOps for Exxact Robotics",
-      "link": "./src/assets/python.svg",
+      "link": "./public/assets/python.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["Django", "React", "Web"]
     },
     {
       "title": "Software for AGCO",
-      "link": "./src/assets/C++.svg",
+      "link": "./public/assets/C++.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["Django", "React", "Web"]
     },
     {
       "title": "Cloud environment with Ansible and K8s",
-      "link": "./src/assets/Docker.svg",
+      "link": "./public/assets/Docker.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["Docker", "Ansible", "K8s"]
     },
     {
       "title": "Fully dockerized complex environment",
-      "link": "./src/assets/Docker.svg",
+      "link": "./public/assets/Docker.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["Docker", "Vagrant", "K8s"]
     },
     {
       "title": "Online game",
-      "link": "./src/assets/JS.svg",
+      "link": "./public/assets/JS.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["Web", "Vue", "NodeJS"]
     },
     {
       "title": "IRC Client/Server",
-      "link": "./src/assets/C++.svg",
+      "link": "./public/assets/C++.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["C++", "network"]
     },
     {
       "title": "C++ STD Library Implementation",
-      "link": "./src/assets/C++.svg",
+      "link": "./public/assets/C++.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["C++"]
     },
     {
       "title": "3D Game in C++",
-      "link": "./src/assets/C.svg",
+      "link": "./public/assets/C.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["C", "GL"]
     },
     {
       "title": "Shell from Scratch",
-      "link": "./src/assets/C.svg",
+      "link": "./public/assets/C.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["C", "shell"]
     },
     {
       "title": "Platform game",
-      "link": "./src/assets/Java.svg",
+      "link": "./public/assets/Java.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["C", "shell"]
     },
     {
       "title": "Puzzle Solver",
-      "link": "./src/assets/Java.svg",
+      "link": "./public/assets/Java.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["C", "shell"]
     },
