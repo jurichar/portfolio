@@ -1,11 +1,11 @@
 // App.tsx
 
 import { Route, Routes } from 'react-router-dom'
-import Home from './Pages/Home'
-import About from './Pages/About'
-import Navbar from './Components/Navbar'
-import Contact from './Pages/Contact'
-import Works from './Pages/Works'
+import Home from './pages/Home'
+import About from './pages/About'
+import Navbar from './components/Navbar'
+import Contact from './pages/Contact'
+import Works from './pages/Works'
 
 function App() {
   return (
