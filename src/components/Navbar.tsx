@@ -26,7 +26,7 @@ function Navbar() {
         className='fixed top-4 left-4 z-[99]'
       >
         <img
-          src="/public/assets/icons/Plus.svg"
+          src="/icons/Plus.svg"
           alt="Plus icon"
           className={`h-10 w-10 transition-transform hover:scale-110 hover:filter hover:sepia hover:brightness-150 duration-300 ease-in-out ${isOpen ? 'rotate-[135deg]' : ''}`}
         />

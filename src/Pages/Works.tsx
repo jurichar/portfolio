@@ -114,7 +114,7 @@ function Works() {
     },
     {
       "title": "C++ STD Library Implementation",
-      "link": "./public/assets/C++.svg",
+      "link": "/assets/C++.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["C++"]
     },
@@ -126,7 +126,7 @@ function Works() {
     },
     {
       "title": "Shell from Scratch",
-      "link": "./public/C.svg",
+      "link": "/C.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["C", "shell"]
     },
