@@ -66,49 +66,49 @@ function Works() {
   const works = [
     {
       "title": "Youtube Clone with Torrent Streaming",
-      "link": "./public/assets/JS.svg",
+      "link": "/assets/JS.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["Django", "React", "Web"]
     },
     {
       "title": "Showcase Websites",
-      "link": "./public/assets/JS.svg",
+      "link": "/assets/JS.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["Django", "React", "Web"]
     },
     {
       "title": "MLOps for Exxact Robotics",
-      "link": "./public/assets/python.svg",
+      "link": "/assets/python.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["Django", "React", "Web"]
     },
     {
       "title": "Software for AGCO",
-      "link": "./public/assets/C++.svg",
+      "link": "/assets/C++.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["Django", "React", "Web"]
     },
     {
       "title": "Cloud environment with Ansible and K8s",
-      "link": "./public/assets/Docker.svg",
+      "link": "/assets/Docker.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["Docker", "Ansible", "K8s"]
     },
     {
       "title": "Fully dockerized complex environment",
-      "link": "./public/assets/Docker.svg",
+      "link": "/assets/Docker.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["Docker", "Vagrant", "K8s"]
     },
     {
       "title": "Online game",
-      "link": "./public/assets/JS.svg",
+      "link": "/assets/JS.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["Web", "Vue", "NodeJS"]
     },
     {
       "title": "IRC Client/Server",
-      "link": "./public/assets/C++.svg",
+      "link": "/assets/C++.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["C++", "network"]
     },
@@ -120,25 +120,25 @@ function Works() {
     },
     {
       "title": "3D Game in C++",
-      "link": "/public/C.svg",
+      "link": "/assets/C.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["C", "GL"]
     },
     {
       "title": "Shell from Scratch",
-      "link": "/C.svg",
+      "link": "/assets/C.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["C", "shell"]
     },
     {
       "title": "Platform game",
-      "link": "./public/assets/Java.svg",
+      "link": "/assets/Java.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["C", "shell"]
     },
     {
       "title": "Puzzle Solver",
-      "link": "./public/assets/Java.svg",
+      "link": "/assets/Java.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["C", "shell"]
     },

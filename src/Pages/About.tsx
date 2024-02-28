@@ -62,7 +62,7 @@ function About() {
             <h1 className='font-bold'>Lorem Ipsum</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere, orci sit amet ullamcorper mattis, felis nulla malesuada erat, quis tristique augue diam rutrum nulla. Quisque varius sagittis purus, vitae porttitor risus congue in. Mauris rutrum, ante sed egestas pharetra, sapien elit placerat urna, quis faucibus tellus nunc in dui. Nunc hendrerit tellus ac ante eleifend finibus porta sed arcu. Proin sagittis ante at auctor ultricies. Aliquam lacinia commodo metus id fringilla. Vivamus convallis blandit blandit.</p>
           </div>
-          <img src="public/profil.png" alt="random" className='w-[50vw]' />
+          <img src="/profil.png" alt="random" className='w-[50vw]' />
         </div>
         <div>
           <h1 className='font-bold'>Experience</h1>
