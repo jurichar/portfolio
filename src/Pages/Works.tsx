@@ -120,13 +120,13 @@ function Works() {
     },
     {
       "title": "3D Game in C++",
-      "link": "./public/assets/C.svg",
+      "link": "/public/C.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["C", "GL"]
     },
     {
       "title": "Shell from Scratch",
-      "link": "./public/assets/C.svg",
+      "link": "./public/C.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
       "tags": ["C", "shell"]
     },
