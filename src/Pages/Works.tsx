@@ -71,18 +71,6 @@ function Works() {
       "tags": ["Django", "React", "Web"]
     },
     {
-      "title": "Sodexo Live !'s Website",
-      "link": "./src/assets/JS.svg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
-      "tags": ["Django", "React", "Web"]
-    },
-    {
-      "title": "Chopard, 1 place Vendôme's Website",
-      "link": "./src/assets/JS.svg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
-      "tags": ["Django", "React", "Web"]
-    },
-    {
       "title": "Showcase Websites",
       "link": "./src/assets/JS.svg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",

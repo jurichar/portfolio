@@ -28,7 +28,7 @@ function Navbar() {
         <img
           src="/src/assets/icons/Plus.svg"
           alt="Plus icon"
-          className={`h-10 w-10 transition-transform hover:scale-110 hover:text-yellow-200 duration-300 ease-in-out ${isOpen ? 'rotate-[135deg]' : ''}`}
+          className={`h-10 w-10 transition-transform hover:scale-110 hover:filter hover:sepia hover:brightness-150 duration-300 ease-in-out ${isOpen ? 'rotate-[135deg]' : ''}`}
         />
       </button >
       <motion.nav
@@ -41,7 +41,7 @@ function Navbar() {
           {isOpen &&
             links.map((link, index) => (
               <motion.li
-                className='border-b-4 border-white text-5xl md:text-7xl w-full list-none overflow-hidden'
+                className='border-b-4 group hover:border-[#FFD700] border-white text-5xl md:text-7xl w-full list-none overflow-hidden'
                 key={index}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -61,7 +61,7 @@ function Navbar() {
                     to={link.to}
                     key={index}
                     onClick={() => handleClick()}
-                    className='w-full h-full hover:tracking-[0.3em] hover:text-[#FFD700] transition-all duration-300'
+                    className='w-full h-full group-hover:tracking-[0.3em] group-hover:text-[#FFD700] transition-all duration-300'
                   >
                     <p className='font-bold'>
                       {link.name}

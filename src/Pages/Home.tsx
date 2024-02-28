@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import Draw from '../Components/Draw';
+import DrawUnderline from '../Components/DrawUnderline';
 
 const icon = (name: IconProp, link: string, index: number) => {
   return (
@@ -23,17 +25,17 @@ const icon = (name: IconProp, link: string, index: number) => {
 
 function Home() {
   return (
-    <div className="text-white">
-      <div className="w-full h-[calc(100vh-10rem)] flex justify-center items-center pb-20 text-3xl">
-        <motion.div
-          initial={{ opacity: 0, scale: 0 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.3, delay: 0.5 }}
-          viewport={{ once: true }}
-        >
-          <h1 className='font-bold'>
-            Hi, <br /> I'm Julien Richard
-          </h1>
+    <div className="text-white w-full h-[calc(100vh-10rem)] flex justify-center items-center pb-20 text-3xl">
+      <motion.div
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.3, delay: 0.5 }}
+        viewport={{ once: true }}
+      >
+        <h1 className='font-bold'>
+          Hi, <br /> I'm Julien Richard
+        </h1>
+        <div className='absolute'>
           <motion.p
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 0.5, x: 0 }}
@@ -42,13 +44,19 @@ function Home() {
             className='opacity-50'>
             and I'm a developer
           </motion.p>
-          <div className="flex flex-row justify-start gap-4">
-            {icon(faGithubSquare, "https://github.com/jurichar/", 0)}
-            {icon(faLinkedin, "https://www.linkedin.com/in/julien-rchd/", 1)}
+          <div className='relative -top-[7.5rem]'>
+            <DrawUnderline />
           </div>
-        </motion.div>
+        </div>
+        <div className="mt-10 flex flex-row justify-start gap-4">
+          {icon(faGithubSquare, "https://github.com/jurichar/", 0)}
+          {icon(faLinkedin, "https://www.linkedin.com/in/julien-rchd/", 1)}
+        </div>
+      </motion.div>
+      <div className='absolute top-8 left-20 w-[7rem] h-[5rem]'>
+        <Draw />
       </div>
-    </div>
+    </div >
   )
 }
 

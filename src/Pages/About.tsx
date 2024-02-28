@@ -1,6 +1,5 @@
 // Pages/About.tsx
 
-import React from 'react'
 import { motion } from 'framer-motion';
 
 function About() {
@@ -49,7 +48,7 @@ function About() {
 
 
   return (
-    <div className="text-white h-full min-h-screen w-full px-20">
+    <div className="text-white h-full min-h-screen w-full px-12 md:px-20">
       <div className='h-16 overflow-hidden mb-14 md:mb-24'>
         <motion.h1
           initial={{ opacity: 1, y: 100 }}
