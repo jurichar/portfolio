@@ -112,27 +112,31 @@ function About() {
 
 
   return (
-    <div className="text-white h-full min-h-screen w-full px-12 md:px-20">
+    <motion.div className="text-white h-full min-h-screen w-full px-12 md:px-20"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: 'easeIn', delay: 0.5 }}
+    >
       <div className='h-16 overflow-hidden mb-14 md:mb-24'>
         <motion.h1
           initial={{ opacity: 1, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: [0.76, 0, 0.24, 1] }}
+          transition={{ duration: 1, ease: [0.76, 0, 0.24, 1], delay: 1 }}
           className='text-6xl text-center font-bold'>ABOUT</motion.h1>
       </div>
-      <div className="flex flex-col-reverse md:flex-row gap-10 justify-center items-center">
+      <div
+        className="flex flex-col-reverse md:flex-row gap-10 justify-center items-center"
+      >
         <div>
           <h1 className='font-bold'>Lorem Ipsum</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere, orci sit amet ullamcorper mattis, felis nulla malesuada erat, quis tristique augue diam rutrum nulla. Quisque varius sagittis purus, vitae porttitor risus congue in. Mauris rutrum, ante sed egestas pharetra, sapien elit placerat urna, quis faucibus tellus nunc in dui. Nunc hendrerit tellus ac ante eleifend finibus porta sed arcu. Proin sagittis ante at auctor ultricies. Aliquam lacinia commodo metus id fringilla. Vivamus convallis blandit blandit.</p>
         </div>
-        <motion.div className='relative min-w-[50vw] w-full'
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}>
+        <div className='relative min-w-[50vw] w-full'>
           <img src="/profil.png" alt="random" loading='lazy' />
           <div className='z-30 absolute md:left-[35%] md:-top-[10%] left-[20%] -top-[25%]'>
             <DrawMe />
           </div>
-        </motion.div>
+        </div>
       </div>
       <h1 className='font-bold text-3xl my-8'>Experience</h1>
       <div className='flex flex-col gap-14'>
@@ -140,7 +144,7 @@ function About() {
           <AboutItem item={item} index={index} />
         ))}
       </div>
-    </div>
+    </motion.div >
   )
 }
 
