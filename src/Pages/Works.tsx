@@ -5,8 +5,9 @@ import Tag from '../components/Tag';
 
 interface Work {
   title: string;
-  link: string;
+  image: string[];
   description: string;
+  link?: string;
   tags: string[];
 }
 
@@ -36,7 +37,7 @@ function WorkCard({ work, onClick }: { work: Work; onClick: () => void }) {
     <motion.div
       initial={{ opacity: 0, scale: 0 }}
       whileInView={{ opacity: 1, scale: 1 }}
-      className="mb-10 object-cover gap-x-10 flex justify-center items-center min-h-32"
+      className="mb-10 object-cover gap-x-10 flex justify-center items-center min-h-32 cursor-pointer"
       onClick={onClick}
       viewport={{ once: true }}
     >
@@ -46,7 +47,7 @@ function WorkCard({ work, onClick }: { work: Work; onClick: () => void }) {
         animate="rest"
       >
         <img
-          src={work.link}
+          src={work.image[0]}
           alt="random"
           className='w-max h-max object-cover'
           loading='lazy'
@@ -74,6 +75,7 @@ function Overlay({ isOpen, onClick }: { isOpen: boolean; onClick: () => void }) 
     isOpen && <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: isOpen ? 0.3 : 0 }}
+      transition={{ duration: 0.3 }}
       className='h-screen w-[20vw] md:w-[50vw] fixed top-0 left-0 z-[100] bg-black'
       onClick={onClick}
     ></motion.div>
@@ -86,14 +88,16 @@ function SelectedWorkOverlay({ isOpen, selectedWork, onClick }: { isOpen: boolea
       initial={{ opacity: 0, x: 500 }}
       animate={{ opacity: isOpen ? 1 : 0, x: isOpen ? 0 : 500 }}
       transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] }}
-      className='min-h-screen w-[80vw] md:w-[50vw] fixed top-0 right-0 bottom-0 backdrop-blur-3xl flex flex-col justify-center items-center z-50 p-10 gap-10 overflow-scroll'
+      className='min-h-screen w-[80vw] md:w-[50vw] fixed top-0 right-0 bottom-0 backdrop-blur-3xl bg-black bg-opacity-50 flex flex-col justify-center items-center z-50 p-4 gap-10 overflow-scroll'
       onClick={onClick}
     >
-      <img src={selectedWork?.link} alt="random" loading='lazy' />
+      <div className='h-1/2 overflow-hidden'>
+        <img src={selectedWork?.image[0]} alt="random" loading='lazy' className=' w-full h-full object-contain max-w-full max-h-full' />
+      </div>
       <h1>
-        {selectedWork?.title}
+        {selectedWork?.title} <a>link</a>
       </h1>
-      <div className='w-full flex flex-row gap-4 justify-center'>
+      <div className='flex flex-row justify-start gap-x-2 gap-y-2 flex-wrap'>
         {selectedWork?.tags.map((tag, index) => (
           <Tag key={index} content={tag} />
         ))}
@@ -109,13 +113,6 @@ function Works() {
   const [isOpen, setIsOpen] = React.useState(false);
   const [selectedWork, setSelectedWork] = React.useState<Work | undefined>();
 
-  interface Work {
-    title: string;
-    link: string;
-    description: string;
-    tags: string[];
-  }
-
   const handleClick = (work: Work) => {
     setSelectedWork(work);
     setIsOpen(!isOpen);
@@ -123,124 +120,124 @@ function Works() {
   }
 
   const works = [
-    // {
-    //   "title": "Sodexo Live !",
-    //   "link": "/assets/works/ultratube.png",
-    //   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
-    //   "tags": ["JavaScript", "Next.js", "Web", "Framer Motion", "Drupal"]
-    // },
-    // {
-    //   "title": "Chopard: 1 Place Vandôme",
-    //   "link": "/assets/works/ultratube.png",
-    //   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
-    //   "tags": ["JavaScript", "Web", "Web GL", "Strapi"]
-    // },
+    {
+      "title": "Sodexo Live !",
+      "image": ["/assets/works/sodexo.png"],
+      "description": "",
+      "tags": ["JavaScript", "Next.js", "Tailwind", "Framer Motion", "Web", "Drupal"]
+    },
+    {
+      "title": "Chopard: 1 Place Vandôme",
+      "image": ["/assets/works/chopard.gif"],
+      "description": "",
+      "tags": ["JavaScript", "SASS", "Web GL", "Web", "Strapi"]
+    },
     {
       "title": "Youtube Clone with Torrent Streaming",
-      "link": "/assets/works/ultratube.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
-      "tags": ["TypeScript", "React.js", "Django", "Web", "Databases", "Torrents"]
+      "image": ["/assets/works/ultratube.png"],
+      "description": "",
+      "tags": ["TypeScript", "React.js", "Tailwind", "Web", "Django", "Databases", "Torrents"]
     },
     {
       "title": "CRM Tool",
-      "link": "/assets/works/focusflow.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
-      "tags": ["TypeScript", "React.js", "Django", "Web", "Databases"]
+      "image": ["/assets/works/focusflow.png"],
+      "description": "",
+      "tags": ["TypeScript", "React.js", "Web", "Django", "Databases"]
     },
     {
       "title": "Reddit Clone",
-      "link": "/assets/works/nextspace.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
+      "image": ["/assets/works/nextspace.png"],
+      "description": "",
       "tags": ["TypeScript", "Next.js", "Web", "Databases"]
     },
     {
       "title": "Landing Page",
-      "link": "/assets/works/landing.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
+      "image": ["/assets/works/landing.png"],
+      "description": "",
       "tags": ["JavaScript", "React.js", "Web"]
     },
     {
       "title": "3D Ligands Viewer",
-      "link": "/assets/works/proteins.gif",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
-      "tags": ["Swift", "Mobile", "Graphics", "Databases"]
+      "image": ["/assets/works/proteins.gif"],
+      "description": "",
+      "tags": ["Swift", "Graphics", "Mobile", "Databases"]
     },
     {
       'title': "42's Mobile App",
-      'link': '/assets/works/companion.gif',
-      'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque',
+      'image': ['/assets/works/companion.gif'],
+      'description': '',
       'tags': ['Swift', 'Mobile', "Databases"]
     },
     {
       "title": "MLOps for Exxact Robotics",
-      "link": "/assets/works/exaact.jpeg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
+      "image": ["/assets/works/exaact.jpeg"],
+      "description": "",
       "tags": ["Python", "AI", "Docker", "Kubernetes", "MLOps", "Databases", "Cloud"]
     },
     {
       "title": "Software for AGCO",
-      "link": "/assets/works/agco.jpeg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
+      "image": ["/assets/works/agco.jpeg"],
+      "description": "",
       "tags": ["C++", 'Qt', "Embedded"]
     },
     {
       "title": "Cloud environment with Ansible and K8s",
-      "link": "/assets/works/cloud.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
+      "image": ["/assets/works/cloud.png"],
+      "description": "",
       "tags": ["Docker", "Ansible", "Kubernetes", "Wordpress", "DevOps", "Cloud"]
     },
     {
       "title": "Fully dockerized complex environment",
-      "link": "/assets/works/iot.gif",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
+      "image": ["/assets/works/iot.gif"],
+      "description": "",
       "tags": ["Docker", "Vagrant", "Kubernetes", "Wordpress", "DevOps", "Databases"]
     },
     {
       "title": "Online game",
-      "link": "/assets/works/pong.jpeg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
-      "tags": ["Vue.js", "Node.js", "Web", "Databases"]
+      "image": ["/assets/works/pong.jpeg"],
+      "description": "",
+      "tags": ["Vue.js", "Web", "Node.js", "Databases"]
     },
     {
       "title": "IRC Client/Server",
-      "link": "/assets/works/irc.gif",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
+      "image": ["/assets/works/irc.gif"],
+      "description": "",
       "tags": ["C++", "Networks", "Software"]
     },
     {
       "title": "C++ STD Library Implementation",
-      "link": "/assets/C++.svg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
+      "image": ["/assets/C++.svg"],
+      "description": "",
       "tags": ["C++", "Software"]
     },
     {
       "title": "3D Game in C++",
-      "link": "/assets/works/cub3d.gif",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
+      "image": ["/assets/works/cub3d.gif"],
+      "description": "",
       "tags": ["C", "Graphics", "Software"]
     },
     {
       "title": "Shell from Scratch",
-      "link": "/assets/works/minishell.gif",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
+      "image": ["/assets/works/minishell.gif"],
+      "description": "",
       "tags": ["C", "Software"]
     },
     {
       "title": "Platform game",
-      "link": "/assets/works/platform_game.gif",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
+      "image": ["/assets/works/platform_game.gif"],
+      "description": "",
       "tags": ["Java", "Graphics"]
     },
     {
       "title": "Olymipcs planning",
-      "link": "/assets/Java.svg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
+      "image": ["/assets/Java.svg"],
+      "description": "",
       "tags": ["Java", "Databases", "Software"]
     },
     {
       "title": "Puzzle Solver",
-      "link": "/assets/works/puzzle_solver.gif",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra sapien eget sem mattis, id ullamcorper erat pharetra. Vestibulum conseque",
+      "image": ["/assets/works/puzzle_solver.gif"],
+      "description": "",
       "tags": ["Java", "AI", "Software"]
     },
   ];

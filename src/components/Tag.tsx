@@ -18,7 +18,7 @@ function Tag({ content }: TagProps) {
       color = 'text-[#007396] border-[#007396]';
       break;
 
-    // Frameworks et bibliothèques
+    // Frameworks
     case 'Qt':
     case 'Django':
     case 'Vue.js':
@@ -28,14 +28,18 @@ function Tag({ content }: TagProps) {
       color = 'text-[#61DAFB] border-[#61DAFB]';
       break;
 
+    // Librairies
+    case 'SASS':
+    case 'Tailwind':
+    case 'Three.js':
+    case 'Framer Motion':
+      color = 'text-[#38B2AC] border-[#38B2AC]';
+      break;
+
     // Technologies graphiques
     case 'Graphics':
     case 'Web GL':
-    case 'Three.js':
-    case 'Framer Motion':
-    case 'Tailwind':
-    case 'SASS':
-      color = 'text-[#FFD700] border-[#FFD700]';
+      color = 'text-[#F9A8D4] border-[#F9A8D4]';
       break;
 
     // Réseaux et bases de données
@@ -53,16 +57,12 @@ function Tag({ content }: TagProps) {
     case 'MLOps':
     case 'DevOps':
     case 'Cloud':
-      color = 'text-[#FFD700] border-[#FFD700]';
+      color = "text-[orange] border-[orange]";
       break;
 
     // Outils de déploiement et gestion
     case 'Docker':
     case 'Kubernetes':
-    case 'Jenkins':
-    case 'Azure':
-    case 'ZenML':
-    case 'Minio':
     case 'Ansible':
     case 'Vagrant':
       color = 'text-[#1c63ed] border-[#1c63ed]';
@@ -74,7 +74,7 @@ function Tag({ content }: TagProps) {
   }
 
   return (
-    <span className={`px-3 py-1 border-2 rounded-full whitespace-nowrap ${color}`}>
+    <span className={`px-3 py-1 border-2 rounded-full whitespace-nowrap pointer-events-none ${color}`}>
       {content}
     </span>
   );

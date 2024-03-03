@@ -14,3 +14,8 @@
 body {
   background-color: black;
 }
+
+h1,
+p {
+  pointer-events: none;
+}

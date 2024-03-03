@@ -16,17 +16,14 @@ function Contact() {
         </li>
         <li className='z-40'>
           <span className='text-2xl font-thin'>email:</span>
-          {"   "}
           <a className='z-40 text-2xl font-bold hover:tracking-[0.3em] hover:text-[#FFD700] transition-all duration-300'>jurichar@student.42.fr</a>
         </li>
         <li className='z-40'>
           <span className='text-2xl font-thin'>linkedin:</span>
-          {"   "}
           <a className='z-40 text-2xl font-bold hover:tracking-[0.3em] hover:text-[#FFD700] transition-all duration-300'>jurichar@student.42.fr</a>
         </li>
         <li className='z-40'>
           <span className='text-2xl font-thin'>github:</span>
-          {"   "}
           <a className='z-40 text-2xl font-bold hover:tracking-[0.3em] hover:text-[#FFD700] transition-all duration-300'>jurichar@student.42.fr</a>
         </li>
       </ul>
