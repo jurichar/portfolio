@@ -4,80 +4,77 @@ interface TagProps {
 
 function Tag({ content }: TagProps) {
   let color = '';
+
   switch (content) {
-    // language
+    // Langages de programmation
     case 'Java':
+    case 'C':
+    case 'C++':
+    case 'Swift':
+    case 'Python':
+    case 'JavaScript':
+    case 'TypeScript':
+    case 'Node.js':
       color = 'text-[#007396] border-[#007396]';
       break;
-    case 'C':
-      color = 'text-[#659bd3] border-[#659bd3]';
-      break;
-    case 'C++':
-      color = 'text-[#659bd3] border-[#659bd3]';
-      break;
+
+    // Frameworks et bibliothèques
     case 'Qt':
-      color = 'text-[#41CD52] border-[#41CD52]';
-      break;
-    case 'Swift':
-      color = 'text-[#FFD700] border-[#FFD700]';
-      break;
-    case 'Python':
-      color = 'text-[#3776AB] border-[#3776AB]';
-      break;
     case 'Django':
-      color = 'text-[#3776AB] border-[#3776AB]';
-      break;
-    case 'JavaScript':
-      color = 'text-[#F7DF1E] border-[#F7DF1E]';
-      break;
-    case 'TypeScript':
-      color = 'text-[#007ACC] border-[#007ACC]';
-      break;
-    case 'Node.js':
-      color = 'text-[#1c63ed] border-[#1c63ed]';
+    case 'Vue.js':
+    case 'React.js':
+    case 'Next.js':
+    case 'React Native':
+      color = 'text-[#61DAFB] border-[#61DAFB]';
       break;
 
-    // tools / libraries
-    case 'Graphics' || 'Web GL' || 'Three.js' || 'Framer Motion' || 'Tailwind' || 'SASS':
+    // Technologies graphiques
+    case 'Graphics':
+    case 'Web GL':
+    case 'Three.js':
+    case 'Framer Motion':
+    case 'Tailwind':
+    case 'SASS':
       color = 'text-[#FFD700] border-[#FFD700]';
       break;
 
-    // domain
+    // Réseaux et bases de données
     case 'Networks':
-      color = 'text-[#FFD700] border-[#FFD700]';
-      break;
     case 'Databases':
       color = 'text-[#FFD700] border-[#FFD700]';
       break;
-    case 'Web' || 'Mobile' || 'Embedded' || 'AI' || 'Software' || 'MLOps' || 'DevOps' || 'Cloud':
+
+    // Domaines de développement
+    case 'Web':
+    case 'Mobile':
+    case 'Embedded':
+    case 'AI':
+    case 'Software':
+    case 'MLOps':
+    case 'DevOps':
+    case 'Cloud':
       color = 'text-[#FFD700] border-[#FFD700]';
       break;
 
-    // frameworks
-    case 'Vue.js' || 'React.js' || 'Next.js' || 'React Native':
-      color = 'text-[#61DAFB] border-[#61DAFB]';
-      break;
-    case 'Wordpress' || 'Strapi' || 'Drupal':
-      color = 'text-[#FFD700] border-[#FFD700]';
-      break;
+    // Outils de déploiement et gestion
     case 'Docker':
+    case 'Kubernetes':
+    case 'Jenkins':
+    case 'Azure':
+    case 'ZenML':
+    case 'Minio':
+    case 'Ansible':
+    case 'Vagrant':
       color = 'text-[#1c63ed] border-[#1c63ed]';
       break;
-    case 'Docker' || 'Kubernetes' || 'Jenkins' || 'Azure' || 'AWS' || 'GCP':
-      color = 'text-[#FFD700] border-[#FFD700]';
-      break;
-    case 'ZenML' || 'Minio' || 'Ansible' || 'Vagrant' || '':
-      color = 'text-[#FFD700] border-[#FFD700]';
-      break;
-
-
 
     default:
-      color = 'text-[#FFD700] border-[#FFD700]';
+      color = 'text-[red] border-[red]';
       break;
   }
+
   return (
-    <span className={`px-3 py-1  border-2 rounded-full whitespace-nowrap ${color}`}>
+    <span className={`px-3 py-1 border-2 rounded-full whitespace-nowrap ${color}`}>
       {content}
     </span>
   );
