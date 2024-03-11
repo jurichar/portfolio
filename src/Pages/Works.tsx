@@ -75,7 +75,7 @@ function Overlay({ isOpen, onClick }: { isOpen: boolean; onClick: () => void }) 
     isOpen && <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: isOpen ? 0.3 : 0 }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 1.3 }}
       className='h-screen w-[20vw] md:w-[50vw] fixed top-0 left-0 z-[100] bg-black'
       onClick={onClick}
     ></motion.div>
@@ -94,17 +94,17 @@ function SelectedWorkOverlay({ isOpen, selectedWork, onClick }: { isOpen: boolea
       <div className='h-1/2 overflow-hidden'>
         <img src={selectedWork?.image[0]} alt="random" loading='lazy' className=' w-full h-full object-contain max-w-full max-h-full' />
       </div>
-      <h1>
+      <h1 className='text-3xl'>
         {selectedWork?.title} <a>link</a>
       </h1>
+      <p className='text-xl p-4'>
+        {selectedWork?.description}
+      </p>
       <div className='flex flex-row justify-start gap-x-2 gap-y-2 flex-wrap'>
         {selectedWork?.tags.map((tag, index) => (
           <Tag key={index} content={tag} />
         ))}
       </div>
-      <p>
-        {selectedWork?.description}
-      </p>
     </motion.div>
   );
 }
@@ -123,121 +123,121 @@ function Works() {
     {
       "title": "Sodexo Live !",
       "image": ["/assets/works/sodexo.png"],
-      "description": "",
+      "description": "A web app, written in JavaScript, with Next.js, with a lot of animations with Framer Motion. It uses a custom API in Drupal to retrieve data.",
       "tags": ["JavaScript", "Next.js", "Tailwind", "Framer Motion", "Web", "Drupal"]
     },
     {
       "title": "Chopard: 1 Place Vandôme",
       "image": ["/assets/works/chopard.gif"],
-      "description": "",
+      "description": "A 2D Graphic experience, written in JavaScript, with SASS, and uses Web GL to render the 2D graphics.",
       "tags": ["JavaScript", "SASS", "Web GL", "Web", "Strapi"]
     },
     {
       "title": "Youtube Clone with Torrent Streaming",
       "image": ["/assets/works/ultratube.png"],
-      "description": "",
+      "description": "A Youtube clone, with a torrent streaming feature, written in Django, with a custom API to retrieve data.",
       "tags": ["TypeScript", "React.js", "Tailwind", "Web", "Django", "Databases", "Torrents"]
     },
     {
       "title": "CRM Tool",
       "image": ["/assets/works/focusflow.png"],
-      "description": "",
+      "description": "A CRM tool, written in TypeScript, with React.js, and uses a custom API to retrieve data.",
       "tags": ["TypeScript", "React.js", "Web", "Django", "Databases"]
     },
     {
       "title": "Reddit Clone",
       "image": ["/assets/works/nextspace.png"],
-      "description": "",
+      "description": "A Reddit clone, written in Next (front + back), with Next.js, and uses a custom API to retrieve data.",
       "tags": ["TypeScript", "Next.js", "Web", "Databases"]
     },
     {
       "title": "Landing Page",
       "image": ["/assets/works/landing.png"],
-      "description": "",
+      "description": "A bunch of landing pages, written in JavaScript, with React.js, and Tailwind.",
       "tags": ["JavaScript", "React.js", "Web"]
     },
     {
       "title": "3D Ligands Viewer",
       "image": ["/assets/works/proteins.gif"],
-      "description": "",
+      "description": "A 3D ligands viewer, written in Swift. It uses a custom API to retrieve data and display it in 3D.",
       "tags": ["Swift", "Graphics", "Mobile", "Databases"]
     },
     {
       'title': "42's Mobile App",
       'image': ['/assets/works/companion.gif'],
-      'description': '',
+      'description': 'A mobile app for 42 students, written in Swift. It uses a custom API to retrieve data. ',
       'tags': ['Swift', 'Mobile', "Databases"]
     },
     {
       "title": "MLOps for Exxact Robotics",
       "image": ["/assets/works/exaact.jpeg"],
-      "description": "",
+      "description": "A MLOps environment for AI solutions, written in Python, with Docker and Kubernetes.",
       "tags": ["Python", "AI", "Docker", "Kubernetes", "MLOps", "Databases", "Cloud"]
     },
     {
       "title": "Software for AGCO",
       "image": ["/assets/works/agco.jpeg"],
-      "description": "",
+      "description": "A software for a tractor, written in Qt / QSkinny.",
       "tags": ["C++", 'Qt', "Embedded"]
     },
     {
       "title": "Cloud environment with Ansible and K8s",
       "image": ["/assets/works/cloud.png"],
-      "description": "",
+      "description": "A cloud environment deployed with Ansible and Kubernetes, with a Wordpress website. ",
       "tags": ["Docker", "Ansible", "Kubernetes", "Wordpress", "DevOps", "Cloud"]
     },
     {
       "title": "Fully dockerized complex environment",
       "image": ["/assets/works/iot.gif"],
-      "description": "",
+      "description": "A fully dockerized complex environment with a database, a web server, a reverse proxy, and a monitoring tool. This project was made in a team of 3.",
       "tags": ["Docker", "Vagrant", "Kubernetes", "Wordpress", "DevOps", "Databases"]
     },
     {
       "title": "Online game",
       "image": ["/assets/works/pong.jpeg"],
-      "description": "",
+      "description": "An online game platform with a game of pong, this project was made in a team of 5. It was written in Vue.js, Node.js and uses PostgreSQL.",
       "tags": ["Vue.js", "Web", "Node.js", "Databases"]
     },
     {
       "title": "IRC Client/Server",
       "image": ["/assets/works/irc.gif"],
-      "description": "",
+      "description": "An IRC client and server, written in C++, from scratch. This project is network-oriented.",
       "tags": ["C++", "Networks", "Software"]
     },
     {
       "title": "C++ STD Library Implementation",
       "image": ["/assets/C++.svg"],
-      "description": "",
+      "description": "A reimplementation of the C++ Standard Library, written in C++ from scratch. This project is software-oriented.",
       "tags": ["C++", "Software"]
     },
     {
       "title": "3D Game in C++",
       "image": ["/assets/works/cub3d.gif"],
-      "description": "",
+      "description": "A 3D game, written in C, from scratch. It uses the raycasting technique to render the 3D world. This project is graphics-oriented.",
       "tags": ["C", "Graphics", "Software"]
     },
     {
       "title": "Shell from Scratch",
       "image": ["/assets/works/minishell.gif"],
-      "description": "",
+      "description": "A shell, written in C, from scratch. It uses the termcaps library to handle the terminal.",
       "tags": ["C", "Software"]
     },
     {
       "title": "Platform game",
       "image": ["/assets/works/platform_game.gif"],
-      "description": "",
+      "description": "A platform game, written in Java, we made in a team of 4. It uses a custom game engine. This project is game-oriented.",
       "tags": ["Java", "Graphics"]
     },
     {
       "title": "Olymipcs planning",
       "image": ["/assets/Java.svg"],
-      "description": "",
+      "description": "An Olympics planning software, written in Java. It uses a database to store and retrieve data. This project is database-oriented.",
       "tags": ["Java", "Databases", "Software"]
     },
     {
       "title": "Puzzle Solver",
       "image": ["/assets/works/puzzle_solver.gif"],
-      "description": "",
+      "description": "A puzzle slider solver, written in Java. It uses the A* algorithm to solve the puzzle.",
       "tags": ["Java", "AI", "Software"]
     },
   ];

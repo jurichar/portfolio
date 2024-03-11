@@ -15,19 +15,19 @@ function Contact() {
           If you want to contact me, you can use the following links:
         </li>
         <li className='z-40'>
-          <span className='text-2xl font-thin'>email:</span>
-          <a className='z-40 text-2xl font-bold hover:tracking-[0.3em] hover:text-[#FFD700] transition-all duration-300'>jurichar@student.42.fr</a>
+          <span className='text-2xl font-thin'>email:{' '}</span>
+          <a className='z-40 text-2xl font-bold hover:tracking-[0.3em] hover:text-[#FFD700] transition-all duration-300' href='mailto:jurichar@student.42.fr' target='_blank'>jurichar@student.42.fr</a>
         </li>
         <li className='z-40'>
-          <span className='text-2xl font-thin'>linkedin:</span>
-          <a className='z-40 text-2xl font-bold hover:tracking-[0.3em] hover:text-[#FFD700] transition-all duration-300'>jurichar@student.42.fr</a>
+          <span className='text-2xl font-thin'>linkedin:{' '}</span>
+          <a className='z-40 text-2xl font-bold hover:tracking-[0.3em] hover:text-[#FFD700] transition-all duration-300' href='https://www.linkedin.com/in/julien-rchd/' target='_blank'>/in/julien-rchd</a>
         </li>
         <li className='z-40'>
-          <span className='text-2xl font-thin'>github:</span>
-          <a className='z-40 text-2xl font-bold hover:tracking-[0.3em] hover:text-[#FFD700] transition-all duration-300'>jurichar@student.42.fr</a>
+          <span className='text-2xl font-thin'>github:{' '}</span>
+          <a className='z-40 text-2xl font-bold hover:tracking-[0.3em] hover:text-[#FFD700] transition-all duration-300' href='https://github.com/jurichar' target='_blank'>github.com/jurichar</a>
         </li>
       </ul>
-    </div>
+    </div >
   )
 }
 
