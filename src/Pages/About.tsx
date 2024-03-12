@@ -27,9 +27,9 @@ function AboutItem({ item, index }: { item: ItemType, index: number }) {
     >
       <h1 className='font-bold opacity-70 whitespace-nowrap pointer-events-none'>{item.duration}</h1>
       <div>
-        <div className='outline-2 transition-all outline-[#FFD700] hover:outline outline-offset-8 rounded'>
+        <div className='group outline-2 transition-all outline-[rgba(255,215,0,0.5)]  hover:outline outline-offset-[1rem] rounded'>
           <Link to={item.link} target='_blank'>
-            <h1 className='font-bold whitespace-nowrap'>
+            <h1 className='font-bold whitespace-nowrap group-hover:opacity-100 opacity-80'>
               <span>
                 {item.title}
               </span>
@@ -40,22 +40,22 @@ function AboutItem({ item, index }: { item: ItemType, index: number }) {
                 {item.company}
               </span>
             </h1>
-            <p className='opacity-80'>{item.description}</p>
+            <p className='group-hover:opacity-80 opacity-70'>{item.description}</p>
+            <div className='group-hover:opacity-100 opacity-50 mt-4 flex flex-row justify-start gap-x-2 gap-y-2 flex-wrap'>
+              {item.tags.map((tag, index) => (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  key={index}
+                  viewport={{ once: true }}
+                  className='pt-2'
+                >
+                  <Tag content={tag} />
+                </motion.div>
+              ))}
+            </div>
           </Link>
-        </div>
-        <div className='mt-4 flex flex-row justify-start gap-x-2 gap-y-2 flex-wrap'>
-          {item.tags.map((tag, index) => (
-            <motion.div
-              initial={{ opacity: 0, scale: 0 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              key={index}
-              viewport={{ once: true }}
-              className='pt-2'
-            >
-              <Tag content={tag} />
-            </motion.div>
-          ))}
         </div>
       </div>
     </motion.div>

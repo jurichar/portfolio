@@ -10,7 +10,7 @@ function Contact() {
           transition={{ duration: 1, ease: [0.76, 0, 0.24, 1] }}
           className='text-6xl text-center font-bold'>CONTACT</motion.h1>
       </div>
-      <ul className="font-normal">
+      <ul className="font-normal cursor-default">
         <li className='text-2xl mb-4'>
           If you want to contact me, you can use the following links:
         </li>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 function Resume() {
@@ -11,9 +10,9 @@ function Resume() {
           transition={{ duration: 1, ease: [0.76, 0, 0.24, 1] }}
           className='text-6xl text-center font-bold'>RESUME</motion.h1>
       </div>
-      {/* <oject data="path-to-your-resume.pdf" type="application/pdf" width="100%" height="600px">
+      <object data="/CV.pdf" type="application/pdf" width="100%" height="600px">
         <p>It appears you don't have a PDF plugin for this browser. No biggie... you can <a href="path-to-your-resume.pdf">click here to download the PDF file.</a></p>
-      </oject> */}
+      </object>
     </div>
   )
 }
