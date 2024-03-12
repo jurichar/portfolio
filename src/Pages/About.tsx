@@ -9,7 +9,6 @@ type ItemType = {
   duration: string;
   company: string;
   title: string;
-  // image: string;
   description: string;
   tags: string[];
   link: string;
@@ -21,10 +20,15 @@ function AboutItem({ item, index }: { item: ItemType, index: number }) {
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: [0.76, 0, 0.24, 1] }}
-      className='flex flex-col gap-2 md:gap-8 md:flex-row'
+      className='flex flex-col gap-2 md:gap-8 md:flex-row md:justify-end'
       key={index}
       viewport={{ once: true }}
     >
+      <div className='max-h-full'>
+        <img src="https://picsum.photos/200/300" alt="random" loading='lazy' draggable='false'
+          className='w-max h-max object-cover'
+        />
+      </div>
       <h1 className='font-bold opacity-70 whitespace-nowrap pointer-events-none'>{item.duration}</h1>
       <div>
         <div className='group outline-2 transition-all outline-[rgba(255,215,0,0.5)]  hover:outline outline-offset-[1rem] rounded'>
@@ -117,7 +121,6 @@ function About() {
       'duration': '2017 - 2018',
       'company': 'University of Paris',
       'title': 'Student',
-      'image': 'https://www.picsum.photos/200/300',
       'description': 'My computer science degree at Université Paris 7 Diderot has given me a solid grounding in various domains like programming, computer sciences, and databases. The curriculum also included a strong mathematical component, which has been invaluable in my coding projects.',
       'tags': ['Java', 'C', 'Python', 'Web', 'Databases', 'Mathematics'],
       'link': 'https://u-paris.fr/'

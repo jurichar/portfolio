@@ -2,7 +2,6 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import Tag from '../components/Tag';
 
-
 interface Work {
   title: string;
   image: string[];
@@ -55,6 +54,7 @@ function WorkCard({ work, onClick }: { work: Work; onClick: () => void }) {
         <motion.div
           className='h-auto w-full flex flex-col justify-center gap-2 backdrop-blur-md absolute bottom-0 left-0 z-50 p-2 bg-black bg-opacity-20 text-white text-center font-bold'
           variants={InfosVariant}
+          transition={{ ease: 'easeOut' }}
         >
           <h1>
             {work.title}
@@ -129,7 +129,7 @@ function Works() {
     {
       "title": "Chopard: 1 Place Vandôme",
       "image": ["/assets/works/chopard.gif"],
-      "description": "A 2D Graphic experience, written in JavaScript, with SASS, and uses Web GL to render the 2D graphics.",
+      "description": "Creation of a website for the Chopard 1 Place Vendôme hotel, aiming to create an immersive experience with WebGL.",
       "tags": ["JavaScript", "SASS", "Web GL", "Web", "Strapi"]
     },
     {
@@ -153,7 +153,7 @@ function Works() {
     {
       "title": "Landing Page",
       "image": ["/assets/works/landing.png"],
-      "description": "A bunch of landing pages, written in JavaScript, with React.js, and Tailwind.",
+      "description": "Landing pages built with various JavaScript frameworks and libraries.",
       "tags": ["JavaScript", "React.js", "Web"]
     },
     {
@@ -171,7 +171,7 @@ function Works() {
     {
       "title": "MLOps for Exxact Robotics",
       "image": ["/assets/works/exaact.jpeg"],
-      "description": "A MLOps environment for AI solutions, written in Python, with Docker and Kubernetes.",
+      "description": "Optimization of machine learning pipelines in Python using Azure.",
       "tags": ["Python", "AI", "Docker", "Kubernetes", "MLOps", "Databases", "Cloud"]
     },
     {
@@ -183,7 +183,7 @@ function Works() {
     {
       "title": "Cloud environment with Ansible and K8s",
       "image": ["/assets/works/cloud.png"],
-      "description": "A cloud environment deployed with Ansible and Kubernetes, with a Wordpress website. ",
+      "description": "Deployment of a complex WordPress environment in the cloud using Ansible and Kubernetes.",
       "tags": ["Docker", "Ansible", "Kubernetes", "Wordpress", "DevOps", "Cloud"]
     },
     {
