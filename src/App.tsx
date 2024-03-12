@@ -1,67 +1,31 @@
-import "./App.scss";
-import Home from "./components/Home/Home";
-import Contact from "./components/Contact/Contact";
-import About from "./components/About/About";
-import Techs from "./components/Techs/Techs";
-import { aboutData } from "../src/data/about.json";
-import { projectsData } from "../src/data/projects.json";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
-import { Analytics } from "@vercel/analytics/react";
-import { useState } from "react";
-import Project_0 from "./components/Projects/Project_0/Project_0";
-import Project_1 from "./components/Projects/Project_1/Project_1";
-import Project_2 from "./components/Projects/Project_2/Project_2";
-import Thanks from "./components/Thanks/Thanks";
+// App.tsx
 
-const App = () => {
-  const [showArrow, setShowArrow] = useState(false);
+import { Route, Routes } from 'react-router-dom'
+import Home from './Pages/Home'
+import About from './Pages/About'
+import Navbar from './components/Navbar'
+import Contact from './Pages/Contact'
+import Works from './Pages/Works'
+import Resume from './Pages/Resume'
 
-  const handleScroll = (e) => {
-    const scrollTop = e.target.scrollTop;
-    if (scrollTop > 200) {
-      setShowArrow(true);
-    } else {
-      setShowArrow(false);
-    }
-  };
-
-  const scrollToTop = () => {
-    const element = document.getElementById("home");
-    element.scrollIntoView({
-      behavior: "auto",
-      block: "end",
-      inline: "nearest",
-    });
-  };
-
+function App() {
   return (
-    <>
-      <div className="content" id="content" onScroll={handleScroll}>
-        <a
-          href="#"
-          className={`back-to-top ${showArrow ? "visible" : "hidden"}`}
-          onClick={scrollToTop}
-        >
-          <FontAwesomeIcon icon={faArrowUp} size="2xl" />
-        </a>
-        <Home />
-        <div className="divider"></div>
-        <About data={aboutData} />
-        <div className="divider"></div>
-        <Project_0 data={projectsData} />
-        <div className="divider"></div>
-        <Project_1 data={projectsData} />
-        <div className="divider"></div>
-        <Project_2 data={projectsData} />
-        <div className="divider"></div>
-        <Techs />
-        <Thanks />
-        <Contact />
+    <div className='max-w-screen grid place-items-center bg-black'>
+      <Navbar />
+      <div className="h-20" />
+      <div className="z-[90] h-40 w-full bg-gradient-to-t from-transparent to-black blur-lg fixed -top-10 pointer-events-none" />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/works" element={<Works />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
+      <div className="h-20 pointer-events-none" />
+      <div className="fixed top-0 left-0 z-50 pointer-events-none">
       </div>
-      <Analytics />
-    </>
-  );
-};
+    </div>
+  )
+}
 
-export default App;
+export default App
