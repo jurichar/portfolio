@@ -48,7 +48,7 @@ function WorkCard({ work, onClick }: { work: Work; onClick: () => void }) {
         <img
           src={work.image[0]}
           alt="random"
-          className='w-max h-max object-cover'
+          className='w-max h-auto object-cover'
           loading='lazy'
         />
         <motion.div
@@ -95,7 +95,7 @@ function SelectedWorkOverlay({ isOpen, selectedWork, onClick }: { isOpen: boolea
         <img src={selectedWork?.image[0]} alt="random" loading='lazy' className=' w-full h-full object-contain max-w-full max-h-full' />
       </div>
       <h1 className='text-3xl'>
-        {selectedWork?.title} <a>link</a>
+        {selectedWork?.title}
       </h1>
       <p className='text-xl p-4'>
         {selectedWork?.description}

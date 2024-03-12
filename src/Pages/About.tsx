@@ -20,7 +20,7 @@ function AboutItem({ item, index }: { item: ItemType, index: number }) {
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: [0.76, 0, 0.24, 1] }}
-      className='flex flex-col gap-2 md:gap-8 md:flex-row md:justify-end'
+      className='flex flex-col gap-6 md:gap-8 md:flex-row md:justify-end'
       key={index}
       viewport={{ once: true }}
     >
