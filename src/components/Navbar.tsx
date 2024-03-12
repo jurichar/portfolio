@@ -11,7 +11,7 @@ function Navbar() {
     { name: 'ABOUT', to: '/about' },
     { name: 'WORKS', to: '/works' },
     { name: 'CONTACT', to: '/contact' },
-    { name: 'RESUME', to: '/' },
+    { name: 'RESUME', to: '/resume' },
   ];
 
   const handleClick = () => {
