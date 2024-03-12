@@ -24,11 +24,6 @@ function AboutItem({ item, index }: { item: ItemType, index: number }) {
       key={index}
       viewport={{ once: true }}
     >
-      <div className='max-h-full'>
-        <img src="https://picsum.photos/200/300" alt="random" loading='lazy' draggable='false'
-          className='w-max h-max object-cover'
-        />
-      </div>
       <h1 className='font-bold opacity-70 whitespace-nowrap pointer-events-none'>{item.duration}</h1>
       <div>
         <div className='group outline-2 transition-all outline-[rgba(255,215,0,0.5)]  hover:outline outline-offset-[1rem] rounded'>
