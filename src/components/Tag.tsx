@@ -15,7 +15,7 @@ function Tag({ content }: TagProps) {
     case 'JavaScript':
     case 'TypeScript':
     case 'Node.js':
-      color = 'text-[#007396] border-[#007396]';
+      color = 'text-[#F7DF1E] border-[#F7DF1E]';
       break;
 
     // Frameworks
@@ -45,7 +45,7 @@ function Tag({ content }: TagProps) {
     // Réseaux et bases de données
     case 'Networks':
     case 'Databases':
-      color = 'text-[#FFD700] border-[#FFD700]';
+      color = 'text-[#10B981] border-[#10B981]';
       break;
 
     // Domaines de développement
@@ -74,7 +74,7 @@ function Tag({ content }: TagProps) {
   }
 
   return (
-    <span className={`px-3 py-1 border-2 rounded-full whitespace-nowrap pointer-events-none ${color}`}>
+    <span className={`px-3 py-1 border-2 rounded-full whitespace-nowrap event ${color} opacity-80`}>
       {content}
     </span>
   );
