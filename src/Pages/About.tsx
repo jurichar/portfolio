@@ -146,7 +146,7 @@ function About() {
           </p>
         </div>
         <div className='relative min-w-[50vw] w-full'>
-          <img src="/profil.png" alt="random" loading='lazy' draggable='false' />
+          <img src="/profil.jpg" alt="random" loading='lazy' draggable='false' />
           <div className='z-30 absolute md:left-[35%] md:-top-[10%] left-[20%] -top-[25%]'>
             <DrawMe />
           </div>
