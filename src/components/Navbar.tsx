@@ -41,7 +41,7 @@ function Navbar() {
           {isOpen &&
             links.map((link, index) => (
               <motion.li
-                className='border-b-4 group hover:border-[#FFD700] border-white text-5xl md:text-7xl w-full list-none overflow-hidden'
+                className='border-b-4 group hover:border-[#FFD700] border-white transition-all text-5xl md:text-7xl w-full list-none overflow-hidden'
                 key={index}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
