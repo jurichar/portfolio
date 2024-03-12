@@ -20,15 +20,15 @@ function AboutItem({ item, index }: { item: ItemType, index: number }) {
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: [0.76, 0, 0.24, 1] }}
-      className='flex flex-col gap-6 md:gap-8 md:flex-row md:justify-end'
+      className='flex flex-col gap-4 md:gap-8 md:flex-row md:justify-end'
       key={index}
       viewport={{ once: true }}
     >
-      <h1 className='font-bold opacity-70 whitespace-nowrap pointer-events-none'>{item.duration}</h1>
+      <h1 className='md:text-xl font-bold opacity-70 whitespace-nowrap pointer-events-none'>{item.duration}</h1>
       <div>
-        <div className='group outline-2 transition-all outline-[rgba(255,215,0,0.5)]  hover:outline outline-offset-[1rem] rounded'>
+        <div className='w-full md:max-w-[50vw] group outline-2 transition-all outline-[rgba(255,215,0,0.5)]  hover:outline outline-offset-[1rem] rounded'>
           <Link to={item.link} target='_blank'>
-            <h1 className='font-bold whitespace-nowrap group-hover:opacity-100 opacity-80'>
+            <h1 className='text-base md:text-3xl font-bold whitespace-nowrap group-hover:opacity-100 opacity-80 pb-4'>
               <span>
                 {item.title}
               </span>
@@ -39,7 +39,7 @@ function AboutItem({ item, index }: { item: ItemType, index: number }) {
                 {item.company}
               </span>
             </h1>
-            <p className='group-hover:opacity-80 opacity-70'>{item.description}</p>
+            <p className='md:text-xl group-hover:opacity-80 opacity-70'>{item.description}</p>
             <div className='group-hover:opacity-100 opacity-50 mt-4 flex flex-row justify-start gap-x-2 gap-y-2 flex-wrap'>
               {item.tags.map((tag, index) => (
                 <motion.div
@@ -140,7 +140,7 @@ function About() {
         className="flex flex-col-reverse md:flex-row gap-10 justify-center items-center"
       >
         <div>
-          <h1 className='font-bold text-3xl pb-4'>Few things about me</h1>
+          <h1 className='font-bold text-2xl md:text-3xl pb-4'>Few things about me</h1>
           <p className='text-xl'>
             Hi, my name is Julien Richard, I grow and I live in Paris, France. I started programming at the university of Paris, where I studied computer sciences and after the pandemic, I decided to join the 42 school to learn more about software engineering. I did a lot of projects in different languages. After 2 internships, I started to work as software engineer and I am currently working at BETC as a front-end engineer.
           </p>
@@ -152,10 +152,10 @@ function About() {
           </div>
         </div>
       </div>
-      <h1 className='font-bold text-3xl my-8'>Experience</h1>
+      <h1 className='font-bold text-3xl mt-20 mb-8'>Experience</h1>
       <div className='flex flex-col gap-14'>
         {items.map((item, index) => (
-          <AboutItem item={item} index={index} />
+          <AboutItem item={item} index={index} key={index} />
         ))}
       </div>
     </motion.div >

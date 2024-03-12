@@ -43,7 +43,7 @@ function Navbar() {
               <motion.li
                 className='border-b-4 group hover:border-[#FFD700] border-white transition-all text-5xl md:text-7xl w-full list-none overflow-hidden'
                 key={index}
-                initial={{ opacity: 0 }}
+                initial={{ opacity: 1 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{
@@ -54,14 +54,14 @@ function Navbar() {
                 <motion.div
                   initial={{ y: 100 }}
                   animate={{ y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.2, ease: [0.76, 0, 0.24, 1] }}
+                  transition={{ duration: 0.5, delay: index * 0.1 + 0.3, ease: [0.76, 0, 0.24, 1] }}
                   className='w-full h-full'
                 >
                   <Link
                     to={link.to}
                     key={index}
                     onClick={() => handleClick()}
-                    className='w-full h-full group-hover:tracking-[0.3em] group-hover:text-[#FFD700] transition-all duration-300'
+                    className='w-full h-full group-hover:tracking-[0.3em] group-hover:text-[#FFD700] transition-all duration-200'
                   >
                     <p className='font-bold'>
                       {link.name}
