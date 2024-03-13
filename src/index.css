@@ -16,6 +16,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Satoshi";
+  src: local('Satoshi'), url('/fonts/WNDVG7O66ENLOD43GS7FBUCC4KMT5OM2.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
 *,
 *::before,
 *::after {
