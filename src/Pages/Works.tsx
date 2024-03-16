@@ -127,6 +127,12 @@ function Works() {
       "tags": ["JavaScript", "Next.js", "Tailwind", "Framer Motion", "Web", "Drupal"]
     },
     {
+      "title": "PokedexCLI",
+      "image": ["/assets/works/pokedexcli.jpeg"],
+      "description": "This is a Pokedex in a command-line REPL. It uses the PokeAPI to fetch Pokemon data",
+      "tags": ["Golang", "CLI", "API"]
+    },
+    {
       "title": "Chopard: 1 Place Vandôme",
       "image": ["/assets/works/chopard.gif"],
       "description": "Creation of a website for the Chopard 1 Place Vendôme hotel, aiming to create an immersive experience with WebGL.",
