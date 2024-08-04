@@ -66,33 +66,41 @@ function About() {
   const items = [
     {
       'duration': '2024 - Present',
-      'company': 'BETC',
-      'title': 'Frontend Engineer',
-      'description': 'As a front-end engineer at BETC, I have been responsible for developing websites of various scales, from luxury brands to big corporations. I have also been involved in the development of specials projects, such as interactive experiences and web applications with headless CMS. ',
+      'company': 'PerfMgr (freelance)',
+      'title': 'Full-stack',
+      'description': 'As a lead full-stack developer, I am responsible for developing the company\'s web application from scratch. I have been involved in all stages of the development process, from planning and design to implementation and deployment. I have also been responsible for managing a team of developers and ensuring that the project is completed on time and within budget. I coded the front-end using Next.js and the back-end using DRF. I also implemented a CI/CD pipeline to automate the deployment process.',
+      'tags': ['JavaScript', 'TypeScript', 'React.js', 'Next.js', 'Django', 'DRF', 'Web', 'SASS', 'Tailwind'],
+      'link': 'https://www.perfmgr.com/'
+    },
+    {
+      'duration': '2024',
+      'company': 'BETC (freelance)',
+      'title': 'Front-end Engineer',
+      'description': 'As a front-end engineer at BETC, I have been responsible for developing websites of various scales, from luxury brands to big corporations. I have also been involved in the development of specials projects, such as interactive experiences and web applications with headless CMS.',
       'tags': ['JavaScript', 'TypeScript', 'React.js', 'Next.js', 'Web', 'SASS', 'Tailwind', 'Framer Motion', 'Web GL', 'Drupal', 'Strapi'],
       'link': 'https://betcfullsix.com/'
     },
     {
       'duration': '2023 - 2024',
       'company': 'Freelance',
-      'title': 'Fullstack Freelance',
-      'description': 'As a freelance front-end engineer, I work on a variety of projects, including a web applications and websites for small business and with a wide range of technologies, including Next, React, Django, Tailwind and more. I have also gained valuable experiences in back-end development.',
-      'tags': ['JavaScript', 'TypeScript', 'React.js', 'Next.js', 'Web', 'SASS', 'Tailwind', 'WordPress'],
+      'title': 'Full-stack Freelance',
+      'description': 'As a freelance full-stack developer, I work on various projects including developing web applications and websites for small businesses using a wide range of technologies such as Next.js, React, Django, and Tailwind. I have also gained valuable experience in backend development.',
+      'tags': ['JavaScript', 'TypeScript', 'React.js', 'Next.js', 'Django', 'DRF', 'Web', 'SASS', 'Tailwind'],
       'link': 'https://www.malt.fr/profile/jurichar'
     },
     {
-      'duration': '2023 - 2023',
+      'duration': '2022 - 2023',
       'company': 'ExxactRobotics',
-      'title': 'MLOps Engineer',
-      'description': 'During my time at ExxactRobotics as an MLOps, I played a crucial role in optimizing data processing pipelines. By refactoring the pipelines in Python and automating processes with tools such as Jenkins, Azure, Minio, ZenML, Kubernetes (K8s), and Ansible, we were able to dramatically speed up data processing. In fact, our code enabled speeds up to 30 times faster than before. This significant improvement in data processing speed had a direct impact on the overall efficiency of the company, reducing wait times and enabling quicker decision-making.',
+      'title': 'Data Engineer',
+      'description': 'At ExxactRobotics as data engineer, I played a crucial role in optimizing data processing pipelines. By refactoring the pipelines in Python and automating processes with tools such as Jenkins, Azure, Minio, ZenML, Kubernetes (K8s), and Ansible, we were able to dramatically speed up data processing. In fact, our code enabled speeds up to 30 times faster than before. This significant improvement in data processing speed had a direct impact on the overall efficiency of the company, reducing wait times and enabling quicker decision-making.',
       "tags": ["Python", "AI", "Docker", "Kubernetes", "MLOps", "Databases", "Cloud"],
       'link': 'https://exxact-robotics.com/'
     },
     {
-      'duration': '2022 - 2023',
+      'duration': '2022',
       'company': 'AGCO',
-      'title': 'Front-end Engineer',
-      'description': 'I had the opportunity to work on integration in QSkinny (a Qt framework) for the user interface of an AGCO tractor. This experience allowed me to develop programming skills in C++ and gain a deep understanding of designing complex and efficient user interfaces. These programming and interface design skills have strengthened my ability to create user experiences as a front-end engineer.',
+      'title': 'Software Engineer (Internship)',
+      'description': 'As a software engineering intern at AGCO, I developed various software solutions to support agricultural machinery. My work included developing user interfaces and optimizing software performance for better user experiences.',
       "tags": ["C++", 'Qt', "Embedded"],
       'link': 'https://www.agcocorp.fr/'
     },
@@ -116,7 +124,7 @@ function About() {
       'duration': '2017 - 2018',
       'company': 'University of Paris',
       'title': 'Student',
-      'description': 'My computer science degree at Université Paris 7 Diderot has given me a solid grounding in various domains like programming, computer sciences, and databases. The curriculum also included a strong mathematical component, which has been invaluable in my coding projects.',
+      'description': 'My computer science degree at Université Paris 7 provided a solid grounding in programming, computer science, and databases. The curriculum also included a strong mathematical component, which has been invaluable in my coding projects.',
       'tags': ['Java', 'C', 'Python', 'Web', 'Databases', 'Mathematics'],
       'link': 'https://u-paris.fr/'
     },
@@ -142,7 +150,7 @@ function About() {
         <div>
           <h1 className='font-bold text-2xl md:text-3xl pb-4'>Few things about me</h1>
           <p className='text-xl'>
-            Hi, my name is Julien Richard, I grow and I live in Paris, France. I started programming at the university of Paris, where I studied computer sciences and after the pandemic, I decided to join the 42 school to learn more about software engineering. I did a lot of projects in different languages. After 2 internships, I started to work as software engineer and I am currently working at BETC as a front-end engineer.
+            Hi, my name is Me. I grew up and live in City. I started programming at the University of City, where I studied computer science. After the pandemic, I joined École 42 to deepen my knowledge in software engineering. I completed various projects in different languages, had two internships, and then started working as a software engineer. Currently, I work as a freelance full-stack developer.
           </p>
         </div>
         <div className='relative min-w-[50vw] w-full'>
