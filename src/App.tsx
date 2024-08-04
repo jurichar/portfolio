@@ -6,7 +6,6 @@ import About from './Pages/About'
 import Navbar from './components/Navbar'
 import Contact from './Pages/Contact'
 import Works from './Pages/Works'
-import Resume from './Pages/Resume'
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/works" element={<Works />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/resume" element={<Resume />} />
       </Routes>
       <div className="h-20 pointer-events-none" />
       <div className="fixed top-0 left-0 z-50 pointer-events-none">
