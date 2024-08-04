@@ -3,16 +3,22 @@
 
 const workData = [
     {
+        "title": "MyPerfMgr",
+        "image": ["/assets/works/perfmgr.png"],
+        "description": "A web app, written in Django, with Django Rest Framework, and uses PostgreSQL. It is a performance management tool, to manage employees, objectives, and more.",
+        "tags": ["Django", "DRF", "postgresql","Next.js", "Tailwind", "Web"]
+    },
+    {
+      "title": "Freelance Admin",
+      "image": ["/assets/works/freelance-admin.png"],
+      "description": "A web app, written in Django, with Django Rest Framework, and uses PostgreSQL. It uses a custom API to retrieve data. It is a freelance admin tool, to manage clients, projects, invoices, estimates and more.",
+      "tags": ["Django", "DRF","postgresql", "Next.js", "Tailwind", "Web"]
+    },
+    {
       "title": "Sodexo Live !",
       "image": ["/assets/works/sodexo.jpg"],
       "description": "A web app, written in JavaScript, with Next.js, with a lot of animations with Framer Motion. It uses a custom API in Drupal to retrieve data.",
       "tags": ["JavaScript", "Next.js", "Tailwind", "Framer Motion", "Web", "Drupal"]
-    },
-    {
-      "title": "PokedexCLI",
-      "image": ["/assets/works/pokedexcli.jpg"],
-      "description": "This is a Pokedex in a command-line REPL. It uses the PokeAPI to fetch Pokemon data",
-      "tags": ["Golang", "CLI", "API"]
     },
     {
       "title": "Chopard: 1 Place Vandôme",
@@ -33,16 +39,34 @@ const workData = [
       "tags": ["TypeScript", "React.js", "Web", "Django", "Databases"]
     },
     {
-      "title": "Reddit Clone",
-      "image": ["/assets/works/nextspace.jpg"],
-      "description": "A Reddit clone, written in Next (front + back), with Next.js, and uses a custom API to retrieve data.",
-      "tags": ["TypeScript", "Next.js", "Web", "Databases"]
+      "title": "Data engineering for Exxact Robotics",
+      "image": ["/assets/works/exaact.jpg"],
+      "description": "Optimization of machine learning pipelines in Python using Azure.",
+      "tags": ["Python", "AI", "Docker", "Kubernetes", "MLOps", "Databases", "Cloud"]
     },
     {
-      "title": "Landing Page",
-      "image": ["/assets/works/landing.jpg"],
-      "description": "Landing pages built with various JavaScript frameworks and libraries.",
-      "tags": ["JavaScript", "React.js", "Web"]
+      "title": "Software development for AGCO",
+      "image": ["/assets/works/agco.jpg"],
+      "description": "A software for a tractor, written in Qt / QSkinny.",
+      "tags": ["C++", 'Qt', "Embedded"]
+    },
+    {
+      "title": "Cloud environment with Ansible and K8s",
+      "image": ["/assets/works/cloud.jpg"],
+      "description": "Deployment of a complex WordPress environment in the cloud using Ansible and Kubernetes.",
+      "tags": ["Docker", "Ansible", "Kubernetes", "Wordpress", "DevOps", "Cloud"]
+    },
+    {
+      "title": "PokedexCLI",
+      "image": ["/assets/works/pokedexcli.jpg"],
+      "description": "This is a Pokedex in a command-line REPL. It uses the PokeAPI to fetch Pokemon data",
+      "tags": ["Golang", "CLI", "API"]
+    },
+    {
+      "title": "Fully dockerized complex environment",
+      "image": ["/assets/works/iot.gif"],
+      "description": "A fully dockerized complex environment with a database, a web server, a reverse proxy, and a monitoring tool. This project was made in a team of 3.",
+      "tags": ["Docker", "Vagrant", "Kubernetes", "Wordpress", "DevOps", "Databases"]
     },
     {
       "title": "3D Ligands Viewer",
@@ -57,34 +81,22 @@ const workData = [
       'tags': ['Swift', 'Mobile', "Databases"]
     },
     {
-      "title": "MLOps for Exxact Robotics",
-      "image": ["/assets/works/exaact.jpg"],
-      "description": "Optimization of machine learning pipelines in Python using Azure.",
-      "tags": ["Python", "AI", "Docker", "Kubernetes", "MLOps", "Databases", "Cloud"]
-    },
-    {
-      "title": "Software for AGCO",
-      "image": ["/assets/works/agco.jpg"],
-      "description": "A software for a tractor, written in Qt / QSkinny.",
-      "tags": ["C++", 'Qt', "Embedded"]
-    },
-    {
-      "title": "Cloud environment with Ansible and K8s",
-      "image": ["/assets/works/cloud.jpg"],
-      "description": "Deployment of a complex WordPress environment in the cloud using Ansible and Kubernetes.",
-      "tags": ["Docker", "Ansible", "Kubernetes", "Wordpress", "DevOps", "Cloud"]
-    },
-    {
-      "title": "Fully dockerized complex environment",
-      "image": ["/assets/works/iot.gif"],
-      "description": "A fully dockerized complex environment with a database, a web server, a reverse proxy, and a monitoring tool. This project was made in a team of 3.",
-      "tags": ["Docker", "Vagrant", "Kubernetes", "Wordpress", "DevOps", "Databases"]
-    },
-    {
       "title": "Online game",
       "image": ["/assets/works/pong.jpeg"],
       "description": "An online game platform with a game of pong, this project was made in a team of 5. It was written in Vue.js, Node.js and uses PostgreSQL.",
       "tags": ["Vue.js", "Web", "Node.js", "Databases"]
+    },
+    {
+      "title": "Reddit Clone",
+      "image": ["/assets/works/nextspace.jpg"],
+      "description": "A Reddit clone, written in Next (front + back), with Next.js, and uses a custom API to retrieve data.",
+      "tags": ["TypeScript", "Next.js", "Web", "Databases"]
+    },
+    {
+      "title": "Landing Page",
+      "image": ["/assets/works/landing.jpg"],
+      "description": "Landing pages built with various JavaScript frameworks and libraries.",
+      "tags": ["JavaScript", "React.js", "Web"]
     },
     {
       "title": "IRC Client/Server",
