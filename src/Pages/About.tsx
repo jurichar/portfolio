@@ -113,15 +113,15 @@ function About() {
       'link': 'https://42.fr/'
     },
     {
-      'duration': '2018 - 2020',
-      'company': 'Colombbus',
+      'duration': '2018 - 2022',
+      'company': 'Colombbus and Play\'n\'Prog',
       'title': 'Educational Engineer',
       'description': 'In my previous role as a Computer and Robotics Instructor, I was responsible for teaching Scratch and other playful learning platforms to young learners. This experience was not only rewarding but also honed my skills in educational technology and curriculum development. I was able to create engaging and interactive lessons that made complex concepts accessible and fun. This role enhanced my understanding of user engagement, which is an invaluable skill in front-end development.',
       'tags': ['JavaScript', 'Education', 'Scratch'],
       'link': 'https://www.colombbus.org/'
     },
     {
-      'duration': '2017 - 2018',
+      'duration': '2017 - 2020',
       'company': 'University of Paris',
       'title': 'Student',
       'description': 'My computer science degree at Université Paris 7 provided a solid grounding in programming, computer science, and databases. The curriculum also included a strong mathematical component, which has been invaluable in my coding projects.',
