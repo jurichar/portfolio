@@ -5,24 +5,31 @@ import prettierPlugin from 'eslint-plugin-prettier';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import reactRefreshPlugin from 'eslint-plugin-react-refresh';
+import globals from 'globals';
 
 export default [
   js.configs.recommended,
   {
-    ignores: ['node_modules/', 'dist/', '*.config.*'],
+    ignores: ['.git', 'node_modules/', 'dist/', '*.d.ts', '*.config.*'],
   },
   {
-    files: ['**/*.{ts,tsx}'],
+    files: ['**/*.{ts,tsx,js,jsx}'],
     languageOptions: {
       parser: typescriptParser,
       sourceType: 'module',
       ecmaVersion: 'latest',
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+        ...globals.worker,
+      },
     },
     plugins: {
       '@typescript-eslint': typescriptPlugin,
     },
     rules: {
       '@typescript-eslint/no-unused-vars': 'error',
+      'prettier/prettier': 'error',
     },
   },
   {

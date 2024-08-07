@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function Draw() {
+export const Draw = () => {
   return (
     <div className="">
       <svg
@@ -81,4 +81,4 @@ export default function Draw() {
       </svg>
     </div>
   );
-}
+};

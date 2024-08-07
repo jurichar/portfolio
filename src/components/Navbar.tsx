@@ -24,6 +24,7 @@ const Navbar = () => {
       <button
         className="fixed top-4 left-4 z-[99]"
         onClick={() => setIsOpen(!isOpen)}
+        type="button"
       >
         <img
           alt="Plus icon"

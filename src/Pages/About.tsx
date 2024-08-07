@@ -39,12 +39,12 @@ const AboutItem = ({ item, index }: { item: ItemType; index: number }) => {
               {item.description}
             </p>
             <div className="group-hover:opacity-100 opacity-50 mt-4 flex flex-row justify-start gap-x-2 gap-y-2 flex-wrap">
-              {item.tags.map((tag, index) => (
+              {item.tags.map((tag, index_item) => (
                 <motion.div
                   className="pt-2"
                   initial={{ opacity: 0, scale: 0 }}
-                  key={index}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  key={index_item}
+                  transition={{ duration: 0.5, delay: index_item * 0.1 }}
                   viewport={{ once: true }}
                   whileInView={{ opacity: 1, scale: 1 }}
                 >

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function DrawUnderline() {
+const DrawUnderline = () => {
   return (
     <div className="">
       <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -17,4 +17,6 @@ export default function DrawUnderline() {
       </svg>
     </div>
   );
-}
+};
+
+export default DrawUnderline;
