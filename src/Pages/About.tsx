@@ -105,10 +105,10 @@ function About() {
       'link': 'https://www.agcocorp.fr/'
     },
     {
-      'duration': '2020 - 2022',
+      'duration': '2020 - 2024',
       'company': 'École 42',
       'title': 'Student',
-      'description': 'Studying at École 42 has provided me with a strong foundation in software engineering, including but not limited to algorithms, data structures, and low-level programming. The school\'s project- based, peer - to - peer learning environment has also equipped me with excellent problem - solving and teamwork skills.',
+      'description': 'Studying at École 42 has provided me with a strong foundation in software engineering, including but not limited to algorithms, data structures, and low-level programming. The school\'s project- based, peer-to-peer learning environment has also equipped me with excellent problem-solving and teamwork skills.',
       "tags": ["JavaScript", "TypeScript", "Python", "Swift", "C++", "C", "Docker", "Web", "Mobile", "Django", "Node.js", "Databases"],
       'link': 'https://42.fr/'
     },
@@ -116,7 +116,7 @@ function About() {
       'duration': '2018 - 2022',
       'company': 'Colombbus and Play\'n\'Prog',
       'title': 'Educational Engineer',
-      'description': 'In my previous role as a Computer and Robotics Instructor, I was responsible for teaching Scratch and other playful learning platforms to young learners. This experience was not only rewarding but also honed my skills in educational technology and curriculum development. I was able to create engaging and interactive lessons that made complex concepts accessible and fun. This role enhanced my understanding of user engagement, which is an invaluable skill in front-end development.',
+      'description': 'In my previous role as a Computer and Robotics Instructor, I was responsible for teaching Scratch and other playful learning platforms to young learners. This experience was not only rewarding but also honed my skills in educational technology and curriculum development. I was able to create engaging and interactive lessons that made complex concepts accessible and fun. This role enhanced my understanding of user engagement, which is an invaluable skill in development.',
       'tags': ['JavaScript', 'Education', 'Scratch'],
       'link': 'https://www.colombbus.org/'
     },
