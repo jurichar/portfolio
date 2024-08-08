@@ -211,12 +211,13 @@ const About = () => {
             Few things about me
           </h1>
           <p className="text-xl">
-            Hi, my name is Me. I grew up and live in City. I started programming
-            at the University of City, where I studied computer science. After
-            the pandemic, I joined École 42 to deepen my knowledge in software
-            engineering. I completed various projects in different languages,
-            had two internships, and then started working as a software
-            engineer. Currently, I work as a freelance full-stack developer.
+            Hi, my name is Julien. I grew up and live in Paris. I started
+            programming at the University of Paris 7, where I studied computer
+            science. After the pandemic, I joined École 42 to deepen my
+            knowledge in software engineering. I completed various projects in
+            different languages, had two internships, and then started working
+            as a full-time developer. Currently, I work as a freelance
+            developer.
           </p>
         </div>
         <div className="relative min-w-[50vw] w-full">
