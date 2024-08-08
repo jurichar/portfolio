@@ -3,8 +3,6 @@ import typescriptPlugin from '@typescript-eslint/eslint-plugin';
 import typescriptParser from '@typescript-eslint/parser';
 import prettierPlugin from 'eslint-plugin-prettier';
 import reactPlugin from 'eslint-plugin-react';
-import reactHooksPlugin from 'eslint-plugin-react-hooks';
-import reactRefreshPlugin from 'eslint-plugin-react-refresh';
 import globals from 'globals';
 
 export default [
@@ -45,8 +43,6 @@ export default [
     },
     plugins: {
       react: reactPlugin,
-      'react-hooks': reactHooksPlugin,
-      'react-refresh': reactRefreshPlugin,
       prettier: prettierPlugin,
     },
     rules: {
@@ -89,10 +85,6 @@ export default [
       'react/react-in-jsx-scope': 'off',
       'react/jsx-one-expression-per-line': 'off',
       'react/prop-types': 'off',
-      'react-refresh/only-export-components': [
-        'warn',
-        { allowConstantExport: true },
-      ],
       'prettier/prettier': ['error', {}, { usePrettierrc: true }],
     },
   },
