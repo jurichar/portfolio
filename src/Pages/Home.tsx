@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import Draw from "../components/Draw";
 import DrawUnderline from "../components/DrawUnderline";
+import { Draw } from "../components/Draw";
 
 const icon = (name: IconProp, link: string, index: number) => {
   return (
